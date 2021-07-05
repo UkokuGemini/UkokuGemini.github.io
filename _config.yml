@@ -1,7 +1,7 @@
 # Site settings
 title: UkokuGemini's Blog
 SEOTitle: UkokuGemini's Blog | UkokuGemini's Blog
-header-img: img//BG.png
+header-img: img//BG.jpg
 email: Ukoku@live.cn
 description: "UkokuGemini Just UkokuGemini."
 keyword: "UkokuGemini"
@@ -37,7 +37,14 @@ kramdown:
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "还没有...(哭)",
+        href: ""
+    }{
+        title: "404",
+        href: "https://ukokugemini.github.io/404"
+    }
+    {
+        title: "Offline",
+        href: "https://ukokugemini.github.io/offline"
     }
 ]
