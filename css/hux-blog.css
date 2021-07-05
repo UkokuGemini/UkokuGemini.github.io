@@ -1054,7 +1054,7 @@ img::-moz-selection {
 }
 .page-fullscreen #tag-heading {
   position: fixed;
-  left: 0;
+  left: 40%;
   top: 0;
   padding-bottom: 150px;
   width: 100%;
