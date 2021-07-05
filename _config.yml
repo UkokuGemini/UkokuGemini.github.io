@@ -39,11 +39,10 @@ friends: [
     {
         title: "还没有...(哭)",
         href: ""
-    }{
+    },{
         title: "404",
         href: "https://ukokugemini.github.io/404"
-    }
-    {
+    },{
         title: "Offline",
         href: "https://ukokugemini.github.io/offline"
     }
