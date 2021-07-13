@@ -2,7 +2,7 @@
 layout:     post
 title:      Updater-EndlessWorld_DarkGemLand
 subtitle:   VersionControl
-date:       0000-00-00
+date:       1990-01-01
 author:     UkokuGemini
 header-img: img/B01.jpg
 catalog: true
