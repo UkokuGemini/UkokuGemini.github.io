@@ -1,12 +1,14 @@
 ---
 layout:     post
-title:      'EW_DGL'Progress Develop News
+title:      EW_DGL Progress Develop News
 subtitle:   EndlessWorld_DarkGemLand
 date:       2021-07-15
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
 ---
+
+
 
 ## EndlessWorld_DarkGemLand
 ---
