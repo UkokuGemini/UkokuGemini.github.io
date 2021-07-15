@@ -4,7 +4,7 @@ title:      Updater-EndlessWorld_DarkGemLand
 subtitle:   VersionControl
 date:       0001-01-01
 author:     UkokuGemini
-header-img: img/B01.jpg
+header-img: img/Blog/B06.jpg
 catalog: true
 ---
 

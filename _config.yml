@@ -1,7 +1,7 @@
 # Site settings
 title: UkokuGemini's Blog
 SEOTitle: UkokuGemini's Blog | UkokuGemini's Blog
-header-img: img//BG.jpg
+header-img: img/WebSite/BG.jpg
 email: Ukoku@live.cn
 description: "UkokuGemini Just UkokuGemini."
 keyword: "UkokuGemini"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/UkokuGemini/UkokuGemini.github.io.git"
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "UkokuGemini Just UkokuGemini."
-sidebar-avatar: /img/Mine.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/WebSite/Mine.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: false
