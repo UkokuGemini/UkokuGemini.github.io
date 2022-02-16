@@ -42,9 +42,11 @@ friends: [
         href: "https://github.com/sunshineyg"
     },{
         title: "404",
+         pic: "./img/Icon/404.png",
         href: "https://ukokugemini.github.io/404"
     },{
         title: "Offline",
+        pic: "./img/Icon/Offline.png",
         href: "https://ukokugemini.github.io/offline"
     }
 ]
