@@ -1,50 +1,38 @@
 ---
 layout:     post
-title:      EW_DGL Progress Develop News
+title:      EW_DGL Progress Latest News
 subtitle:   EndlessWorld_DarkGemLand
-date:       2021-07-15
+date:       2022-02-17
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
 ---
 
-
-
 ## EndlessWorld_DarkGemLand
 ---
-阶段开发时间 `2021-7-15`
 
--记连云港出差期间
-
-### 版本
-版本:Application Version 2.5.1.216
+### 最新版本
+版本:Application Version 3.9.0.310(酸菜鱼)
     
-数据库版本：DataBase 2.5.0.0.1
+### 最近记事
 
-### 主要功能
-+ `[冒险系统-·Travel]`
-    #### 冒险难度
-    * 冒险难度调节
-    * 多种可选自动冒险难度设定
-    #### 冒险旅途事件
-    * 忽略事件
-+ `[Buff系统-教会]`
-    * 可增添Buff
-+ `[战斗系统]`
-+ `[技能系统-导师]`
-    * 技能学习
-+ `[物品系统-仓库]`
-    * 增加武器、防具、饰品
-+ `[商店系统-商店]` 
-    * 商店更新
-+ `[医疗系统-医疗所]`
-    * 三种医疗模式
-+ `[新人物属性系统-·Fefus]`
-    * 随机
-+ `[对话系统-·Dialog）]`
-+ `[日志系统]`
-    * 日志显示
-+ `[后台]`
-+ `[热键]`
-+ `[updater]`
-    *更新软件
+    写了个AutoUpdate.exe实现在游戏界面内开启更新，更新后再重启.
+
+    结果把我的数据库文件覆盖掉了,就很生气.
+
+    最近都在恢复数据库里的数据.幸好代码里有一些数据结构.
+
+    更新了一下Sqlite.dll链接库,发现最新的1.0.115.5的dll居然不支持密码了.就又换回1.0.112.0 😒
+
+    游戏本身今年初始没有太多更新,完善了一下ReadMe.md文档。
+
+    初步做一个PreRealese。3.9.0.310,想吃酸菜鱼了。叫了个这个版本名称。😄
+
+### 最近目标
+  
+  在准备中级职称考试,最近不会有太大的动作.
+
+  把管家增益效果补充完成.
+
+  关于AutoUpdate,考虑如果覆盖数据库，会丢失原有数据.
+  所以更新要针对数据库结构更改做定制更新优化.
