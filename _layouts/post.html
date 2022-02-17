@@ -101,7 +101,8 @@ layout: default
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <Br/>
                     {% endfor %}
                 </ul>
                 {% endif %}
