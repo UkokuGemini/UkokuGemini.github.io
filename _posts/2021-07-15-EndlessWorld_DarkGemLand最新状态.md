@@ -2,7 +2,7 @@
 layout:     post
 title:      EW_DGL Progress Latest News
 subtitle:   EndlessWorld_DarkGemLand
-date:       2022-02-17
+date:       2022-02-28
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
@@ -10,25 +10,25 @@ catalog: true
 
 ## EndlessWorld_DarkGemLand
 ---
+<center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
+
 
 ### `最新版本`
-版本:Application Version 3.9.0.310(酸菜鱼)
+版本:Application Version **#4.0.0.365(暖风机)**
 
   ---  
   
 ### `最近记事`
 
-写了个AutoUpdate.exe实现在游戏界面内开启更新，更新后再重启.
+#### 简要更新日志`[2022-2-24]`
 
-结果把我的数据库文件覆盖掉了,就很生气.
-
-最近都在恢复数据库里的数据.幸好代码里有一些数据结构.
-
-更新了一下Sqlite.dll链接库,发现最新的1.0.115.5的dll居然不支持密码了.就又换回1.0.112.0 😒
-
-游戏本身今年初始没有太多更新,完善了一下ReadMe.md文档。
-
-初步做一个PreRealese。3.9.0.310,想吃酸菜鱼了。叫了个这个版本名称。😄
+>提供稳定版本.
+>
+>新增种族、职业、技能数据(部分实装).
+>
+>实装部分：牧师[治疗]、战士[战吼]技能效果.
+>
+>优化战斗日志.
 
 ---
 
