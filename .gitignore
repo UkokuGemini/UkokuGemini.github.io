@@ -1,3 +1,7 @@
-﻿D:\GitHub\UkokuGemini\UkokuGemini.github.io\_posts\BlogAdd.exe
+﻿
+/_posts/BlogAdd.exe
+/music/BGM.Old/*
+
+.gitignore
 *.exe
 *.ini
