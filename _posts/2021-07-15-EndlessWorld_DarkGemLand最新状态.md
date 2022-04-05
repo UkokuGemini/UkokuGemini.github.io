@@ -2,7 +2,7 @@
 layout:     post
 title:      EW_DGL Progress Latest News
 subtitle:   EndlessWorld_DarkGemLand
-date:       2022-02-28
+date:       2022-04-05
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
