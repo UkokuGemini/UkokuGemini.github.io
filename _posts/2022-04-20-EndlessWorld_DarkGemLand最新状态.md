@@ -1,9 +1,9 @@
 ---
-layout:     post
-title:      EndlessWorld_DarkGemLand
-subtitle:   最新动态
-date:       2022-04-19
-author:     UkokuGemini
+layout: post
+title: EndlessWorld_DarkGemLand
+subtitle: 最新动态
+date: 2022-04-19
+author: UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
 ---
