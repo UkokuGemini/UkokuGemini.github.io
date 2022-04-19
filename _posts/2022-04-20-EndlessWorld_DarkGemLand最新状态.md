@@ -1,12 +1,13 @@
 ---
 layout:     post
-title:      EW_DGL Progress Latest News
-subtitle:   EndlessWorld_DarkGemLand
-date:       2022-04-20
+title:      EndlessWorld_DarkGemLand
+subtitle:   最新动态
+date:       2022-04-19
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: true
 ---
+
 
 ## EndlessWorld_DarkGemLand
 ***
@@ -14,7 +15,7 @@ catalog: true
 
 
 ### `最新版本`
-####  `稳定发布版本` **#4.1.6.467(小馄饨暨两周年版本)**
+#### `稳定发布版本` **#4.1.6.467(小馄饨暨两周年版本)**
 #### `最新发布版本` **#4.1.8.503**
 
 ***
@@ -28,9 +29,11 @@ catalog: true
 技能拥有不同的继续攻击或继续施法特点.
 旅途将会出现陷阱、迷宫、和旅站.
 英雄现在可以锁定，锁定后英雄将不再离开.
+
 ***
+
 ### `最近目标`
-- 獲得條件`碎片`/`原石`/`黑石` #策划设计 
+- 获得条件`碎片`/`原石`/`黑石` #策划设计 
 - 碎片掉落(N与Lv的关系,最大MonsterLv的关系)
 - 宝藏
 - 锁定名额获取
