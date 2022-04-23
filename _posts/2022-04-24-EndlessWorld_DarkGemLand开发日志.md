@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:       EndlessWorld_DarkGemLand
+title:      EndlessWorld_DarkGemLand
 subtitle:   开发日志
 date:       2022-04-24
 author:     UkokuGemini
@@ -31,7 +31,7 @@ catalog: true
 ***
 ### `历史日志`
  ###### Ver1.0.0 - [2020-3-27]
- - 初版DGL.exe. 可以实现简单功能. 新角色可刷新初始属性"双随机机制". 商店提供离线经验/在线经验领取. 战斗系统Beta和战斗日志. 增加必然事件和等待事件. 技能Beta和智能施法.
+初版DGL.exe. 可以实现简单功能. 新角色可刷新初始属性"双随机机制". 商店提供离线经验/在线经验领取. 战斗系统Beta和战斗日志. 增加必然事件和等待事件. 技能Beta和智能施法.
  ###### Ver2.0.0 - [2021-5-28]
  - 新增后台及老板键. 遇怪公式调整. 技能重构. 其他优化.
  ###### Ver2.1.0 - [2021-6-4]
