@@ -9,19 +9,12 @@ catalog: True
 ---
 
 ## EndlessWorld_DarkGemLand
-***
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ### `版本情况`
 #### `稳定发布版本`[**# Ver4.1.6.467(小馄饨暨两周年版本)**](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)/EndlessWorld_DarkGemLand.msi)
 
 #### `最新开发版本` **# Ver4.2.3.535**<sub>[2022-4-25]</sub>
-
-### `开发计划` 
-技能实装(10/77)
-
----
-
 ### `历史日志`
 ###### Ver1.0.0<sub>[2020-3-27]</sub>
  - 初版DGL.exe. 可以实现简单功能
@@ -174,9 +167,3 @@ catalog: True
  - 增加怪物技能释放,添加怪物技能上限
  - 修复战斗后状态栏显示问题
  - 优化战文本,对敌技能显示敌方名字
-
-
-### ToBeContinue...
-
----
----
