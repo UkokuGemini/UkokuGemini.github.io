@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      EndlessWorld-DarkGemLand Project
+title:      EndlessWorld-DarkGemLand
 subtitle:   开发日志
 date:       2022-04-26
 author:     UkokuGemini
