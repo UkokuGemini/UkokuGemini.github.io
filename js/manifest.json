@@ -1,7 +1,7 @@
 {
-  "name": "BY Blog",
-  "short_name": "BY Blog",
-  "description": "A personal blog by engineer",
+  "name": "UkokuGemini Blog",
+  "short_name": "UkokuGemini Blog",
+  "description": "UkokuGemini Just UkokuGemini.",
   "icons": [{
     "src": "/img/WebSite/NightCrow-32.png",
     "sizes": "128x128",
