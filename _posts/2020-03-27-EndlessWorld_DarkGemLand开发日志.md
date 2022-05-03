@@ -7,17 +7,12 @@ author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
 ---
-
 ## EndlessWorld_DarkGemLand
 ---
-
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
-
 ### `版本情况`
-
 #### 稳定发布版本 
 -> [**# Ver4.1.6.467**](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)/EndlessWorld_DarkGemLand.msi) <sub>\[2022-3-27\](\"小馄饨" - 暨两周年版本)</sub>
-
 #### 最新开发版本 
 -> **# Ver4.2.5.553**<sub>[2022-5-29]</sub>
 
@@ -50,9 +45,7 @@ Ver4.2.5
 上帝之手/幻影无形/偷盗/贪得无厌/法术奥义/元素轰炸/沉默/魔法精研/军备/高利贷/雇佣兵/无往不利/诅咒/迷惑/妖术/巫毒/制裁/魔法免疫/反伤/坚韧不屈/嗜血/激怒/狂热/狂怒/附魔/闪电术/缠绕枝蔓/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/基础命中/基础闪避/基础爆击几率/基础爆击伤害/基础吸血/基础生命回复/基础魔法回復/怪物技能
 ```
 ---
-
 ### `历史日志`
-
 ###### Ver1.0.0<sub>[2020-3-27]</sub>
  - 初版DGL.exe(可以实现简单功能) 
  - 新角色可刷新初始属性"双随机机制"
@@ -231,5 +224,8 @@ Ver4.2.5
  - 实装技能(战斗技巧/多重箭矢/瞄准/穿透/专注)
  - 完成某些Buff技能,暂存,在一定条件触发并消耗的机制
  - <u>消耗性技能</u>战斗日志显示
+ - 暂停战斗功能
+ - 更快回城(步数增加距离百分比)
+ - 冒险途中改变自动冒险选项.
  
  
