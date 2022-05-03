@@ -2,7 +2,7 @@
 layout:     post
 title:      EndlessWorld-DarkGemLand
 subtitle:   开发日志
-date:       2022/04/29
+date:       2022/05/03
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -226,7 +226,7 @@ Ver4.2.5
  - 优化<u>持续性技能</u>的代码和显示(包含<u>双向</u>作用的持续技能)
  - 实装技能(冲锋)
 
- ###### Ver4.2.5<sub>[2022-5-3]</sub>
+###### Ver4.2.5<sub>[2022-5-3]</sub>
  - 新增叠加技能显示.(显示技能叠加了多少次数)
  - 实装技能(战斗技巧/多重箭矢/瞄准/穿透/专注)
  - 完成某些Buff技能,暂存,在一定条件触发并消耗的机制
