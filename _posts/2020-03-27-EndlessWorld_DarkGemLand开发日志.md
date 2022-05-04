@@ -10,15 +10,14 @@ catalog: True
 ## EndlessWorld_DarkGemLand
 ---
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
-### `版本情况`
 
+---
+### `版本情况`
 #### 稳定发布版本 
 -> [**# Ver4.1.6.467**](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)/EndlessWorld_DarkGemLand.msi) <sub>\[2022-3-27\](\"小馄饨" - 暨两周年版本)</sub>
 #### 最新开发版本 
 -> **# Ver4.2.5.553**<sub>[2022-5-4]</sub>
-
 - 简要更新日志:  
-
 ```
 Ver4.2.5
 -   新增叠加技能显示.(显示技能叠加了多少次数)
@@ -30,20 +29,18 @@ Ver4.2.5
 -   冒险途中改变自动冒险选项
 -   修改怪物评分系统
 ```
-
 ---
-
 ### `开发计划` 
 陆续实装技能(16/77)
 - 已实装
 ```
-1.治疗/战吼-2
-2.祝福/驱逐/惩戒/威吓-6
-3.魔法恢复/火球术/寒冰术-9
-4.法力燃烧-10
-5.冲锋-11
-6.战斗技巧-12
-7.多重箭矢/瞄准/穿透/专注-16
+1.治疗/战吼
+2.祝福/驱逐/惩戒/威吓
+3.魔法恢复/火球术/寒冰术
+4.法力燃烧
+5.冲锋
+6.战斗技巧
+7.多重箭矢/瞄准/穿透/专注
 ```
 - 尚未实装
 ```
