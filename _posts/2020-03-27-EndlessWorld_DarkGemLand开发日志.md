@@ -11,10 +11,11 @@ catalog: True
 ---
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 ### `版本情况`
+
 #### 稳定发布版本 
 -> [**# Ver4.1.6.467**](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)/EndlessWorld_DarkGemLand.msi) <sub>\[2022-3-27\](\"小馄饨" - 暨两周年版本)</sub>
 #### 最新开发版本 
--> **# Ver4.2.5.553**<sub>[2022-5-29]</sub>
+-> **# Ver4.2.5.553**<sub>[2022-5-4]</sub>
 
 - 简要更新日志:  
 
@@ -24,6 +25,10 @@ Ver4.2.5
 -   实装技能(战斗技巧/多重箭矢/瞄准/穿透/专注)
 -   完成某些Buff技能,暂存,在一定条件触发并消耗的机制
 -   消耗性技能战斗日志显示
+-   暂停战斗功能
+-   更快回城(步数增加距离百分比)
+-   冒险途中改变自动冒险选项
+-   修改怪物评分系统
 ```
 
 ---
@@ -223,7 +228,7 @@ Ver4.2.5
  - 新增叠加技能显示.(显示技能叠加了多少次数)
  - 实装技能(战斗技巧/多重箭矢/瞄准/穿透/专注)
  - 完成某些Buff技能,暂存,在一定条件触发并消耗的机制
- - <u>消耗性技能</u>战斗日志显示
+ - 增加<u>消耗性技能</u>战斗日志显示
  - 暂停战斗功能
  - 更快回城(步数增加距离百分比)
  - 冒险途中改变自动冒险选项
