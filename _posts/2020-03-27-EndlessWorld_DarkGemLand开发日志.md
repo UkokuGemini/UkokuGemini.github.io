@@ -15,13 +15,15 @@ catalog: True
 ## 
 ### **版本情况**
 #### 🔰`稳定发布版本` 
-<left><a herf=https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)>
-<img src=https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable></a></left>
+<a float:left herf=https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)>
+<img src=https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable>
+</a>
+
 #### 🔰`最新开发版本`
-<left>
+<a float:left>
 <img src=https://badgen.net/badge/release/Version4.3.6[2022-5-8]></img>
 <img src=https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches>
-</left>
+</a>
 
 ```
 🌐Ver4.2.5简要更新日志: 
