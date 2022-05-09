@@ -16,16 +16,13 @@ catalog: True
 
 ### **版本情况**
 #### 🔰`稳定发布版本` 
-<a float:left herf="https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)">
-<img src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable"></img>
+<a herf="https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)">
+<img style="float:left"src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable"/>
 </a>
 
-#### 🔰`最新开发版本`![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
-![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
-<a float:left>
-<img src="https://badgen.net/badge/release/Version4.3.6[2022-5-8]"></img>
-<img src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"></img>
-</a>
+#### 🔰`最新开发版本`
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.6[2022-5-8]"/>
+<img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 
 ```
 🌐Ver4.2.5简要更新日志: 
