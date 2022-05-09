@@ -15,10 +15,14 @@ catalog: True
 ## 
 ### **版本情况**
 #### 🔰`稳定发布版本` 
-[![stable-release](https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable/)](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8))
+<left><a herf=https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)>
+<img src=https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable></a></left>
 #### 🔰`最新开发版本`
-![last-release](https://badgen.net/badge/release/Version4.3.6[2022-5-8])
-![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
+<left>
+<img src=https://badgen.net/badge/release/Version4.3.6[2022-5-8]></img>
+<img src=https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches>
+</left>
+
 ```
 🌐Ver4.2.5简要更新日志: 
 -   新增叠加技能显示.(显示技能叠加了多少次数)
