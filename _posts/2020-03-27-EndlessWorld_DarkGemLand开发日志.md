@@ -12,13 +12,13 @@ catalog: True
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
-### `版本情况`
+## 
+### **版本情况**
 #### 🔰`稳定发布版本` 
- - [**🌐Ver4.1.6.467**](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/🌐Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8)/EndlessWorld_DarkGemLand.msi) <sub>\[2022-3-27\](\"小馄饨" - 暨两周年版本)</sub>
-
-#### 🔰`最新开发版本` 
- - **🌐Ver4.2.5.553**<sub>[2022-5-4]</sub>
- 
+[![stable-release](https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable/)](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8))
+#### 🔰`最新开发版本`
+[![last-release](https://badgen.net/badge/release/Version4.3.6[2022-5-8])]()
+[![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)]()
 ```
 🌐Ver4.2.5简要更新日志: 
 -   新增叠加技能显示.(显示技能叠加了多少次数)
@@ -32,8 +32,8 @@ catalog: True
 ```
 
 ---
-### `开发计划` 
-💠`陆续实装技能(16/77)`
+### **开发计划** 
+💠陆续实装技能(16/77)
  - 已实装
 ```
 1.治疗/战吼
@@ -50,7 +50,7 @@ catalog: True
 ```
 
 ---
-### `历史日志`
+### **历史日志**
 ###### 🌐Ver1.0.0<sub>[2020-3-27]</sub>
  - 初版DGL.exe(可以实现简单功能) 
  - 新角色可刷新初始属性"双随机机制"
@@ -234,4 +234,7 @@ catalog: True
  - 冒险途中改变自动冒险选项
  - 修改怪物评分系统
  
- 
+###### 🌐Ver4.2.6<sub>[2022-5-8]</sub>
+ - 实装技能(上帝之手/恶魔之绊/无中生有/贪得无厌/
+ - 实装技能(法术奥义/元素轰炸/沉默/魔法精研)
+ - 实装技能(军备/高利贷)
