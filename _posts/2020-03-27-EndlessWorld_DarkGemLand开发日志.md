@@ -20,7 +20,8 @@ catalog: True
 <img src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable"></img>
 </a>
 
-#### 🔰`最新开发版本`
+#### 🔰`最新开发版本`![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
+![last-mommit](https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
 <a float:left>
 <img src="https://badgen.net/badge/release/Version4.3.6[2022-5-8]"></img>
 <img src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"></img>
