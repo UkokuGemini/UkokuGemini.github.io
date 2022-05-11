@@ -2,7 +2,7 @@
 layout:     post
 title:      EndlessWorld-DarkGemLand
 subtitle:   开发日志
-date:       2022/05/09
+date:       2022/05/11
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -24,21 +24,21 @@ catalog: True
 
 #### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.2.6[2022-5-9]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
+<img style="float:left" src="https://badgen.net/badge/release/Version4.2.7[2022-5-11]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 .
 
 ---
 
 ```
 🌐简要更新日志: 
- - 实装技能(上帝之手/恶魔之绊/无中生有/贪得无厌/
- - 实装技能(法术奥义/元素轰炸/沉默/魔法精研)
- - 实装技能(军备/高利贷)
+ - 实装技能(替身/无往不利/诅咒)
+ - 内置定时保存和0时清屏功能
+ - 日志现在可以语音朗读了
 ```
 
 ---
 ### **开发计划** 
-💠陆续实装技能(26/77)
+💠陆续实装技能(29/77)
  - 已实装
 ```
 1.治疗/战吼
@@ -51,10 +51,11 @@ catalog: True
 8.上帝之手/恶魔之绊/无中生有/贪得无厌
   法术奥义/元素轰炸/沉默/魔法精研
   军备/高利贷
+9.替身/无往不利/诅咒
 ```
 - 尚未实装
 ```
-雇佣兵/无往不利/诅咒/迷惑/妖术/巫毒/制裁/魔法免疫/反伤/坚韧不屈/嗜血/激怒/狂热/狂怒/附魔/闪电术/缠绕枝蔓/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/基础命中/基础闪避/基础爆击几率/基础爆击伤害/基础吸血/基础生命回复/基础魔法回復/怪物技能
+迷惑/妖术/巫毒/制裁/魔法免疫/反伤/坚韧不屈/嗜血/激怒/狂热/狂怒/附魔/闪电术/缠绕枝蔓/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/基础命中/基础闪避/基础爆击几率/基础爆击伤害/基础吸血/基础生命回复/基础魔法回復/怪物技能
 ```
 
 ---
@@ -248,3 +249,8 @@ catalog: True
  - 实装技能(上帝之手/恶魔之绊/无中生有/贪得无厌/
  - 实装技能(法术奥义/元素轰炸/沉默/魔法精研)
  - 实装技能(军备/高利贷)
+ 
+ ###### 🌐Ver4.2.7<sub>[2022-5-11]</sub>
+ - 实装技能(替身/无往不利/诅咒)
+ - 内置定时保存和0时清屏功能
+ - 日志现在可以语音朗读了
