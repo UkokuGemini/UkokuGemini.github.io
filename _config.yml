@@ -15,7 +15,7 @@ sidebar-about-description: "UkokuGemini Just UkokuGemini."
 sidebar-avatar: /img/WebSite/Mine.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
-RSS: True
+RSS: false
 github_username:    UkokuGemini
 
 # Build settings
