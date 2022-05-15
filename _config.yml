@@ -6,7 +6,7 @@ email: Ukoku@live.cn
 description: "UkokuGemini Just UkokuGemini."
 keyword: "UkokuGemini"
 url: "http://UkokuGemini.github.io"          
-baseurl: ""    
+baseurl: "http://UkokuGemini.github.io"    
 github_repo: "https://github.com/UkokuGemini/UkokuGemini.github.io.git" 
 
 # Sidebar settings
