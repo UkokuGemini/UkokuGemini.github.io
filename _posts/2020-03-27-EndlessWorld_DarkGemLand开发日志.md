@@ -1,15 +1,13 @@
 ---
-aliases: 
-tags: 
 layout:     post
-title: 2020-03-27-EndlessWorld_DarkGemLand开发日志
+title: EndlessWorld_DarkGemLand开发日志
 subtitle:   开发日志
 date:       2022/05/14
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
 date created: Sunday, April 24th 2022, 10:43:40 pm
-date modified: Sunday, May 15th 2022, 9:29:44 am
+date modified: Wednesday, May 18th 2022, 2:26:27 am
 ---
 
 # 2020-03-27-EndlessWorld_DarkGemLand开发日志
@@ -333,3 +331,4 @@ date modified: Sunday, May 15th 2022, 9:29:44 am
  - 武器出售价格现在降低至购买价格的20%
  - 现在解雇驱逐英雄会有一个弹框提醒
  - 新增快速出售物品的按键
+ - 现在在角色中可自由命名英雄
