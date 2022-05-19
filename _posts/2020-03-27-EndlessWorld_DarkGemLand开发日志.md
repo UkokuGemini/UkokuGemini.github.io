@@ -15,11 +15,11 @@ catalog: True
 
 ---
 
-# ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/BADGE/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
+## ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
 
 ## **版本情况**
 
-### 🔰`稳定发布版本` [<SUB>*下载*</SUB>](HTTPS://GITHUB.COM/UKOKUGEMINI/ENDLESSWORLD_DARKGEMLAND-RELEASE/RELEASES/TAG/VERSION4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8))
+### 🔰`稳定发布版本` [<SUB>*下载*</SUB>](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.3.0(%E6%9B%99%E5%85%89)/EndlessWorld_DarkGemLand.Ver4.3.0.2022-05-20.msi)
 
 <img style="float:left" src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable">
 .
@@ -28,17 +28,14 @@ catalog: True
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.2.8[2022-5-14]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.0[2022-5-20]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 .
 
 ---
 
 ```
 🌐简要更新日志: 
--   实装技能(迷惑)
--   优化朗读速度,文本和关闭朗读的线程速度
--   修复[惩戒]在[魔法精研]技能学习后不能正确造成伤害的问题
--   调整技能点学习的所需数值
+	稳定版本(曙光)
 ```
 
 ---
