@@ -1,36 +1,32 @@
 ---
 layout:     post
-title: EndlessWorld_DarkGemLand开发日志
+title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date:       2022/05/14
+date: 2022/05/18 04:28:53
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
-date created: Sunday, April 24th 2022, 10:43:40 pm
-date modified: Wednesday, May 18th 2022, 2:26:27 am
 ---
 
-# 2020-03-27-EndlessWorld_DarkGemLand开发日志
-
-## EndlessWorld_DarkGemLand
+# ENDLESSWORLD_DARKGEMLAND
 
 ---
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
 
-## ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
+# ![ENDLESSWORLD_DARKGEMLAND开发日志](HTTPS://BADGEN.NET/BADGE/:/ENDLESSWORLD_DARKGEMLAND开发日志/CYAN?ICON=GITHUB)
 
-### **版本情况**
+## **版本情况**
 
-#### 🔰`稳定发布版本` [<sub>*下载*</sub>](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Version4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8))
+### 🔰`稳定发布版本` [<SUB>*下载*</SUB>](HTTPS://GITHUB.COM/UKOKUGEMINI/ENDLESSWORLD_DARKGEMLAND-RELEASE/RELEASES/TAG/VERSION4.1.6(%E5%B0%8F%E9%A6%84%E9%A5%A8))
 
 <img style="float:left" src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable">
 .
 
 ---
 
-#### 🔰`最新开发版本`
+### 🔰`最新开发版本`
 
 <img style="float:left" src="https://badgen.net/badge/release/Version4.2.8[2022-5-14]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 .
@@ -47,7 +43,7 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
 
 ---
 
-### **开发计划**
+## **开发计划**
 
 💠陆续实装技能(30/77)
  - 已实装
@@ -75,13 +71,13 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
 
 ---
 
-### **工作情况**
+## **工作情况**
 
 ![](https://ghchart.rshah.org/444444/UkokuGemini)
 
-### **历史日志**
+## **历史日志**
 
-#### 🌐Ver1.0.0<sub>[2020-3-27]</sub>
+### 🌐VER1.0.0<SUB>[2020-3-27]</SUB>
 
  - 初版DGL.exe(**大果粒**)可以实现简单功能
  - 新角色可刷新初始属性"双随机机制"
@@ -90,14 +86,14 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 增加必然事件和等待事件
  - 技能Beta和智能施法
 
-#### 🌐Ver2.0.0<sub>[2021-5-28]</sub>
+### 🌐VER2.0.0<SUB>[2021-5-28]</SUB>
 
  - 新增后台及老板键
  - 遇怪公式调整
  - 技能重构
  - 其他优化
 
-#### 🌐Ver2.1.0<sub>[2021-6-4]</sub>
+### 🌐VER2.1.0<SUB>[2021-6-4]</SUB>
 
  - 游戏更名DGL_Rise.exe
  - 新增数据库验证
@@ -105,64 +101,64 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 冒险具有难度分级了,可选择难度冒险
  - 人物拥有更多属性,如护甲,魔抗
 
-#### 🌐Ver2.1.1.4<sub>[2021-6-14]</sub>
+### 🌐VER2.1.1.4<SUB>[2021-6-14]</SUB>
 
  - 稳定版本(**小酸奶**)
  - 技能可以升级了
  - 战斗日志更丰富了
 
-#### 🌐Ver2.3.0<sub>[2021-7-1]</sub>
+### 🌐VER2.3.0<SUB>[2021-7-1]</SUB>
 
  - 物品可以影响属性了
 
-#### 🌐Ver2.4.0<sub>[2021-7-3]</sub>
+### 🌐VER2.4.0<SUB>[2021-7-3]</SUB>
 
  - 现在可以在酒馆喝酒了
 
-#### 🌐Ver2.4.1<sub>[2021-7-11]</sub>
+### 🌐VER2.4.1<SUB>[2021-7-11]</SUB>
 
  - 平衡了世界的金钱
 
-#### 🌐Ver2.5.1<sub>[2021-7-15]</sub>
+### 🌐VER2.5.1<SUB>[2021-7-15]</SUB>
 
  - 现在拥有自动更新的软件Updater.exe
 
-#### 🌐Ver3.5.1<sub>[2021-8-10]</sub>
+### 🌐VER3.5.1<SUB>[2021-8-10]</SUB>
 
  - 游戏更名为EndlessWorld_DarkGemLand
  - 修复了Bugs
 
-#### 🌐Ver3.5.2<sub>[2021-9-2]</sub>
+### 🌐VER3.5.2<SUB>[2021-9-2]</SUB>
 
  - 现在有武器仓库,并且可以在铁匠铺锻造升级武器
 
-#### 🌐Ver3.6.0<sub>[2021-9-11]</sub>
+### 🌐VER3.6.0<SUB>[2021-9-11]</SUB>
 
  - 现在可以添加多个勇士,共享武器和金钱
  - 有全局的统计了
 
-#### 🌐Ver3.6.4<sub>[2021-9-26]</sub>
+### 🌐VER3.6.4<SUB>[2021-9-26]</SUB>
 
  - 新增世界SID码对照
 
-#### 🌐Ver3.6.6<sub>[2021-9-28]</sub>
+### 🌐VER3.6.6<SUB>[2021-9-28]</SUB>
 
  - 新增地图导航 城镇、住宅Ui改变了
 
-#### 🌐Ver3.7.2<sub>[2021-10-6]</sub>
+### 🌐VER3.7.2<SUB>[2021-10-6]</SUB>
 
  - 稳定版本(**椰子树**)
 
-#### 🌐Ver3.7.5<sub>[2021-10-20]</sub>
+### 🌐VER3.7.5<SUB>[2021-10-20]</SUB>
 
  - 现在可以调整语言了
 
-#### 🌐Ver3.7.6<sub>[2021-10-21]</sub>
+### 🌐VER3.7.6<SUB>[2021-10-21]</SUB>
 
  - 现在技能可以在不同导师处学习不同技能
  - 现在在管家中可以看见更新日志了
 
-#### 🌐Ver3.8.0<sub>[2021-11-3]</sub>
+### 🌐VER3.8.0<SUB>[2021-11-3]</SUB>
 
  - 现在不匹配的世界将会崩塌(会删除世界内所有数据)
  - 英雄出生属性随机选择界面进行了优化
@@ -171,7 +167,7 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 去除了导航里返回的标签,现在直接点击对应标签(包括上级导航)也可以直接到达
  - 设置新的更新日志的样式,最近的一次更新将会突出显示
 
-#### 🌐Ver3.8.2<sub>[2021-11-4]</sub>
+### 🌐VER3.8.2<SUB>[2021-11-4]</SUB>
 
  - 新增"管家"功能,包括:
  - 提供增益Buff,不可取消,被动提供
@@ -180,57 +176,57 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 城镇>工会>提供管家雇佣场所. 雇佣管家刷新：该场所间隔时间会刷新新的管家. 雇佣会替换原有管家
  - 支持从管家界面转跳到雇佣场所
 
-#### 🌐Ver3.8.3<sub>[2021-11-13]</sub>
+### 🌐VER3.8.3<SUB>[2021-11-13]</SUB>
 
  - 隐藏地点限时开放
 
-#### 🌐Ver3.8.4<sub>[2021-11-14]</sub>
+### 🌐VER3.8.4<SUB>[2021-11-14]</SUB>
 
  - 新增偷盗武器仓库中装备的设定
 
-#### 🌐Ver3.8.5<sub>[2021-11-20]</sub>
+### 🌐VER3.8.5<SUB>[2021-11-20]</SUB>
 
  - 工会中现在新增职业承接,职业对应不同技能
  - 偷学技能实现定时刷新
 
-#### 🌐Ver3.8.6<sub>[2021-11-21]</sub>
+### 🌐VER3.8.6<SUB>[2021-11-21]</SUB>
 
  - 更新战斗UI
  - 修复种族对属性加权没有实装的问题
  - 现在可以在隐藏地点"基因研究所"内变更种族了
 
-#### 🌐Ver3.8.7<sub>[2021-12-12]</sub>
+### 🌐VER3.8.7<SUB>[2021-12-12]</SUB>
 
  - 更新了Logo
  - 更改了Sid世界的判定方式
  - 新增物品"基因碎片"
 
-#### 🌐Ver3.8.8<sub>[2021-12-19]</sub>
+### 🌐VER3.8.8<SUB>[2021-12-19]</SUB>
 
  - 现在可以进行基因突破了
 
-#### 🌐Ver3.9.0<sub>[2022-2-17]</sub>
+### 🌐VER3.9.0<SUB>[2022-2-17]</SUB>
 
  - 重写AutoUpdate.exe替换Updater.exe实现软件内自动更新重启游戏
 
-#### 🌐Ver4.0.0<sub>[2022-2-24]</sub>
+### 🌐VER4.0.0<SUB>[2022-2-24]</SUB>
 
  - 提供稳定版本(**暖风机**)
  - 新增种族、职业、技能数据(部分实装)
  - 实装(治疗、战吼)技能效果
  - 优化战斗日志
 
-#### 🌐Ver4.0.3<sub>[2022-3-2]</sub>
+### 🌐VER4.0.3<SUB>[2022-3-2]</SUB>
 
  - 增加清屏按钮
  - 优化技能显示
 
-#### 🌐Ver4.1.0<sub>[2022-3-3]</sub>
+### 🌐VER4.1.0<SUB>[2022-3-3]</SUB>
 
  - 系统数据库与用户存档分离
  - 初始化字体
 
-#### 🌐Ver4.1.3<sub>[2022-3-17]</sub>
+### 🌐VER4.1.3<SUB>[2022-3-17]</SUB>
 
  - 新增怪物评分
  - 新增图书馆部分说明,增添Wiki标志
@@ -238,21 +234,21 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 管家现在会在工会内定期刷新新增
  - 神社现在会定期刷新新增
 
-#### 🌐Ver4.1.5<sub>[2022-3-25]</sub>
+### 🌐VER4.1.5<SUB>[2022-3-25]</SUB>
 
  - 首次探索经验加成比例由1.5改为1;升级经验比例由10改为20
  - 城镇新增搜寻任务,并自动可以执行
 
-#### 🌐Ver4.1.6<sub>[2022-3-26]</sub>
+### 🌐VER4.1.6<SUB>[2022-3-26]</SUB>
 
  - 稳定版本(**小馄饨**)
  - 现在可以实现自动冒险前领取一次神社祝福.
 
-#### 🌐Ver4.1.7<sub>[2022-4-5]</sub>
+### 🌐VER4.1.7<SUB>[2022-4-5]</SUB>
 
  - 赌场装修竣工营业啦
 
-#### 🌐Ver4.1.8<sub>[2022-4-20]</sub>
+### 🌐VER4.1.8<SUB>[2022-4-20]</SUB>
 
  - 现在可以在神社净化负面效果
  - 更醒目的隐藏地点倒计时
@@ -260,31 +256,31 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 旅途将会出现陷阱、迷宫和旅站
  - 英雄现在可以锁定,锁定后英雄将不再离开
 
-#### 🌐Ver4.2.0<sub>[2022-4-22]</sub>
+### 🌐VER4.2.0<SUB>[2022-4-22]</SUB>
 
  - 增加冒险武器、基因碎片、黑石掉落
  - 修改SP点数获得机制
 
-#### 🌐Ver4.2.1<sub>[2022-4-24]</sub>
+### 🌐VER4.2.1<SUB>[2022-4-24]</SUB>
 
  - 实装技能(祝福、驱逐、惩戒、威吓)
  - 新增简略的实时属性显示
  - 增加<u>持续技能</u>显示状态
 
-#### 🌐Ver4.2.2<sub>[2022-4-25]</sub>
+### 🌐VER4.2.2<SUB>[2022-4-25]</SUB>
 
  - 实装技能(魔法恢复、火球术、寒冰术)
  - 增加怪物技能释放,添加怪物技能上限
  - 修复战斗后状态栏显示问题
  - 优化战文本,对敌技能显示敌方名字
 
-#### 🌐Ver4.2.3<sub>[2022-4-26]</sub>
+### 🌐VER4.2.3<SUB>[2022-4-26]</SUB>
 
  - 实装技能(魔法燃烧)
  - 新增、优化<u>被动技能</u>触发机制代码
  - 优化战斗显示文本
 
-#### 🌐Ver4.2.4<sub>[2022-4-29]</sub>
+### 🌐VER4.2.4<SUB>[2022-4-29]</SUB>
 
  - 增添一个手动关闭怪物信息面板的按钮
  - 增添一个英雄更名的功能(需要在雇佣管家的情况下使用)
@@ -292,7 +288,7 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 优化<u>持续性技能</u>的代码和显示(包含<u>双向</u>作用的持续技能)
  - 实装技能(冲锋)
 
-#### 🌐Ver4.2.5<sub>[2022-5-4]</sub>
+### 🌐VER4.2.5<SUB>[2022-5-4]</SUB>
 
  - 新增叠加技能显示.(显示技能叠加了多少次数)
  - 实装技能(战斗技巧/多重箭矢/瞄准/穿透/专注)
@@ -304,31 +300,37 @@ date modified: Wednesday, May 18th 2022, 2:26:27 am
  - 修改怪物评分系统
  
 
-#### 🌐Ver4.2.6<sub>[2022-5-9]</sub>
+### 🌐VER4.2.6<SUB>[2022-5-9]</SUB>
 
  - 实装技能(上帝之手/恶魔之绊/无中生有/贪得无厌/
  - 实装技能(法术奥义/元素轰炸/沉默/魔法精研)
  - 实装技能(军备/高利贷)
  
 
-#### 🌐Ver4.2.7<sub>[2022-5-11]</sub>
+### 🌐VER4.2.7<SUB>[2022-5-11]</SUB>
 
  - 实装技能(替身/无往不利/诅咒)
  - 内置定时保存和0时清屏功能
  - 日志现在可以语音朗读了
  
 
-#### 🌐Ver4.2.8<sub>[2022-5-14]</sub>
+### 🌐VER4.2.8<SUB>[2022-5-14]</SUB>
 
  - 实装技能(迷惑)
  - 优化朗读速度,文本和关闭朗读的线程速度
  - 修复[惩戒]在[魔法精研]技能学习后不能正确造成伤害的问题
  - 调整技能点学习的所需数值
 
-#### 🌐Ver4.2.9<sub>[2022-5-17]</sub>Pre
+### 🌐VER4.2.9<SUB>[2022-5-19]</SUB>
 
  - 技能[贪婪]现在在连续触发时会有一个20%概率衰减
  - 武器出售价格现在降低至购买价格的20%
  - 现在解雇驱逐英雄会有一个弹框提醒
  - 新增快速出售物品的按键
  - 现在在角色中可自由命名英雄
+ - 侧边新增音乐盒, 可以听音乐.
+ - 变更[语言更改]位置, 变更语言时同步对话
+
+### 🌐VER4.3.0<SUB>[2022-5-20]</SUB>
+
+ - 稳定版本(**曙光**)
