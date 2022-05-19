@@ -2,20 +2,20 @@
 layout:     post
 title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date: 2022/05/18 04:28:53
+date: 2022/05/20
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
 ---
 
-# ENDLESSWORLD_DARKGEMLAND
+# EndlessWorld_DarkGemLand开发日志
 
 ---
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
 
-# ![ENDLESSWORLD_DARKGEMLAND开发日志](HTTPS://BADGEN.NET/BADGE/:/ENDLESSWORLD_DARKGEMLAND开发日志/CYAN?ICON=GITHUB)
+# ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/BADGE/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
 
 ## **版本情况**
 
