@@ -2,7 +2,7 @@
 layout:     post
 title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date: 2022/05/27
+date: 2022/05/29
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -28,7 +28,7 @@ catalog: True
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.3.1[2022-5-27]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.1[2022-5-29]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 .
 
 ---
@@ -38,6 +38,7 @@ catalog: True
 -   基础技能/职业技能现在分开显示
 -   基础技能实装
 -   升级基础技能现在不需要额外消耗技能点
+-   不同职业现在拥有初始属性的增强
 ```
 
 ---
@@ -335,9 +336,10 @@ catalog: True
 
  - 稳定版本(**曙光**)
 
-### 🌐VER4.3.1<SUB>[2022-5-27]</SUB>Pre
+### 🌐VER4.3.1<SUB>[2022-5-29]</SUB>
 
  - 基础技能/职业技能现在分开显示
  - 基础技能实装
  - 升级基础技能现在不需要额外消耗技能点
+ - 不同职业现在拥有初始属性的增强
 
