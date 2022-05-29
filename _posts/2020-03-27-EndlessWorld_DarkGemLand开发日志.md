@@ -25,7 +25,7 @@ catalog: True
 
 <img style="float:left" src="https://img.shields.io/github/release-date/UkokuGemini/EndlessWorld_DarkGemLand-Release">
 
-
+.
 
  - [下载地址](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.3.0(%E6%9B%99%E5%85%89)/EndlessWorld_DarkGemLand.Ver4.3.0.2022-05-20.msi)
 
@@ -37,10 +37,11 @@ catalog: True
 
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 
+.
 
+- 🌐简要更新日志: 
 
 ```
-🌐简要更新日志: 
 -   基础技能/职业技能现在分开显示
 -   基础技能实装
 -   升级基础技能现在不需要额外消耗技能点
