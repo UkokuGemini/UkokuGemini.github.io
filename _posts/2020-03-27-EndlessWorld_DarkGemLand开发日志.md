@@ -25,6 +25,8 @@ catalog: True
 
 <div></div>
 
+.
+
  - [下载地址](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.3.0(%E6%9B%99%E5%85%89)/EndlessWorld_DarkGemLand.Ver4.3.0.2022-05-20.msi)
 
 ---
@@ -34,6 +36,8 @@ catalog: True
 <img style="float:left" src="https://badgen.net/badge/release/Version4.3.1[2022-5-29]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
 
 <div></div>
+
+.
 
 ---
 
