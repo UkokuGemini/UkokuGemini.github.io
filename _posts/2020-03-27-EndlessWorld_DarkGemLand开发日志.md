@@ -19,22 +19,32 @@ catalog: True
 
 ## **版本情况**
 
-### 🔰`稳定发布版本` [<SUB>*下载*</SUB>](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.3.0(%E6%9B%99%E5%85%89)/EndlessWorld_DarkGemLand.Ver4.3.0.2022-05-20.msi)
+### 🔰`稳定发布版本` 
 
 <img style="float:left" src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable">
+
+<img style="float:left" src="https://img.shields.io/github/release-date/UkokuGemini/EndlessWorld_DarkGemLand-Release">
+
 .
+
+---
+
+ - [下载地址](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.3.0(%E6%9B%99%E5%85%89)/EndlessWorld_DarkGemLand.Ver4.3.0.2022-05-20.msi)
 
 ---
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.3.1[2022-5-29]"/><img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches"/>
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.1[2022-5-29]">
+
+<img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
+
 .
 
----
+--- 
 
 ```
-🌐简要更新日志: 
+🌐简要更新日志:
 -   基础技能/职业技能现在分开显示
 -   基础技能实装
 -   升级基础技能现在不需要额外消耗技能点
@@ -45,7 +55,7 @@ catalog: True
 
 ## **开发计划**
 
-💠陆续实装技能(37/77)
+💠陆续实装技能(41/77)
  - 已实装
 
 ```
@@ -62,12 +72,13 @@ catalog: True
 9.替身/无往不利/诅咒
 10.迷惑
 11.基础技能(命中/闪避/暴击几率/暴击伤害/吸血/生命恢复/魔法恢复)
+12.妖术/缠绕枝蔓/巫毒/坚韧不屈
 ```
 
 - 尚未实装
 
 ```
-/妖术/巫毒/制裁/魔法免疫/反伤/坚韧不屈/嗜血/激怒/狂热/狂怒/附魔/闪电术/缠绕枝蔓/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/怪物技能
+/制裁/魔法免疫/反伤/嗜血/激怒/狂热/狂怒/附魔/闪电术/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/怪物技能
 ```
 
 ---
@@ -343,8 +354,12 @@ catalog: True
  - 升级基础技能现在不需要额外消耗技能点
  - 不同职业现在拥有初始属性的增强
 
+### 🌐VER4.3.2<SUB>[2022-6-29]</SUB>
 
-
+ - 技能实装 (妖术/缠绕枝蔓/巫毒/坚韧不屈)
+ - 修改技能 (多重箭矢的作用效果: 衰减为伤害衰减, 修改元素轰炸的效果)
+ - 基础技能现在在未学习时, 也会显示基础数据
+ - 职业精通额外加成
 
 ### End
 ***
