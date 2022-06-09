@@ -95,10 +95,11 @@ layout: default
                     <!-- Friends Blog -->
                     {% if site.friends %}
                     <hr>
-                    <h5>FRIENDS</h5>
                     <table>
                         <tr>
                         <th>
+                        <h5>FRIENDS</h5>
+                        <hr>
                         <ul class="list-inline">
                             {% for friend in site.friends %}
                                 <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
@@ -109,7 +110,7 @@ layout: default
                         </th>
                         <th>
                         <p>{{ site.bgmName }}</p>
-                        <audio controls loop=-1 height="200">
+                        <audio controls loop=-1 height="100">
                           <source src="{{ site.bgmsrc }}"
                            type="audio/mpeg">
                         </audio>
