@@ -31,7 +31,7 @@ exclude: ["node_modules","README.md"]
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+input: GFM                            # use Github Flavored Markdown !important
 
 
 # Friends
@@ -66,12 +66,13 @@ friends: [
         href: "https://ukokugemini.github.io/offline"
     }
 ]
+
 BgmSources: [
     {
-        Name: Just For You - Giovanni Marradi
+        Name: Just For You - Giovanni Marradi,
         src: "/music/BGM.mp3"
     },{
-        Name: kkkkkkkk
+        Name: kkkkkkkk,
         src: "/music/BGM.mp3"
     }
 ]
