@@ -88,16 +88,17 @@ layout: default
         {% endif %}
 
     <!-- Sidebar Container -->
-            <div>
-                <table>
-                    <tr>
-                      <th>
-                        <div >
-        
-                        <!-- Friends Blog -->
-                        {% if site.friends %}
-                        <hr>
-                        <h5>FRIENDS</h5>
+                <div class="
+                    col-lg-8 col-lg-offset-2
+                    col-md-10 col-md-offset-1
+                    sidebar-container">        
+                    <!-- Friends Blog -->
+                    {% if site.friends %}
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <table>
+                        <tr>
+                        <th>
                         <ul class="list-inline">
                             {% for friend in site.friends %}
                                 <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
@@ -105,18 +106,17 @@ layout: default
                             {% endfor %}
                         </ul>
                         {% endif %}
-                        </div>
-                      </th>
-                      <th>
+                        </th>
+                        <th>
                         <p>{{ site.bgmName }}</p>
                         <audio controls loop=-1 height="200">
-                            <source src="{{ site.bgmsrc }}"
-                             type="audio/mpeg">
+                          <source src="{{ site.bgmsrc }}"
+                           type="audio/mpeg">
                         </audio>
-                      </th>
-                    </tr>
-                  </table>
-            </div>
+                        </th>
+                        </tr>
+                </table>
+                </div>
         </div>
     </div>
 </article>
