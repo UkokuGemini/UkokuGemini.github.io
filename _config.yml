@@ -8,6 +8,8 @@ keyword: "UkokuGemini"
 url: "http://UkokuGemini.github.io"          
 baseurl: ""    
 github_repo: "https://github.com/UkokuGemini/UkokuGemini.github.io.git" 
+bgmName: Just For You - Giovanni Marradi
+bgmsrc: "/music/BGM.mp3"
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.

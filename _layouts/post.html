@@ -77,9 +77,9 @@ layout: default
                 visible-lg-block
                 sidebar-container
                 catalog-container">
-                <p>BGM:馬の骨 - [燃え殻]</p>
+                <p>BGM:{{ site.bgmName }}</p>
                 <audio controls loop=-1>
-                    <source src="/music/BGM.mp3"
+                    <source src="{{ site.bgmsrc }}"
                      type="audio/mpeg">
                 </audio>
                 <div class="side-catalog">
