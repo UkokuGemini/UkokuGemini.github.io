@@ -95,10 +95,17 @@ layout: default
                     <!-- Friends Blog -->
                     {% if site.friends %}
                     <hr>
-                    <table>
-                        <tr>
+                    <table><tr>
                         <th>
-                        <h5>FRIENDS</h5>
+                            <h5>MUSIC:</h5>
+                            <p>{{ site.bgmName }}</p>
+                            <audio controls loop=-1 height="100">
+                              <source src="{{ site.bgmsrc }}"
+                               type="audio/mpeg">
+                            </audio>
+                        </th>
+                        <th>
+                            <h5>FRIENDS</h5>
                         <hr>
                         <ul class="list-inline">
                             {% for friend in site.friends %}
@@ -106,17 +113,9 @@ layout: default
                                 <Br/>
                             {% endfor %}
                         </ul>
-                        {% endif %}
+                            {% endif %}
                         </th>
-                        <th>
-                        <p>{{ site.bgmName }}</p>
-                        <audio controls loop=-1 height="100">
-                          <source src="{{ site.bgmsrc }}"
-                           type="audio/mpeg">
-                        </audio>
-                        </th>
-                        </tr>
-                </table>
+                        </tr></table>
                 </div>
         </div>
     </div>
