@@ -104,14 +104,15 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
-
+            </div>
+            <div float:right>
                 <p>{{ site.bgmName }}</p>
-                <audio controls loop=-1>
+                <audio controls loop=-1 height="200">
                     <source src="{{ site.bgmsrc }}"
                      type="audio/mpeg">
                 </audio>
-                
-            </div>
+            </div>    
+            
         </div>
     </div>
 </article>
