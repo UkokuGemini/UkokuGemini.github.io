@@ -97,14 +97,6 @@ layout: default
                     <hr>
                     <table><tr>
                         <th>
-                            <h5>MUSIC:</h5>
-                            <p>{{ site.bgmName }}</p>
-                            <audio controls loop=-1 height="100">
-                              <source src="{{ site.bgmsrc }}"
-                               type="audio/mpeg">
-                            </audio>
-                        </th>
-                        <th>
                             <h5>FRIENDS</h5>
                         <hr>
                         <ul class="list-inline">
@@ -115,6 +107,17 @@ layout: default
                         </ul>
                             {% endif %}
                         </th>
+
+                        <th>
+                            <h5>MUSIC:</h5>
+                            <hr>
+                            <p>{{ site.bgmName }}</p>
+                            <audio controls loop=-1 height="100">
+                              <source src="{{ site.bgmsrc }}"
+                               type="audio/mpeg">
+                            </audio>
+                        </th>
+                        
                         </tr></table>
                 </div>
         </div>
