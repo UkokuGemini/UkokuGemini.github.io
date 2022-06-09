@@ -88,31 +88,38 @@ layout: default
         {% endif %}
 
     <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
-                        <Br/>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+            <div >
+                <table >
+                    <tr>
+                      <th>
+                        <div class="
+                        col-lg-8 col-lg-offset-2
+                        col-md-10 col-md-offset-1
+                        sidebar-container">
+        
+                        <!-- Friends Blog -->
+                        {% if site.friends %}
+                        <hr>
+                        <h5>FRIENDS</h5>
+                        <ul class="list-inline">
+                            {% for friend in site.friends %}
+                                <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                                <Br/>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        </div>
+                      </th>
+                      <th>
+                        <p>{{ site.bgmName }}</p>
+                        <audio controls loop=-1 height="200">
+                            <source src="{{ site.bgmsrc }}"
+                             type="audio/mpeg">
+                        </audio>
+                      </th>
+                    </tr>
+                  </table>
             </div>
-            <div float:right>
-                <p>{{ site.bgmName }}</p>
-                <audio controls loop=-1 height="200">
-                    <source src="{{ site.bgmsrc }}"
-                     type="audio/mpeg">
-                </audio>
-            </div>    
-            
         </div>
     </div>
 </article>
