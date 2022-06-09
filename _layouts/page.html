@@ -65,11 +65,6 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
-            <p>{{ site.bgmName }}</p>
-            <audio controls loop=-1>
-                <source src="{{ site.bgmsrc }}"
-                 type="audio/mpeg">
-            </audio>
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/About/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
@@ -122,6 +117,19 @@ layout: default
                 </ul>
                 {% endif %}
     		</div>
+        {% endif %}
+        {% if site.BgmSources %}
+            <h5>MUSIC</h5>
+            <audio controls loop=-1>
+                {% for BgmSource in site.BgmSources %}
+                <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                {% endfor %}
+            </audio>
+            <ul>
+                {% for BgmName in site.BgmSources %}
+                <li>{{ BgmName.Name }}</li>
+                {% endfor %}
+            </ul>
         {% endif %}
 	</div>
 </div>

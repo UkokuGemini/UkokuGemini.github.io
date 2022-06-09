@@ -42,19 +42,19 @@ friends: [
         href: "https://github.com/sunshineyg"
     },{
         title: "psy",
-        pic: "",
+        pic: "unknown_user.png",
         href: ""
     },{
         title: "大庭叶藏",
-        pic: "http://qlogo1.store.qq.com/qzone/857558572/857558572/100?1264092606",
+        pic: "/img/Icon/qzone.png",
         href: "https://user.qzone.qq.com/857558572"
     },{
         title: "筑梦踏实",
-        pic: "https://qlogo1.store.qq.com/qzone/563088446/563088446/100?1375332773",
+        pic: "/img/Icon/qzone.png",
         href: "https://user.qzone.qq.com/563088446"
     },{
         title: "可可",
-        pic: "http://qlogo1.store.qq.com/qzone/530041647/530041647/100?1541628497",
+        pic: "/img/Icon/qzone.png",
         href: "https://user.qzone.qq.com/530041647"
     },{
         title: "404",
@@ -69,10 +69,10 @@ friends: [
 
 BgmSources: [
     {
-        Name: Just For You - Giovanni Marradi,
-        src: "/music/BGM.mp3"
+        Name: Just For You - By.Giovanni Marradi,
+        src: "/music/JustForYou.mp3"
     },{
-        Name: kkkkkkkk,
-        src: "/music/BGM.mp3"
+        Name: 燃え殻 - By.馬の骨,
+        src: "/music/燃え殻.mp3"
     }
 ]
