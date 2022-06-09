@@ -107,29 +107,29 @@ layout: default
                 </section>
                 <!-- Friends Blog -->
                 {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
                         <Br/>
                     {% endfor %}
-                </ul>
+                    </ul>
+                {% endif %}
+                {% if site.BgmSources %}
+                    <h5>MUSIC</h5>
+                    <audio controls loop=-1>
+                        {% for BgmSource in site.BgmSources %}
+                        <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                        {% endfor %}
+                    </audio>
+                    <ul>
+                        {% for BgmName in site.BgmSources %}
+                        <li>{{ BgmName.Name }}</li>
+                        {% endfor %}
+                    </ul>
                 {% endif %}
     		</div>
-        {% endif %}
-        {% if site.BgmSources %}
-            <h5>MUSIC</h5>
-            <audio controls loop=-1>
-                {% for BgmSource in site.BgmSources %}
-                <source src="{{ BgmSource.src }}" type="audio/mpeg">
-                {% endfor %}
-            </audio>
-            <ul>
-                {% for BgmName in site.BgmSources %}
-                <li>{{ BgmName.Name }}</li>
-                {% endfor %}
-            </ul>
         {% endif %}
 	</div>
 </div>
