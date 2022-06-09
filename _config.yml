@@ -8,8 +8,6 @@ keyword: "UkokuGemini"
 url: "http://UkokuGemini.github.io"          
 baseurl: ""    
 github_repo: "https://github.com/UkokuGemini/UkokuGemini.github.io.git" 
-bgmName: Just For You - Giovanni Marradi
-bgmsrc: "/music/BGM.mp3"
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -66,5 +64,14 @@ friends: [
         title: "Offline",
         pic: "/img/Icon/Offline.png",
         href: "https://ukokugemini.github.io/offline"
+    }
+]
+BgmSources: [
+    {
+        Name: Just For You - Giovanni Marradi
+        src: "/music/BGM.mp3"
+    },{
+        Name: kkkkkkkk
+        src: "/music/BGM.mp3"
     }
 ]

@@ -91,11 +91,11 @@ layout: default
                 <div class="
                     col-lg-8 col-lg-offset-2
                     col-md-10 col-md-offset-1
-                    sidebar-container">        
-                    <!-- Friends Blog -->
-                    {% if site.friends %}
+                    sidebar-container">  
                     <hr>
                     <table><tr>
+                    <!-- Friends Blog -->
+                    {% if site.friends %}
                         <th>
                             <h5>FRIENDS</h5>
                         <hr>
@@ -105,19 +105,23 @@ layout: default
                                 <Br/>
                             {% endfor %}
                         </ul>
-                            {% endif %}
                         </th>
-
+                    {% endif %}
+                    {% if site.friends %}
                         <th>
-                            <h5>MUSIC:</h5>
-                            <hr>
-                            <p>{{ site.bgmName }}</p>
+                            <h5>MUSIC</h5>
                             <audio controls loop=-1 height="100">
-                              <source src="{{ site.bgmsrc }}"
-                               type="audio/mpeg">
+                                {% for BgmSource in site.BgmSources %}
+                                <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                                {% endfor %}
                             </audio>
+                            <ul>
+                                {% for BgmName in site.BgmSources %}
+                                <li>{{ BgmName.Name }}</li>
+                                {% endfor %}
+                            </ul>
                         </th>
-                        
+                    {% endif %}
                         </tr></table>
                 </div>
         </div>
