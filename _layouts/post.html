@@ -77,11 +77,6 @@ layout: default
                 visible-lg-block
                 sidebar-container
                 catalog-container">
-                <p>BGM:{{ site.bgmName }}</p>
-                <audio controls loop=-1>
-                    <source src="{{ site.bgmsrc }}"
-                     type="audio/mpeg">
-                </audio>
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
@@ -109,6 +104,13 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+
+                <p>{{ site.bgmName }}</p>
+                <audio controls loop=-1>
+                    <source src="{{ site.bgmsrc }}"
+                     type="audio/mpeg">
+                </audio>
+                
             </div>
         </div>
     </div>
