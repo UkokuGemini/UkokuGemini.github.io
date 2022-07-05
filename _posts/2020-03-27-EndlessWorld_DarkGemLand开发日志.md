@@ -35,7 +35,7 @@ catalog: True
 
 <img style="float:left" src="https://badgen.net/badge/release/Version4.3.2.640[2022-6-9]">
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
-
+<img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 .
 
 --- 
