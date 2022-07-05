@@ -1,25 +1,11 @@
 ---
 layout: post
-title: Blog Develop Log
-subtitle: 博客开发日志
+title: 博客开发日志
+subtitle: 记录
 date: 2022-7-6
 author : UkokuGemini
 header-img: img/Blog/B03.jpg
 catalog: true
 ---
-
-##### 2021-07-05  
-建站
-
-##### 2021-10-28  
-添加 Links 页面
-
-##### 2022-04-05  
-添加音乐控件
-
-##### 2022-06-09  
-调整音乐控件在主页和日志页的显示状态
-
-##### 2022-07-06  
-日志页面添加独立背景音乐
-
+# 博客开发日志
+> 2022年7月6日
