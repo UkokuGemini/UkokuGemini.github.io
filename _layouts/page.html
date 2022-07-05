@@ -120,11 +120,12 @@ layout: default
                     <hr>
                     <h5>MUSIC</h5>
                     <audio controls loop=-1>
-                        {% for BgmSource in site.BgmSources %}
-                        <source src="{{ BgmSource.src }}" type="audio/mpeg">
-                        {% endfor %}
                         {% if page.BgmSrc %}
                         <source src="{{ page.BgmSrc }}" type="audio/mpeg">
+                        {% else %}
+                            {% for BgmSource in site.BgmSources %}
+                            <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                            {% endfor %}
                         {% endif %}
                     </audio>
                     <ul>
