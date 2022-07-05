@@ -111,14 +111,24 @@ layout: default
                         <th>
                             <h5>MUSIC</h5>
                             <audio controls="controls" autoplay="autoplay" loop="loop" height="100">
-                                {% for BgmSource in site.BgmSources %}
-                                <source src="{{ BgmSource.src }}" type="audio/mpeg">
-                                {% endfor %}
+                                {% if page.bgmsrc %}
+                                <source src="{{ page.bgmsrc }}" type="audio/mpeg">
+                                {% else %}
+                                    {% for BgmSource in site.BgmSources %}
+                                    <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                                    {% endfor %}
+                                {% endif %}
                             </audio>
-                            <ul>
-                                {% for BgmName in site.BgmSources %}
-                                <li>{{ BgmName.Name }}</li>
-                                {% endfor %}
+                            <ul>  
+                                {% if page.bgmname %}
+                                    {% if page.bgmname %}
+                                    <li>{{ Page.bgmname }}</li>
+                                    {% endif %}
+                                {% else %}
+                                    {% for BgmName in site.BgmSources %}
+                                    <li>{{ BgmName.Name }}</li>
+                                    {% endfor %}
+                                {% endif %}
                             </ul>
                         </th>
                     {% endif %}

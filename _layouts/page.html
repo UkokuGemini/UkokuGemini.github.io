@@ -119,15 +119,10 @@ layout: default
                 {% if site.BgmSources %}
                     <hr>
                     <h5>MUSIC</h5>
-                    <h5>page.bgmsrc</h5>
                     <audio controls loop=-1>
-                        {% if page.bgmsrc %}
-                        <source src= page.bgmsrc type="audio/mpeg">
-                        {% else %}
-                            {% for BgmSource in site.BgmSources %}
-                            <source src="{{ BgmSource.src }}" type="audio/mpeg">
-                            {% endfor %}
-                        {% endif %}
+                        {% for BgmSource in site.BgmSources %}
+                        <source src="{{ BgmSource.src }}" type="audio/mpeg">
+                        {% endfor %}
                     </audio>
                     <ul>
                         {% for BgmName in site.BgmSources %}
