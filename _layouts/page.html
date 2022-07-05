@@ -123,6 +123,9 @@ layout: default
                         {% for BgmSource in site.BgmSources %}
                         <source src="{{ BgmSource.src }}" type="audio/mpeg">
                         {% endfor %}
+                        {% if page.BgmSrc %}
+                        <source src="{{ page.BgmSrc }}" type="audio/mpeg">
+                        {% endif %}
                     </audio>
                     <ul>
                         {% for BgmName in site.BgmSources %}
