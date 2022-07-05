@@ -122,7 +122,7 @@ layout: default
                             <ul>  
                                 {% if page.bgmsrc %}
                                     {% if page.bgmname %}
-                                    <li>Page.bgmname</li>
+                                    <li>{{ page.bgmname }}</li>
                                     {% endif %}
                                 {% else %}
                                     {% for BgmName in site.BgmSources %}
