@@ -122,7 +122,6 @@ layout: default
                     <h5>Mynumber</h5>
                     <audio controls loop=-1>
                         {% for BgmSource in site.BgmSources %}
-                      
                         <source src="{{ BgmSource.src }}" type="audio/mpeg">
                         {% endfor %}
                     </audio>
@@ -136,6 +135,3 @@ layout: default
         {% endif %}
 	</div>
 </div>
-<script type="text/javascript">
- var Mynumber = Math.random();
-</script>

@@ -71,8 +71,5 @@ BgmSources: [
     {
         Name: Just For You - By.Giovanni Marradi,
         src: "/music/JustForYou.mp3"
-    },{
-        Name: 燃え殻 - By.馬の骨,
-        src: "/music/燃え殻.mp3"
     }
 ]
