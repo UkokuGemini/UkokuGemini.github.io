@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Blog Develop Log
-subtitle: -博客开发日志
+subtitle: 博客开发日志
 date: 2022-07-06
 author : UkokuGemini
 header-img: img/Blog/B03.jpg
 catalog: true
 ---
+
 ##### 2021-07-05  - 建站
 ##### 2021-10-28  - 添加 Links 页面
 ##### 2022-04-05  - 添加音乐控件
