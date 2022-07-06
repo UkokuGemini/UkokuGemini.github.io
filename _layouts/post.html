@@ -110,7 +110,7 @@ layout: default
                     {% if site.BgmSources %}
                         <th>
                             <h5>MUSIC</h5>
-                            <audio controls="controls" autoplay="autoplay" loop="loop" height="100">
+                            <audio controls="controls" controlsList="nodownload" autoplay="autoplay" loop="loop" height="100">
                                 {% if page.bgmsrc %}
                                 <source src="{{ page.bgmsrc }}" type="audio/mpeg">
                                 {% else %}
