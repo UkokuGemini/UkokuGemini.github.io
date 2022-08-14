@@ -2,7 +2,7 @@
 layout:     post
 title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date: 2022/08/12
+date: 2022/08/14
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -33,7 +33,7 @@ catalog: True
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.3.3.640Beta[2022-8-12]">
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.3.658[2022-8-14]">
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 <img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 .
@@ -42,16 +42,19 @@ catalog: True
 
 ```
 🌐简要更新日志:
- - 技能实装 (盾击)
- - 修改技能 (巫医-迷惑:改为魔法护盾.作用效果为: 受到伤害时以魔法代替生命损失)
+ - 技能实装(盾击/附魔攻击/充能闪电/聚魔之刃/佛心/追击/截拳/恩泽)
+ - 修改技能(巫医-迷惑:改为魔法护盾.作用效果为: 受到伤害时以魔法代替生命损失)
  - 修改技能(巫医-巫毒:现在可以额外等比恢复魔法)
+ - 调整日志记录路径结构;修复重复记录的问题;调整自动记录的时间;退出记录.
+ - 调整命中闪避模型
+ - 设置转职金钱数额
 ```
 
 ---
 
 ## **开发计划**
 
-💠 #### 陆续实装技能(49/78)
+💠 #### 陆续实装技能(56/68)
 - 已实装
 ```
 1.治疗/战吼
@@ -71,10 +74,12 @@ catalog: True
 15.魔法免疫/激怒
 16.制裁
 17.盾击
+18.附魔攻击/充能闪电/聚魔之刃
+19.佛心/追击/截拳/恩泽
 ```
-- 尚未实装(≈19)
+- 尚未实装(≈12)
 ```
-附魔/闪电术/充能/佛心/追击/截拳/恩泽/噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/王道A/王道B/王道C/王道D/鬼道A/鬼道B/怪物技能...
+噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/...
 ```
 ---
 
@@ -383,11 +388,14 @@ catalog: True
  - 职业精通额外加成
  - 现在职业[战士]不再拥有[冲锋]技能,改为新技能[嘲讽].冲锋现在是怪物技能.
 
-### 🌐VER4.3.2Beta<SUB>[2022-8-12]</SUB>
+### 🌐VER4.3.3<SUB>[2022-8-14]</SUB>
 
- - 技能实装 (盾击)
- - 修改技能 (巫医-迷惑:改为魔法护盾.作用效果为: 受到伤害时以魔法代替生命损失)
+ - 技能实装(盾击/附魔攻击/充能闪电/聚魔之刃/佛心/追击/截拳/恩泽)
+ - 修改技能(巫医-迷惑:改为魔法护盾.作用效果为: 受到伤害时以魔法代替生命损失)
  - 修改技能(巫医-巫毒:现在可以额外等比恢复魔法)
+ - 调整日志记录路径结构;修复重复记录的问题;调整自动记录的时间;退出记录.
+ - 调整命中闪避模型
+ - 设置转职金钱数额
 
 ### End
 ***
