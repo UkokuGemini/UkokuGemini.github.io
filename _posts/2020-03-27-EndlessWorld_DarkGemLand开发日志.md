@@ -2,7 +2,7 @@
 layout:     post
 title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date: 2022/08/14
+date: 2022/08/21
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -33,7 +33,7 @@ catalog: True
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.3.3.658[2022-8-14]">
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.4[2022-8-21]">
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 <img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 .
@@ -42,19 +42,16 @@ catalog: True
 
 ```
 🌐简要更新日志:
- - 技能实装(盾击/附魔攻击/充能闪电/聚魔之刃/佛心/追击/截拳/恩泽)
- - 修改技能(巫医-迷惑:改为魔法护盾.作用效果为: 受到伤害时以魔法代替生命损失)
- - 修改技能(巫医-巫毒:现在可以额外等比恢复魔法)
- - 调整日志记录路径结构;修复重复记录的问题;调整自动记录的时间;退出记录.
- - 调整命中闪避模型
- - 设置转职金钱数额
+ - 技能实装(会心/绝杀)
+ - 自启动设置
+ - 后台关闭时以背景方式启动
 ```
 
 ---
 
 ## **开发计划**
 
-💠 #### 陆续实装技能(56/68)
+💠 #### 陆续实装技能(58/68)
 - 已实装
 ```
 1.治疗/战吼
@@ -76,10 +73,11 @@ catalog: True
 17.盾击
 18.附魔攻击/充能闪电/聚魔之刃
 19.佛心/追击/截拳/恩泽
+20.会心/绝杀
 ```
-- 尚未实装(≈12)
+- 尚未实装(≈10)
 ```
-噬魂之刃/会心一击/伺机而动/银色闪光/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/...
+噬魂之刃/偷袭/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/...
 ```
 ---
 
@@ -397,6 +395,12 @@ catalog: True
  - 调整命中闪避模型
  - 设置转职金钱数额
 
+### 🌐VER4.3.4<SUB>[2022-8-21]</SUB>
+
+ - 技能实装(会心/绝杀)
+ - 自启动设置
+ - 后台关闭时以背景方式启动
+ 
 ### End
 ***
 ***
