@@ -2,7 +2,7 @@
 layout:     post
 title: EndlessWorld_DarkGemLand
 subtitle:   开发日志
-date: 2022/08/21
+date: 2022/09/05
 author:     UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
@@ -33,7 +33,7 @@ catalog: True
 
 ### 🔰`最新开发版本`
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.3.4[2022-8-21]">
+<img style="float:left" src="https://badgen.net/badge/release/Version4.3.4[2022-09-05]">
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 <img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
 .
@@ -42,16 +42,20 @@ catalog: True
 
 ```
 🌐简要更新日志:
- - 技能实装(会心/绝杀)
- - 自启动设置
- - 后台关闭时以背景方式启动
+ - 技能实装(噬魂之刃/偷袭/天籁)
+ - 修复闪电术没有触发[法力燃烧]作用.
+ - 法力燃烧现在只作用于法术伤害之后,不再作用于攻击.
+ - 修正闪避数值公式,默认闪避=命中时的闪避系数0.25.
+ - 技能修改(狂热)
+ - 修复激怒,截拳等倒转攻防对象的暴击几率和暴击伤害计算错误的问题.
+ - 技能修改(战伤)
 ```
 
 ---
 
 ## **开发计划**
 
-💠 #### 陆续实装技能(58/68)
+💠 #### 陆续实装技能(61/68)
 - 已实装
 ```
 1.治疗/战吼
@@ -66,7 +70,7 @@ catalog: True
 10.(迷惑)魔法护盾
 11.基础技能(命中/闪避/暴击几率/暴击伤害/吸血/生命恢复/魔法恢复)
 12.妖术/缠绕枝蔓/巫毒/坚韧不屈
-13.嗜血/狂热/狂怒
+13.嗜血/狂热/（狂怒）战伤
 14.嘲讽
 15.魔法免疫/激怒
 16.制裁
@@ -74,16 +78,24 @@ catalog: True
 18.附魔攻击/充能闪电/聚魔之刃
 19.佛心/追击/截拳/恩泽
 20.会心/绝杀
+21.噬魂之刃/偷袭/天籁
 ```
-- 尚未实装(≈10)
+- 尚未实装(≈7)
 ```
-噬魂之刃/偷袭/天籁/神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/...
+神之庇佑/靡靡之音/赞歌/赌徒A/赌术/逆天改命/老千/...
 ```
 ---
 
 ## **工作情况**
 
 ![](https://ghchart.rshah.org/444444/UkokuGemini)
+
+***
+
+## **Wiki**
+[Wiki-Page](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki)
+
+***
 
 ## **历史日志**
 
@@ -400,6 +412,16 @@ catalog: True
  - 技能实装(会心/绝杀)
  - 自启动设置
  - 后台关闭时以背景方式启动
+ 
+ ### 🌐VER4.3.5<SUB>[2022-9-4]</SUB>
+
+ - 技能实装(噬魂之刃/偷袭/天籁)
+ - 修复闪电术没有触发[法力燃烧]作用.
+ - 法力燃烧现在只作用于法术伤害之后,不再作用于攻击.
+ - 修正闪避数值公式,默认闪避=命中时的闪避系数0.25.
+ - 技能修改(狂热)
+ - 修复激怒,截拳等倒转攻防对象的暴击几率和暴击伤害计算错误的问题.
+ - 技能修改(战伤)
  
 ### End
 ***
