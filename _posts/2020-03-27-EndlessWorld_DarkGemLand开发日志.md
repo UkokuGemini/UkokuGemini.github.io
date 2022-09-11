@@ -10,8 +10,7 @@ catalog: True
 
 # EndlessWorld_DarkGemLand开发手记
 
-
-# <CENTER> ENDLESSWORLD_DARKGEMLAND</CENTER>
+---
 
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
