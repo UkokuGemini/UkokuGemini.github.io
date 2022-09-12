@@ -14,6 +14,10 @@ catalog: True
 
 ---
 
+EndlessWorld_DarkGemLand-开发手记
+
+---
+
 ## **🏆项目**
 
 ![branches](https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release)
