@@ -14,9 +14,7 @@ catalog: True
 
 ---
 
-<left> </Left>
-
-EndlessWorld_DarkGemLand-开发手记
+<p align="left"> # EndlessWorld_DarkGemLand-开发手记</p>
 
 ---
 
