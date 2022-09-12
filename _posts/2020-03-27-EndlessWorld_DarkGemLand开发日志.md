@@ -9,29 +9,27 @@ catalog: True
 ---
 #  ENDLESSWORLD_DARKGEMLAND
 
----
-
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
 
-
-
 ## **🏆项目**
-<div style="float:left">
 
-![branches](https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release)
-![commits](https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
-![releases](https://badgen.net/github/releases/UkokuGemini/EndlessWorld_DarkGemLand-Release)
-![tags](https://badgen.net/github/tags/UkokuGemini/EndlessWorld_DarkGemLand-Release)
-![issues](https://badgen.net/github/issues/UkokuGemini/EndlessWorld_DarkGemLand-Release)
+<img style="float:left" src="https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release">
+<img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
+<img style="float:left" src="https://badgen.net/github/releases/UkokuGemini/EndlessWorld_DarkGemLand-Release">
+<img style="float:left" src="https://badgen.net/github/tags/UkokuGemini/EndlessWorld_DarkGemLand-Release">
+<img style="float:left" src="https://badgen.net/github/issues/UkokuGemini/EndlessWorld_DarkGemLand-Release">
 
-![watchers](https://badgen.net/github/watchers/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
-![stars](https://badgen.net/github/stars/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
-![assets-dl(Download)](https://badgen.net/github/assets-dl/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
-![forks](https://badgen.net/github/forks/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
+<img style="float:left" src="https://badgen.net/github/watchers/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green">
+<img style="float:left" src="https://badgen.net/github/stars/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green">
+<img style="float:left" src="https://badgen.net/github/assets-dl/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green">
+<img style="float:left" src="https://badgen.net/github/forks/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green">
 
-</div>
+.
+
+---
+
 ## **🎮游戏**
 
 ### `描述`
@@ -55,10 +53,8 @@ catalog: True
 
 <img style="float:left" src="https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable">
 <img style="float:left" src="https://img.shields.io/github/release-date/UkokuGemini/EndlessWorld_DarkGemLand-Release">
+
 .
-
----
-
  - [下载地址](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.4.0(%E6%98%8E%E5%A0%82%E4%BD%9B)/EndlessWorld_DarkGemLand.Ver4.4.0.2022-09-12.msi).
 
 ---
@@ -67,10 +63,7 @@ catalog: True
 
 <img style="float:left" src="https://badgen.net/badge/release/Version4.4.0[2022-09-12]">
 <img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
-<img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
-.
-
----
+<img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">.
 
 ### **进度日志** 
 
@@ -115,11 +108,15 @@ catalog: True
 
 使用VisualStudio 2022 VB.net语言
 
-![visualstudio](https://badgen.net/badge/visualstudio/2022/cyan?icon=visualstudio)![visualstudio](https://badgen.net/badge/visualstudio/VB.Net/cyan?icon=visualstudio)
+<img style="float:left" src="https://badgen.net/badge/visualstudio/2022/cyan?icon=visualstudio"><img style="float:left" src="https://badgen.net/badge/visualstudio/VB.Net/cyan?icon=visualstudio">
+
+.
 
 ### `·平台&运行库`
 
-![Windows](https://badgen.net/badge/Windows/建议10+/black?icon=windows)![Framework](https://badgen.net/badge/Framework/4.7.2+/black)![Sqlite](https://badgen.net/badge/Sqlite/1.0.112.0/black)
+<img style="float:left" src="https://badgen.net/badge/Windows/建议10+/black?icon=windows"><img style="float:left" src="https://badgen.net/badge/Framework/4.7.2+/black"><img style="float:left" src="https://badgen.net/badge/Sqlite/1.0.112.0/black">
+
+.
 
 - **FrameWork4.7.2** [官方页面](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net472)
 	- [下载链接](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net472-web-installer)
@@ -158,25 +155,32 @@ catalog: True
 
 ## **🎫LICENSE**
 
-[![license](https://badgen.net/github/license/UkokuGemini/EndlessWorld_DarkGemLand-Release)](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/LICENSE )
+[<img style="float:left" src="https://badgen.net/github/license/UkokuGemini/EndlessWorld_DarkGemLand-Release">](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/LICENSE)
+
+.
 
 ---
 
+
+
 ## **📁文件一览**
 
-![repo size](https://img.shields.io/github/repo-size/ukokugemini/EndlessWorld_DarkGemLand-Release)
- - 游戏主体文件![EndlessWorld_DarkGemLand.exe size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.exe?color=yellow&label=EndlessWorld_DarkGemLand.exe)
- - DataBase系统数据库![EndlessWorld_DarkGemLand.SysData.db size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.SysData.db?color=yellow&label=EndlessWorld_DarkGemLand.SysData.db)
- - DataBase用户数据库存档![EndlessWorld_DarkGemLand.UserData.db size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.UserData.db?color=yellow&label=EndlessWorld_DarkGemLand.UserData.db)
- - SQLite.DLL数据库组件<sub> Ver1.0.112 </sub>
-	 - ![SQLite.Interop.dll size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/SQLite.Interop.dll?color=yellow&label=SQLite.Interop.dll)
-	 - ![System.Data.SQLite.dll size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/System.Data.SQLite.dll?color=yellow&label=System.Data.SQLite.dll)
+<img style="float:left" src="https://img.shields.io/github/repo-size/ukokugemini/EndlessWorld_DarkGemLand-Release">
+
+.
+
+-  ·    游戏主体文件<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.exe?color=yellow&label=EndlessWorld_DarkGemLand.exe">
+ - ·    DataBase系统数据库<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.SysData.db?color=yellow&label=EndlessWorld_DarkGemLand.SysData.db">
+ - ·    DataBase用户数据库存档<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.UserData.db?color=yellow&label=EndlessWorld_DarkGemLand.UserData.db">
+ -  SQLite.DLL数据库组件<sub> Ver1.0.112 </sub>
+	 - <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/SQLite.Interop.dll?color=yellow&label=SQLite.Interop.dll">
+	 - <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/System.Data.SQLite.dll?color=yellow&label=System.Data.SQLite.dll">
  -  音频组件
-	 - ![AxInterop.WMPLib.dll size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AxInterop.WMPLib.dll?color=yellow&label=AxInterop.WMPLib.dll)
-	 - ![Interop.WMPLib.dll size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/Interop.WMPLib.dll?color=yellow&label=Interop.WMPLib.dll)
-	 - ![wmp.dll size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/wmp.dll?color=yellow&label=wmp.dll)
- - AutoUpdate版本更新软件![AutoUpdate-EndlessWorld_DarkGemLand.exe size](https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AutoUpdate-EndlessWorld_DarkGemLand.exe?color=yellow&label=AutoUpdate-EndlessWorld_DarkGemLand.exe)
- - 
+	 - <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AxInterop.WMPLib.dll?color=yellow&label=AxInterop.WMPLib.dll">
+	 - <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/Interop.WMPLib.dll?color=yellow&label=Interop.WMPLib.dll">
+	 - <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/wmp.dll?color=yellow&label=wmp.dll">
+ - ·    AutoUpdate版本更新软件<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AutoUpdate-EndlessWorld_DarkGemLand.exe?color=yellow&label=AutoUpdate-EndlessWorld_DarkGemLand.exe">
+
 ---
 
 ## **🎳特别感谢**
