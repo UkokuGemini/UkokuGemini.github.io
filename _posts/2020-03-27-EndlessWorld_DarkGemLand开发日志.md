@@ -18,7 +18,7 @@ catalog: True
 
 
 ## **🏆项目**
-
+<div style="float:left">
 
 ![branches](https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release)
 ![commits](https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
@@ -31,6 +31,7 @@ catalog: True
 ![assets-dl(Download)](https://badgen.net/github/assets-dl/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
 ![forks](https://badgen.net/github/forks/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green)
 
+</div>
 ## **🎮游戏**
 
 ### `描述`
