@@ -16,7 +16,7 @@ catalog: True
 
 ---
 
-<div alien="left">
+<div align="left">
 
 ## **🏆项目**
 
