@@ -179,55 +179,17 @@ catalog: True
 .
 
 ---
-
--  ·    游戏主体文件<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.exe?color=yellow&label=EndlessWorld_DarkGemLand.exe">
-
-.
-
----
-
- - ·    DataBase系统数据库<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.SysData.db?color=yellow&label=EndlessWorld_DarkGemLand.SysData.db">
-
-.
-
----
-
- - ·    DataBase用户数据库存档<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/EndlessWorld_DarkGemLand.UserData.db?color=yellow&label=EndlessWorld_DarkGemLand.UserData.db">
-
-.
-
----
-
- -  SQLite.DLL数据库组件<sub> Ver1.0.112 </sub>
-
----
-- <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/SQLite.Interop.dll?color=yellow&label=SQLite.Interop.dll">
-
----
-
-- <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/System.Data.SQLite.dll?color=yellow&label=System.Data.SQLite.dll">
-
-
----
-
- -  音频组件
-.
-
----
-
-- <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AxInterop.WMPLib.dll?color=yellow&label=AxInterop.WMPLib.dll">
-
----
-
-- <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/Interop.WMPLib.dll?color=yellow&label=Interop.WMPLib.dll">
-
----
-
-- <img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/wmp.dll?color=yellow&label=wmp.dll">
-
----
-
- - ·    AutoUpdate版本更新软件<img style="float:left" src="https://img.shields.io/github/size/UkokuGemini/EndlessWorld_DarkGemLand-Release/Release/AutoUpdate-EndlessWorld_DarkGemLand.exe?color=yellow&label=AutoUpdate-EndlessWorld_DarkGemLand.exe">
+- 游戏主体文件 `EndlessWorld_DarkGemLand.exe`
+- DataBase系统数据库  `EndlessWorld_DarkGemLand.SysData.db`
+- DataBase用户数据库存档 `EndlessWorld_DarkGemLand.UserData.db`
+-  SQLite.DLL数据库组件<sub> Ver1.0.112 </sub>
+    - `SQLite.Interop.dll`
+    - `System.Data.SQLite.dll`
+-  音频组件
+    - `AxInterop.WMPLib.dll`
+    - `Interop.WMPLib.dll`
+    - `wmp.dll`
+ - AutoUpdate版本更新软件 `AutoUpdate-EndlessWorld_DarkGemLand.exe`
 
 .
 
