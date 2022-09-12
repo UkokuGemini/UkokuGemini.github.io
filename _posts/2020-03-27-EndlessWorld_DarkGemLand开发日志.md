@@ -11,11 +11,11 @@ catalog: True
 # EndlessWorld_DarkGemLand开发手记
 
 ---
-
- <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
+<center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
-# ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
+
+# ![EndlessWorld_DarkGemLand开发手记](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发手记/cyan?icon=github)
 
 ## **🎉稳定发布版本** 
 
@@ -38,20 +38,22 @@ catalog: True
 
 ---
 
-### **进度日志** 
-#### 🌐VER4.4.0<SUB>[2022-9-12]</SUB>
+#### .
+
+
+### **进度日志** 🌐Ver.4.4.0<SUB>[2022-9-12]</SUB>
 
  - 稳定版本(**明堂佛**)
 
 #### [更多历史日志](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_Log)
 ---
-## **工作情况**
+## **📅工作情况**
 
 ![](https://ghchart.rshah.org/444444/UkokuGemini)
 
 ---
-## **开发待办**
-### **✒近期**
+## **📐开发待办**
+### **·近期**
 
  - 账户转移
 
