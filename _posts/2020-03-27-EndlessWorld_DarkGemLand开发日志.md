@@ -10,15 +10,16 @@ catalog: True
 
 ## <CENTER> ENDLESSWORLD_DARKGEMLAND</CENTER>
 
+---
+
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
 
-# EndlessWorld_DarkGemLand-开发手记
-
----
+<div alien="left">
 
 ## **🏆项目**
+
 
 ![branches](https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release)
 ![commits](https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches)
@@ -197,4 +198,5 @@ catalog: True
 # ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
 
 ---
+</div>
 ---
