@@ -7,6 +7,8 @@ author: UkokuGemini
 header-img: img/Blog/B05.jpg
 catalog: True
 ---
+#  ENDLESSWORLD_DARKGEMLAND
+
 
 ## <CENTER> ENDLESSWORLD_DARKGEMLAND</CENTER>
 
@@ -16,7 +18,7 @@ catalog: True
 
 ---
 
-<div align="left">
+
 
 ## **🏆项目**
 
@@ -192,4 +194,3 @@ catalog: True
 # ![EndlessWorld_DarkGemLand开发日志](https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github)
 
 ---
-</div>
