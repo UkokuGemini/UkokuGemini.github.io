@@ -55,8 +55,9 @@ catalog: True
 <img style="float:left" src="https://img.shields.io/github/release-date/UkokuGemini/EndlessWorld_DarkGemLand-Release">
 
 .
+---
 
- - [下载地址](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.4.0(%E6%98%8E%E5%A0%82%E4%BD%9B)/EndlessWorld_DarkGemLand.Ver4.4.0.2022-09-12.msi).
+ - [<img style="float:left" src="https://badgen.net/badge/DownLoad/Click Here/black/">](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version4.4.0(%E6%98%8E%E5%A0%82%E4%BD%9B)/EndlessWorld_DarkGemLand.Ver4.4.0.2022-09-12.msi).
 
 ---
 
