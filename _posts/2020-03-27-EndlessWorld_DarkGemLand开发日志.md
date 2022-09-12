@@ -8,13 +8,13 @@ header-img: img/Blog/B05.jpg
 catalog: True
 ---
 
-# <CENTER> ENDLESSWORLD_DARKGEMLAND</CENTER>
+## <CENTER> ENDLESSWORLD_DARKGEMLAND</CENTER>
 
 <center><img src="https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true" width="400"></center>
 
 ---
 
-<p align="left">
+# EndlessWorld_DarkGemLand-开发手记
 
 ---
 
@@ -198,4 +198,3 @@ catalog: True
 
 ---
 ---
-</p>
