@@ -193,8 +193,6 @@ catalog: True
     - `wmp.dll`
  - AutoUpdate版本更新软件 `AutoUpdate-EndlessWorld_DarkGemLand.exe`
 
-.
-
 ---
 
 ## **🎳特别感谢**
