@@ -64,21 +64,7 @@ catalog: True
 
 ## **🔬最新开发进度**
 
-<img style="float:left" src="https://badgen.net/badge/release/Version4.4.0[2022-09-12]">
-<img style="float:left" src="https://badgen.net/github/last-commit/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
-<img style="float:left" src="https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches">
-
-.
-
----
-
-### **进度日志** 
-
-#### 🌐VER4.4.0<SUB>[2022-9-12]</SUB>
-
- - 稳定版本(**明堂佛**)
-
-#### [更多历史日志](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_Log)
+- [历史日志](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_Log)
 
 ---
 
@@ -89,18 +75,7 @@ catalog: True
 ---
 
 ## **🧩开发待办**
-
-### **近期**
-
- - 账户转移
-
- - 设置保存
-
-     - 用户(使用者)World
-
- - 靡靡之音/赌徒A/赌术/逆天改命/老千/...
-
-#### [更多待办](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_todo)
+ - [待办](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_todo)
 
 ---
 
