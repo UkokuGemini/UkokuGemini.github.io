@@ -40,27 +40,33 @@ friends: [
         title: "sunshineyg",
         pic: "https://avatars.githubusercontent.com/u/58005045?v=4",
         href: "https://github.com/sunshineyg"
-    },{
+    },
+    {
         title: "psy",
         pic: "/img/Icon/UnUser.png",
         href: ""
-    },{
-        title: "大庭叶藏",
-        pic: "/img/Icon/qzone.png",
-        href: "https://user.qzone.qq.com/857558572"
-    },{
-        title: "筑梦踏实",
-        pic: "/img/Icon/qzone.png",
-        href: "https://user.qzone.qq.com/563088446"
-    },{
-        title: "可可",
-        pic: "/img/Icon/qzone.png",
-        href: "https://user.qzone.qq.com/530041647"
-    },{
+    },
+    #{
+    #    title: "大庭叶藏",
+    #    pic: "/img/Icon/qzone.png",
+    #    href: "https://user.qzone.qq.com/857558572"
+    #},
+    #{
+    #    title: "筑梦踏实",
+    #    pic: "/img/Icon/qzone.png",
+    #    href: "https://user.qzone.qq.com/563088446"
+    #},
+    #{
+    #    title: "可可",
+    #    pic: "/img/Icon/qzone.png",
+    #   href: "https://user.qzone.qq.com/530041647"
+    #},
+    {
         title: "404",
         pic: "/img/Icon/404.png",
         href: "https://ukokugemini.github.io/404"
-    },{
+    },
+    {
         title: "Offline",
         pic: "/img/Icon/Offline.png",
         href: "https://ukokugemini.github.io/offline"
