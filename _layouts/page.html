@@ -23,9 +23,9 @@ layout: default
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '出自:  ' + data.from +"/" +data.from_who
+          const from = '#谨言出自:  ' + data.from +"/" + data.from_who.replace("null","")
           const sub = []
-          sub.unshift("#谨言: " + data.hitokoto, from)
+          sub.unshift("#此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
             strings: sub,
             startDelay: 300,
@@ -34,7 +34,7 @@ layout: default
             backSpeed: 50,
           })
         } else {
-          document.getElementById('hitokoto').innerHTML = "#谨言: " + data.hitokoto
+          document.getElementById('hitokoto').innerHTML = "#此刻谨言: " + data.hitokoto
         }
       })
   }
