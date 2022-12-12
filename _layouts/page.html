@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- Type.js核心代码 -->
+<!-- Type.js核心代码 
 <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
 <script type="text/javascript">
     var options = {
@@ -16,7 +16,7 @@ layout: default
         loop: true,      //是否循环
     };
     var typed = new Typed('#TypedSubheading', options);
-</script>
+</script>-->
 <!-- hitokoto核心代码 -->
 <script>function subtitleType () {
     fetch('https://v1.hitokoto.cn')
@@ -34,7 +34,7 @@ layout: default
             backSpeed: 50,
           })
         } else {
-          document.getElementById('hitokoto').innerHTML = data.hitokoto
+          document.getElementById('hitokoto').innerHTML ="谨言:" + data.hitokoto
         }
       })
   }
@@ -57,10 +57,12 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
-                    <span id="TypedSubheading" style="white-space: pre-wrap;line-height: 30px;">|</span>
+                    <!-- span id="TypedSubheading" style="white-space: pre-wrap;line-height: 30px;">|</span>-->
                     <!-- 在span标签内加入 white-space: pre-wrap 样式，在strings内的语句中加入\n换行符可以实现换行 -->
-                </div>
+                
             </div>
+            </div>
+            <div><span id="hitokoto"></span></div>
         </div>
     </div>
 </header>
