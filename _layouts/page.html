@@ -23,7 +23,7 @@ layout: default
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who 
+          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who.Replace(/null/,"")
           const sub = []
           sub.unshift("  ·此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
