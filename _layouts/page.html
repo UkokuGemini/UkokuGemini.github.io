@@ -26,7 +26,7 @@ layout: default
         if (true) {
           const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who
           const sub = []
-          sub.unshift("  ·此刻谨言: " + data.hitokoto, from.replace("null",""))
+          sub.unshift("  ·此刻谨言: " + data.hitokoto, from.replace("/null",""))
           window.typed = new Typed('#hitokoto', {
             strings: sub,
             startDelay: 300,
