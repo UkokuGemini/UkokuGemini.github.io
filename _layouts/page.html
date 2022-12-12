@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
@@ -11,17 +12,16 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
+                    <span id="typed" style="white-space: pre-wrap;line-height: 30px;">1224345495todsm</span>
                     <div id="typed-strings">
                         <p>Typed.js is a <strong>JavaScript</strong> library.</p>
                         <p>It <em>types</em> out sentences.</p>
                       </div>
-                      <span id="typed"></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 <script>
     var typed = new Typed('#typed', {
       stringsElement: '#typed-strings'
