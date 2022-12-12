@@ -23,9 +23,9 @@ layout: default
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '#谨言出自:  ' + data.from +"/" + data.from_who.replace("null","")
+          const from = '·谨言出自:  ' + data.from +"/" + data.from_who.replace("null","")
           const sub = []
-          sub.unshift("#此刻谨言: " + data.hitokoto, from)
+          sub.unshift("·此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
             strings: sub,
             startDelay: 300,
@@ -34,7 +34,7 @@ layout: default
             backSpeed: 50,
           })
         } else {
-          document.getElementById('hitokoto').innerHTML = "#此刻谨言: " + data.hitokoto
+          document.getElementById('hitokoto').innerHTML = "·此刻谨言: " + data.hitokoto
         }
       })
   }
@@ -62,7 +62,7 @@ layout: default
                 </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 " style="text-align:right">  
-                <span id="hitokoto" style="color:whitesmoke"></span>
+                <span id="hitokoto" class="subheading" style="color:whitesmoke"></span>
             </div>
         </div>
     </div>
