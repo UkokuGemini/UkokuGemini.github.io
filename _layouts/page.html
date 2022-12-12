@@ -25,9 +25,9 @@ layout: default
         if (true) {
           const from = '出自:  ' + data.from +"/" +data.from_who
           const sub = []
-          sub.unshift(data.hitokoto, from)
+          sub.unshift("#谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
-            strings: "#谨言: "+ sub,
+            strings: sub,
             startDelay: 300,
             typeSpeed: 150,
             loop: true,
