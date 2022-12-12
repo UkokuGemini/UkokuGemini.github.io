@@ -24,7 +24,6 @@ layout: default
       .then(data => {
         if (true) {
           const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who.replace("null","无名") 
-          document.getElementById('hitokotoTest').innerHTML = from
           const sub = []
           sub.unshift("  ·此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
@@ -63,8 +62,7 @@ layout: default
                 </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 " style="text-align:right">  
-                <span id="hitokoto" class="subheading"></span>
-                <span id="hitokotoTest" class="subheading"></span>
+                <span id="hitokoto" class="subheading" style="color:wheat"></span>
             </div>
         </div>
     </div>
