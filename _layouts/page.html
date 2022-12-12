@@ -11,11 +11,22 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
+                    <div id="typed-strings">
+                        <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+                        <p>It <em>types</em> out sentences.</p>
+                      </div>
+                      <span id="typed"></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings'
+    });
+  </script>
 
 <!-- Main Content -->
 <div class="container">
