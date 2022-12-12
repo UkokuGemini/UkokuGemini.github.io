@@ -16,15 +16,15 @@ layout: default
         loop: true,      //是否循环
     };
     var typed = new Typed('#TypedSubheading', options);
-</script>-->
-<script>function ReplaceNull (StrNull) {return StrNull.Replace("null","佚名9");}</script>
+</script>
+<script>function ReplaceNull(StrNull) {return StrNull.Replace("null","佚名9");}</script>-->
 <!-- hitokoto核心代码 -->
 <script>function subtitleType () {
     fetch('https://v1.hitokoto.cn')
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '  ·谨言出自:  ' + data.from +"/" + ReplaceNull(data.from_who)
+          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who.tostring().replace("null","")
           const sub = []
           sub.unshift("  ·此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
