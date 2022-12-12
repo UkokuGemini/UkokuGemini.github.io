@@ -23,18 +23,18 @@ layout: default
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '·谨言出自:  ' + data.from +"/" + data.from_who.replace("null","")
+          const from = '  ·谨言出自:  ' + data.from.replace("null","") +"/" + data.from_who.replace("null","")
           const sub = []
-          sub.unshift("·此刻谨言: " + data.hitokoto, from)
+          sub.unshift("  ·此刻谨言: " + data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
             strings: sub,
             startDelay: 300,
-            typeSpeed: 150,
+            typeSpeed: 100,
             loop: true,
             backSpeed: 50,
           })
         } else {
-          document.getElementById('hitokoto').innerHTML = "·此刻谨言: " + data.hitokoto
+          document.getElementById('hitokoto').innerHTML = "  ·此刻谨言: " + data.hitokoto
         }
       })
   }
