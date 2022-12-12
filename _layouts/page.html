@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- 核心代码 -->
+<!-- 核心代码 
 <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
 <script type="text/javascript">
     var options = {
@@ -16,7 +16,37 @@ layout: default
         loop: true,      //是否循环
     };
     var typed = new Typed('#subheading', options);
-</script>
+</script>-->
+<script>function subtitleType () {
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        if (true) {
+          const from = '出自 ' + data.from
+          const sub = []
+          sub.unshift(data.hitokoto, from)
+          window.typed = new Typed('#subheading', {
+            strings: sub,
+            startDelay: 300,
+            typeSpeed: 150,
+            loop: true,
+            backSpeed: 50,
+          })
+        } else {
+          document.getElementById('subheading').innerHTML = data.hitokoto
+        }
+      })
+  }
+  if (true) {
+    if (typeof Typed === 'function') {
+      subtitleType()
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+    }
+  } else {
+    subtitleType()
+  }
+  </script>
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
