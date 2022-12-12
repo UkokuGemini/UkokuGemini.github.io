@@ -23,7 +23,7 @@ layout: default
       .then(response => response.json())
       .then(data => {
         if (true) {
-          const from = '  ·谨言出自:  ' + data.from.replace("null","") +"/" + data.from_who.replace("null","") 
+          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who.replace("null","无名") 
           document.getElementById('hitokotoTest').innerHTML = from
           const sub = []
           sub.unshift("  ·此刻谨言: " + data.hitokoto, from)
@@ -48,7 +48,7 @@ layout: default
   } else {
     subtitleType()
   }
-  </script>
+</script>
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
