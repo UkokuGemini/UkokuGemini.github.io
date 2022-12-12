@@ -27,14 +27,14 @@ layout: default
           const sub = []
           sub.unshift(data.hitokoto, from)
           window.typed = new Typed('#hitokoto', {
-            strings: sub,
+            strings: "#谨言: "+ sub,
             startDelay: 300,
             typeSpeed: 150,
             loop: true,
             backSpeed: 50,
           })
         } else {
-          document.getElementById('hitokoto').innerHTML ="谨言:" + data.hitokoto
+          document.getElementById('hitokoto').innerHTML = "#谨言: " + data.hitokoto
         }
       })
   }
@@ -62,7 +62,7 @@ layout: default
                 </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 " style="text-align:right">  
-                <span id="hitokoto"></span>
+                <span id="hitokoto" class="subheading"></span>
             </div>
         </div>
     </div>
