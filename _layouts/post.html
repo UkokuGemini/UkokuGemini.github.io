@@ -118,9 +118,7 @@ layout: default
                     {% if site.BgmSources %}
                         <th>
                             <h5>MUSIC</h5>
-                            <meta name="referrer" content="no-referrer-when-downgrade"" />
-                            <audio controls="controls" controlsList="nodownload" referrerpolicy="no-referrer-when-downgrade" 
-                            autoplay="autoplay" loop="loop" height="100">
+                            <audio controls="controls" controlsList="nodownload" autoplay="autoplay" loop="loop" height="100">
                                 {% if page.bgmsrc %}
                                 <source src="{{ page.bgmsrc }}" type="audio/mpeg">
                                 {% else %}

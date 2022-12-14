@@ -34,6 +34,7 @@ layout: default
 </script>
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />   
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -154,9 +155,7 @@ layout: default
                 {% if site.BgmSources %}
                     <hr>
                     <h5>MUSIC</h5>
-                    <meta name="referrer" content="no-referrer-when-downgrade"" />
-                    <!-- 对某个特定资源设置 referer 策略 -->
-                    <audio controls loop=-1 controlsList="nodownload" referrerpolicy="no-referrer-when-downgrade">
+                    <audio controls loop=-1 controlsList="nodownload">
                         {% for BgmSource in site.BgmSources %}
                         <source src="{{ BgmSource.src }}" type="audio/mpeg">
                         {% endfor %}
