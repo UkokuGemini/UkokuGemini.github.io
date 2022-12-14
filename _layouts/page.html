@@ -154,7 +154,9 @@ layout: default
                 {% if site.BgmSources %}
                     <hr>
                     <h5>MUSIC</h5>
-                    <audio controls loop=-1 controlsList="nodownload">
+                    <meta name="referrer" content="no-referrer-when-downgrade"" />
+                    <!-- 对某个特定资源设置 referer 策略 -->
+                    <audio controls loop=-1 controlsList="nodownload" referrerpolicy="no-referrer-when-downgrade">
                         {% for BgmSource in site.BgmSources %}
                         <source src="{{ BgmSource.src }}" type="audio/mpeg">
                         {% endfor %}
