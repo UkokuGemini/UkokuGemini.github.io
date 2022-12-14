@@ -72,6 +72,7 @@ friends: [
         href: "https://ukokugemini.github.io/offline"
     }
 ]
+# BgmSeverPath: "http://47.96.176.56:8089/github.io.sever/music.pack"
 BgmSources: [
     {
         Name: Just For You - By.Giovanni Marradi,
