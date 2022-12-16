@@ -152,6 +152,7 @@ layout: default
                     {% endfor %}
                     </ul>
                 {% endif %}
+                <!-- Music -->
                 {% if site.BgmSources %}
                     <hr>
                     <h5>MUSIC</h5>
@@ -165,6 +166,9 @@ layout: default
                         <li>{{ BgmName.Name }}</li>
                         {% endfor %}
                     </ul>
+                {% endif %}
+                {% if site.BgmSources == "Music" %}
+                <h5>MUSIC yyyy</h5>
                 {% endif %}
     		</div>
         {% endif %}
