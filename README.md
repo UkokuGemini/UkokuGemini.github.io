@@ -6,9 +6,6 @@
 
 [![pages-build-deployment](https://github.com/UkokuGemini/UkokuGemini.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/UkokuGemini/UkokuGemini.github.io/actions/workflows/pages/pages-build-deployment)
 
-
-
-#### Stargazers over time
-<center><img src="https://starchart.cc/UkokuGemini/UkokuGemini.github.io.svg" width="400"></center>
+![](https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/WebSite/Preview.png)
 
 ***
