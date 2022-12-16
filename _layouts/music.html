@@ -1,0 +1,158 @@
+---
+layout: default
+---
+<script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+<script>function subtitleType () {
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        if (true) {
+          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who
+          const sub = []
+          sub.unshift("  ·此刻谨言: " + data.hitokoto + " ^5000", from.replace("/null",""))
+          window.typed = new Typed('#hitokoto', {
+            strings: sub,
+            startDelay: 300,
+            typeSpeed: 150,
+            loop: true,
+            backSpeed: 75,
+          })
+        } else {
+          document.getElementById('hitokoto').innerHTML = "  ·此刻谨言: " + data.hitokoto
+        }
+      })
+  }
+  if (true) {
+    if (typeof Typed === 'function') {
+      subtitleType()
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+    }
+  } else {
+    subtitleType()
+  }
+</script>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">{{ page.description }}</span>
+                    <!-- span id="TypedSubheading" style="white-space: pre-wrap;line-height: 30px;">|</span>-->
+                    <!-- 在span标签内加入 white-space: pre-wrap 样式，在strings内的语句中加入\n换行符可以实现换行 -->
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 " style="text-align:right">  
+                <span id="hitokoto" class="subheading" style="color:gainsboro"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        {% if site.sidebar == false %}
+<!-- NO SIDEBAR -->
+    <!-- PostList Container -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
+                {{ content }}
+            </div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+                <!-- Friends Blog -->
+                {% if site.friends %}
+                <hr>
+                <h5>友情链接</h5>
+                <ul class="list-inline">
+                    {% for friend in site.friends %}
+                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <Br/>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        {% else %}
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			{{ content }}
+    		</div>
+    <!-- Sidebar Container -->
+  
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="{{'/About/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        {% if site.sidebar-avatar %}
+                            <a href="{{ site.baseurl }}/About">
+                                <img src="{{site.sidebar-avatar}}"/>
+                            </a>
+                        {% endif %}
+                        {% if site.sidebar-about-description %}
+                            <p>{{site.sidebar-about-description}}</p>
+                        {% endif %}
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            {% if site.RSS %}
+                            <li>
+                                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.github_username %}
+                            <li>
+                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                        {% if site.email %}
+                            <p>✉️ {{site.email}}</p>
+                        {% endif %}
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                {% if site.friends %}
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                    {% for friend in site.friends %}
+                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <Br/>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+    		</div>
+        {% endif %}
+	</div>
+</div>
