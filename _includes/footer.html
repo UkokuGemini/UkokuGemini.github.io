@@ -50,7 +50,7 @@
                     var RunMinutes_Blog = Math.floor(RundateM_Blog%(24*3600*1000)%(3600*1000)/(60*1000));
                     var RunSeconds_Blog = Math.round(RundateM_Blog%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                     var RunTime_Blog = RunDays_Blog + "天" + RunHours_Blog + "时" + RunMinutes_Blog + "分" + RunSeconds_Blog + "秒";
-                document.getElementById("Time_culculate").innerHTML = "在今生已然等你：" + RunTime_Born + "/于此地依然等你：" + RunTime_Blog;
+                document.getElementById(id).innerHTML = "在今生已然等你：" + RunTime_Born + "/于此地依然等你：" + RunTime_Blog;
                 }setInterval("ShowRunTime('Time_culculate')", 1000);
                 </script>
                 </div>
