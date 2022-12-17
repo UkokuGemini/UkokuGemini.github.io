@@ -37,14 +37,14 @@
                 var BornDate = new Date("1993/06/11 00:00:00");
                 var BlogDate = new Date("2021/07/04 00:00:00");
                 function ShowRunTime(id) {
-                var NowDate_Born = new Date();
-                var RunDateM_Born = parseInt(NowDate_Born - BornDate);
+                var NowDate = new Date();
+                var RunDateM_Born = parseInt(NowDate - BornDate);
                 var RunDays_Born = Math.floor(RundateM_Born/(24*3600*1000));
                 var RunHours_Born = Math.floor(RundateM_Born%(24*3600*1000)/(3600*1000));
                 var RunMinutes_Born = Math.floor(RundateM_Born%(24*3600*1000)%(3600*1000)/(60*1000));
                 var RunSeconds_Born = Math.round(RundateM_Born%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                 var RunTime_Born = RunDays_Born + "天" + RunHours_Born + "时" + RunMinutes_Born + "分" + RunSeconds_Born + "秒";
-                    var RundateM_Blog = parseInt(NowDate_Blog - BlogDate);
+                    var RundateM_Blog = parseInt(NowDate - BlogDate);
                     var RunDays_Blog = Math.floor(RundateM_Blog/(24*3600*1000));
                     var RunHours_Blog = Math.floor(RundateM_Blog%(24*3600*1000)/(3600*1000));
                     var RunMinutes_Blog = Math.floor(RundateM_Blog%(24*3600*1000)%(3600*1000)/(60*1000));
