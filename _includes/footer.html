@@ -31,12 +31,11 @@
                     </li>
                     {% endif %}
                 </ul>
-                <div class="copyright text-muted">
-                    <span id="Time_Born">👵</iframe>
-                        <br>
-                    <span id="Time_Blog">👴</iframe>
+                <div>
+                    <span class="copyright text-muted" id="Time_culculate">👴</iframe>
                 <script>
                 var BornDate = new Date("1993/06/11 00:00:00");
+                var BlogDate = new Date("2021/07/04 00:00:00");
                 function ShowRunTime(id) {
                 var NowDate_Born = new Date();
                 var RunDateM_Born = parseInt(NowDate_Born - BornDate);
@@ -45,22 +44,15 @@
                 var RunMinutes_Born = Math.floor(RundateM_Born%(24*3600*1000)%(3600*1000)/(60*1000));
                 var RunSeconds_Born = Math.round(RundateM_Born%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                 var RunTime_Born = RunDays_Born + "天" + RunHours_Born + "时" + RunMinutes_Born + "分" + RunSeconds_Born + "秒";
-                document.getElementById("Time_Born").innerHTML = "在今生已然等你：" + RunTime_Born;
-                }setInterval("ShowRunTime('Time_Born')", 1000);
-                </script>
-                <script>
-                    var BlogDate = new Date("2021/07/04 00:00:00");
-                    function ShowRunTime(id) {
-                    var NowDate_Blog = new Date();
                     var RundateM_Blog = parseInt(NowDate_Blog - BlogDate);
                     var RunDays_Blog = Math.floor(RundateM_Blog/(24*3600*1000));
                     var RunHours_Blog = Math.floor(RundateM_Blog%(24*3600*1000)/(3600*1000));
                     var RunMinutes_Blog = Math.floor(RundateM_Blog%(24*3600*1000)%(3600*1000)/(60*1000));
                     var RunSeconds_Blog = Math.round(RundateM_Blog%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                     var RunTime_Blog = RunDays_Blog + "天" + RunHours_Blog + "时" + RunMinutes_Blog + "分" + RunSeconds_Blog + "秒";
-                    document.getElementById("Time_Blog").innerHTML = "于此地依然等你：" + RunTime_Blog;
-                    }setInterval("ShowRunTime('Time_Blog')", 1000);
-                    </script>
+                document.getElementById("Time_culculate").innerHTML = "在今生已然等你：" + RunTime_Born + "/于此地依然等你：" + RunTime_Blog;
+                }setInterval("ShowRunTime('Time_culculate')", 1000);
+                </script>
                 </div>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
