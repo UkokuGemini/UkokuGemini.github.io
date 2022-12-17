@@ -116,32 +116,8 @@ layout: default
                         </th>
                     {% endif %}
                     <!--Music-->
-                    {% if site.BgmSources %}
                         <th>
                             <h5>MUSIC</h5>
-                            <!--OldMuiscControl
-                            <audio controls="controls" controlsList="nodownload" autoplay="autoplay" loop="loop" height="100">
-                                {% if page.bgmsrc %}
-                                <source src="{{ page.bgmsrc }}" type="audio/mpeg">
-                                {% else %}
-                                    {% for BgmSource in site.BgmSources %}
-                                    <source src="{{ BgmSource.src }}" type="audio/mpeg">
-                                    {% endfor %}
-                                {% endif %}
-                            </audio>
-                            <ul>  
-                                {% if page.bgmsrc %}
-                                    {% if page.bgmname %}
-                                    <li>{{ page.bgmname }}</li>
-                                    {% endif %}
-                                {% else %}
-                                    {% for BgmName in site.BgmSources %}
-                                    <li>{{ BgmName.Name }}</li>
-                                    {% endfor %}
-                                {% endif %}
-                            </ul>
-                            -->
-                            <!--Pop Music-->
                             <div>
                                 <!-- require APlayer -->
                                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -173,8 +149,6 @@ layout: default
                                         list-folded="true">
                                     </meting-js>
                                     {% else %}
-                                    <!--
-                                    {% for BgmSource in site.BgmSources %}-->
                                     <meting-js
                                         name="{{ BgmSource.name }}"
                                         artist="{{ BgmSource.artist }}"
@@ -187,12 +161,9 @@ layout: default
                                         list-folded="true">
                                     </meting-js>
                                     {% endif %}
-                                    <!--
-                                    {% endfor %}-->
                                 {% endif %}
                             </div>
                         </th>
-                    {% endif %}
                         </tr></table>
                 </div>
         </div>
