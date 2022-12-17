@@ -32,6 +32,8 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
+                    <span id="htmer_time_Blog"></iframe><br>
+                    <span id="htmer_time_Blog"></iframe>
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
                      On My <a href="{{ site.github_repo }}">GitHub</a> |
@@ -131,4 +133,47 @@
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;}</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        var Born_time = Math.round(new Date(Date.UTC(1993, 06, 11, 00, 00, 00)).getTime() / 1000);
+        var Blog_Time = Math.round(new Date(Date.UTC(1993, 06, 11, 00, 00, 00)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime_Born = secondToDate((timestamp - Born_time));
+        currentTime_Blog = secondToDate((timestamp - Blog_time));
+        currentTimeHtml_Born = "今生已然等你：' + currentTime_Born[0] + '年 ' + currentTime_Born[1] + '天 '
+                + currentTime_Born[2] + '时 ' + currentTime_Born[3] + '分 ' + currentTime_Born[4]
+                + '秒';
+        currentTimeHtml_Born = "此地已然等你：' + currentTime_Blog[0] + '年 ' + currentTime_Blog[1] + '天 '
+                + currentTime_Blog[2] + '时 ' + currentTime_Blog[3] + '分 ' + currentTime_Blog[4]
+                + '秒';
+        document.getElementById("htmer_time_Born").innerHTML = currentTimeHtml_Born;
+        document.getElementById("htmer_time_Blog").innerHTML = currentTimeHtml_Blog;
+    }    setInterval(setTime, 1000);
+</script>
 
