@@ -127,6 +127,26 @@ layout: default
                                     {% endfor %}
                                 {% endif %}
                             </audio>
+                            <!--Pop Music-->
+                            <div>
+                                <!-- require APlayer -->
+                                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+                                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+                                <!-- require MetingJS -->
+                                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                                <!--我的网易云音乐(喜爱红心)地址:306443252-->
+                                <meting-js
+                                    server="netease"
+                                    type="playlist"
+                                    id="7822619060"
+                                    autoplay="false"
+                                    fixed="false"
+                                    mini="true"
+                                    order="random"
+                                    mutex="true"
+                                    list-folded="true">
+                                </meting-js>
+                                </div>
                             <ul>  
                                 {% if page.bgmsrc %}
                                     {% if page.bgmname %}
