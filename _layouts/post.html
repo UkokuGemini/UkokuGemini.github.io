@@ -150,10 +150,10 @@ layout: default
                                     </meting-js>
                                     {% else %}
                                     <meting-js
-                                        name="{{ BgmSource.name }}"
-                                        artist="{{ BgmSource.artist }}"
-                                        url="{{ BgmSource.src }}"
-                                        cover="{{ BgmSource.cover }}"
+                                        name="{{ site.BgmSources.name }}"
+                                        artist="{{ site.BgmSources.artist }}"
+                                        url="{{ site.BgmSources.src }}"
+                                        cover="{{ site.BgmSources.cover }}"
                                         autoplay="false"
                                         loop="one"
                                         preload="auto"
@@ -164,7 +164,7 @@ layout: default
                                 {% endif %}
                             </div>
                         </th>
-                        </tr></table>
+                    </tr></table>
                 </div>
         </div>
     </div>
