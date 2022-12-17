@@ -83,6 +83,6 @@ BgmSources: [
         name: "1时间",
         artist: "ハンバート_ハンバート",
         src: "/music/1时间.mp3",
-        cover: "/music/Default.png"
+        cover: "/music/DefaultBGM.png"
     }
 ]
