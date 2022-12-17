@@ -31,69 +31,30 @@
                     </li>
                     {% endif %}
                 </ul>
-                <div>
-                    <p id="RunTime" style="color:DarkGray;"></p>
-               <script>
-                var BootDate = new Date("2017/09/25 00:00:00");
-                function ShowRunTime(id) {
+                <div class="copyright text-muted">
+                    <span id="Time_Blog">👴</iframe>
+                    <span id="Time_Born">👵</iframe>
+                <script>
+                var BornDate = new Date("1993/06/11 00:00:00");
+                var BlogDate = new Date("2021/07/04 00:00:00");
+                function ShowRunTime() {
                 var NowDate = new Date();
-                var RunDateM = parseInt(NowDate - BootDate);
+                var RunDateM = parseInt(NowDate - BornDate);
                 var RunDays = Math.floor(RunDateM/(24*3600*1000));
                 var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
                 var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
                 var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                 var RunTime = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
-                document.getElementById(id).innerHTML = "小俊博客在风风雨雨中勉勉强强已运行：" + RunTime;
-                }setInterval("ShowRunTime('RunTime')", 1000);
-               </script>
-                </div>
-                <div>
-                    <span id="htmer_time_Blog">👴</iframe>
-                    <span id="htmer_time_Born">👵</iframe>
-                    <script>
-                    function secondToDate(second) {
-                        if (!second) {
-                            return 0;
-                        }
-                        var time = new Array(0, 0, 0, 0, 0);
-                        if (second >= 365 * 24 * 3600) {
-                            time[0] = parseInt(second / (365 * 24 * 3600));
-                            second %= 365 * 24 * 3600;
-                        }
-                        if (second >= 24 * 3600) {
-                            time[1] = parseInt(second / (24 * 3600));
-                            second %= 24 * 3600;
-                        }
-                        if (second >= 3600) {
-                            time[2] = parseInt(second / 3600);
-                            second %= 3600;
-                        }
-                        if (second >= 60) {
-                            time[3] = parseInt(second / 60);
-                            second %= 60;
-                        }
-                        if (second > 0) {
-                            time[4] = second;
-                        }
-                        return time;}</script>    
-                    <script type="text/javascript" language="javascript">
-                        function setTime() {
-                                    var Born_time = Math.round(new Date(Date.UTC(1993, 06, 11, 00, 00, 00)).getTime() / 1000);
-                                    var Blog_Time = Math.round(new Date(Date.UTC(2021, 07, 04, 00, 00, 00)).getTime() / 1000);
-                                    var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-                                    currentTime_Born = secondToDate((timestamp - Born_time));
-                                    currentTime_Blog = secondToDate((timestamp - Blog_time));
-                                    currentTimeHtml_Born = "今生已然等你：' + currentTime_Born[0] + '年 ' + currentTime_Born[1] + '天 '
-                                            + currentTime_Born[2] + '时 ' + currentTime_Born[3] + '分 ' + currentTime_Born[4]
-                                            + '秒';
-                                    currentTimeHtml_Blog = "此地已然等你：' + currentTime_Blog[0] + '年 ' + currentTime_Blog[1] + '天 '
-                                            + currentTime_Blog[2] + '时 ' + currentTime_Blog[3] + '分 ' + currentTime_Blog[4]
-                                            + '秒';
-                                    document.getElementById("htmer_time_Born").innerHTML = currentTimeHtml_Born;
-                                    document.getElementById("htmer_time_Blog").innerHTML = currentTimeHtml_Blog;
-                                }    
-                        setInterval(setTime, 1000);
-                    </script>
+                document.getElementById("Time_Born").innerHTML = "在今生已然等你：" + RunTime;
+                var RunDateM = parseInt(NowDate - BlogDate);
+                var RunDays = Math.floor(RunDateM/(24*3600*1000));
+                var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
+                var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
+                var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
+                var RunTime = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
+                document.getElementById("Time_Blog").innerHTML = "于此地已然等你：" + RunTime;
+                }setInterval("ShowRunTime()", 1000);
+                </script>
                 </div>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
