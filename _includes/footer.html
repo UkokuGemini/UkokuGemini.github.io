@@ -32,12 +32,12 @@
                     {% endif %}
                 </ul>
                 <div class="copyright text-muted">
-                    <span id="Time_Blog">👴</iframe>
                     <span id="Time_Born">👵</iframe>
+                        <br>
+                    <span id="Time_Blog">👴</iframe>
                 <script>
                 var BornDate = new Date("1993/06/11 00:00:00");
-                var BlogDate = new Date("2021/07/04 00:00:00");
-                function ShowRunTime() {
+                function ShowRunTime(id) {
                 var NowDate = new Date();
                 var RunDateM = parseInt(NowDate - BornDate);
                 var RunDays = Math.floor(RunDateM/(24*3600*1000));
@@ -46,15 +46,21 @@
                 var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                 var RunTime = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
                 document.getElementById("Time_Born").innerHTML = "在今生已然等你：" + RunTime;
-                var RunDateM = parseInt(NowDate - BlogDate);
-                var RunDays = Math.floor(RunDateM/(24*3600*1000));
-                var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
-                var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
-                var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
-                var RunTime = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
-                document.getElementById("Time_Blog").innerHTML = "于此地已然等你：" + RunTime;
-                }setInterval("ShowRunTime()", 1000);
+                }setInterval("ShowRunTime('Time_Born')", 1000);
                 </script>
+                <script>
+                    var BlogDate = new Date("2021/07/04 00:00:00");
+                    function ShowRunTime(id) {
+                    var NowDate = new Date();
+                    var RunDateM = parseInt(NowDate - BlogDate);
+                    var RunDays = Math.floor(RunDateM/(24*3600*1000));
+                    var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
+                    var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
+                    var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
+                    var RunTime = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
+                    document.getElementById("Time_Blog").innerHTML = "于此地依然等你：" + RunTime;
+                    }setInterval("ShowRunTime('Time_Blog')", 1000);
+                    </script>
                 </div>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
