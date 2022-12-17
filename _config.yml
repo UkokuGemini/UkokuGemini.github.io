@@ -78,7 +78,7 @@ BgmSources: [
         name: "Just For You",
         artist: "Giovanni Marradi",
         src: "/music/JustForYou.mp3"
-    }
+    },
     {
         name: "1时间",
         artist: "ハンバート_ハンバート",
