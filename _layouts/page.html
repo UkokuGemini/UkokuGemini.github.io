@@ -156,6 +156,7 @@ layout: default
                 {% if site.BgmSources %}
                     <hr>
                     <h5>MUSIC</h5>
+                    <!--
                     <audio controls loop=-1 controlsList="nodownload">
                         {% for BgmSource in site.BgmSources %}
                         <source src="{{ BgmSource.src }}" type="audio/mpeg">
@@ -165,7 +166,20 @@ layout: default
                         {% for BgmName in site.BgmSources %}
                         <li>{{ BgmName.Name }}</li>
                         {% endfor %}
-                    </ul>
+                    </ul>-->
+                    {% for BgmSource in site.BgmSources %}
+                    <meting-js
+                    name="{{ BgmSource.name }}"
+                    artist="{{ BgmSource.artist }}"
+                    url="{{ BgmSource.src }}"
+                    fixed="true"
+                    autoplay="true"
+                    loop="one"
+                    preload="auto"
+                    mutex="true"
+                    list-folded="true">
+                    </meting-js>
+                    {% endfor %}
                 {% endif %}
     		</div>
         {% endif %}
