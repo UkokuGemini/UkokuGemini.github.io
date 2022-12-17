@@ -118,31 +118,28 @@ layout: default
                     <!--Music-->
                         <th>
                             <div>
-                                {% if page.bgmsever %}
-                                <h5>MUSIC</h5>
                                 <!-- require APlayer -->
                                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
                                 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
                                 <!-- require MetingJS -->
                                 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                                {% if page.bgmsever %}
+                                <h5>MUSIC</h5>
+                                <ul class="list-inline">
                                 <meting-js
                                     server="{{ page.bgmsever }}"
                                     type="{{ page.bgmtype }}"
-                                    id="{{ page.bgmid }}"                                    
+                                    id="{{ page.bgmid }}" 
                                     autoplay="true"
                                     loop="one"
                                     preload="auto"
                                     mutex="true"
                                     list-folded="true">
                                 </meting-js>
+                                </ul>
                                 {% else %}
                                     {% if page.bgmsrc %}
                                     <h5>MUSIC</h5>
-                                    <!-- require APlayer -->
-                                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-                                    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-                                    <!-- require MetingJS -->
-                                    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
                                     <meting-js
                                         name="{{ page.bgmname }}"
                                         artist="{{ page.bgmartist }}"
@@ -157,11 +154,6 @@ layout: default
                                     {% else %}
                                         {% if site.BgmSources %}
                                         <h5>MUSIC</h5>
-                                        <!-- require APlayer -->
-                                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-                                        <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-                                        <!-- require MetingJS -->
-                                        <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
                                             {% for BgmSource in site.BgmSources %}
                                         <meting-js
                                         name="{{ BgmSource.name }}"
