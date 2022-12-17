@@ -128,13 +128,15 @@ layout: default
                                 <meting-js
                                     server="{{ page.bgmsever }}"
                                     type="{{ page.bgmtype }}"
-                                    id="{{ page.bgmid }}"
+                                    id="{{ page.bgmid }}">
+                                </meting-js>
+                                <!--
                                     autoplay="true"
                                     loop="one"
                                     preload="auto"
                                     mutex="true"
                                     list-folded="true">
-                                </meting-js>
+                                -->
                                 {% else %}
                                     {% if page.bgmsrc %}
                                     <h5>MUSIC</h5>
