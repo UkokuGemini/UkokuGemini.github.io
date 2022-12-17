@@ -145,19 +145,33 @@ layout: default
                             <div>
                                 <!-- require APlayer -->
                                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+                                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
                                 <!-- require MetingJS -->
+                                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
                                 {% if page.bgmsrc %}
-                                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js">
-                                const ap = new APlayer({
-                                    container: document.getElementById('aplayer'),
-                                    audio: [{
-                                    name: '{{ page.bgmname }}',
-                                    artist: '{{ page.bgmartist }}',
-                                    url: '{{ page.bgmsrc }}'
-                                    }]
-                                });
-                                </script>
+                                <meting-js
+                                name="{{ page.bgmname }}"
+                                artist="{{ page.bgmartist }}"
+                                url="{{ page.bgmsrc }}"
+                                fixed="true"
+                                autoplay="true"
+                                loop="one"
+                                preload="auto"
+                                mutex="true"
+                                list-folded="true">
+                                </meting-js>
                                 {% else %}
+                                <meting-js
+                                name="{{ BgmSource.name }}"
+                                artist="{{ BgmSource.artist }}"
+                                url="{{ BgmSource.src }}"
+                                fixed="true"
+                                autoplay="true"
+                                loop="one"
+                                preload="auto"
+                                mutex="true"
+                                list-folded="true">
+                                </meting-js>
                                 {% endif %}
                             </div>
                         </th>

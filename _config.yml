@@ -75,7 +75,8 @@ friends: [
 # BgmSeverPath: "http://47.96.176.56:8089/github.io.sever/music.pack"
 BgmSources: [
     {
-        Name: Just For You - By.Giovanni Marradi,
+        name: Just For You,
+        artist: Giovanni Marradi,
         src: "/music/JustForYou.mp3"
     }
 ]
