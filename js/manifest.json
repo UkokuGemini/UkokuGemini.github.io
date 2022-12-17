@@ -3,11 +3,11 @@
   "short_name": "UkokuGemini Blog",
   "description": "UkokuGemini Just UkokuGemini.",
   "icons": [{
-    "src": "/img/WebSite/NightCrow-32.png",
+    "src": "/img/WebSite/NightCrow.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "/img/WebSite/NightCrow-32.png",
+    "src": "/img/WebSite/NightCrow.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
