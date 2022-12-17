@@ -148,12 +148,12 @@ layout: default
                                 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
                                 <!-- require MetingJS -->
                                 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-                                {% if page.bgmsrc %}
+                                {% if page.BgmSources %}
                                 <meting-js
-                                name="{{ page.bgmname }}"
-                                artist="{{ page.bgmartist }}"
-                                url="{{ page.bgmsrc }}"
-                                cover="\img\Icon\DefaultBGM.png"
+                                name="{{ page.BgmSources.name }}"
+                                artist="{{ page.BgmSources.artist }}"
+                                url="{{ page.BgmSources.src }}"
+                                cover="{{ page.BgmSources.cover }}"
                                 autoplay="true"
                                 loop="one"
                                 preload="auto"
@@ -166,7 +166,7 @@ layout: default
                                     name="{{ BgmSource.name }}"
                                     artist="{{ BgmSource.artist }}"
                                     url="{{ BgmSource.src }}"
-                                    cover="\img\Icon\DefaultBGM.png"
+                                    cover="{{ BgmSource.cover }}""
                                     autoplay="true"
                                     loop="one"
                                     preload="auto"

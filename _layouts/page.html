@@ -172,19 +172,22 @@ layout: default
                     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
                     <!-- require MetingJS -->
                     <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-                    {% for BgmSource in site.BgmSources %}
+                    <!--
+                    {% for BgmSource in site.BgmSources %}-->
                     <meting-js
                     name="{{ BgmSource.name }}"
                     artist="{{ BgmSource.artist }}"
                     url="{{ BgmSource.src }}"
-                    cover="\img\Icon\DefaultBGM.png"
+                    cover="{{ BgmSource.cover }}"
+                    Mini="true"
                     autoplay="true"
                     loop="one"
                     preload="auto"
                     mutex="true"
                     list-folded="true">
                     </meting-js>
-                    {% endfor %}
+                    <!--
+                    {% endfor %}-->
                 {% endif %}
     		</div>
         {% endif %}

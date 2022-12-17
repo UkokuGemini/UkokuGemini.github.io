@@ -74,14 +74,15 @@ friends: [
 ]
 # BgmSeverPath: "http://47.96.176.56:8089/github.io.sever/music.pack"
 BgmSources: [
-    {
-        name: "Just For You",
-        artist: "Giovanni Marradi",
-        src: "/music/JustForYou.mp3"
-    },
+    #{
+    #    name: "Just For You",
+    #    artist: "Giovanni Marradi",
+    #    src: "/music/JustForYou.mp3"
+    #},
     {
         name: "1时间",
         artist: "ハンバート_ハンバート",
-        src: "/music/1时间.mp3"
+        src: "/music/1时间.mp3",
+        cover: "/music/Default.png"
     }
 ]
