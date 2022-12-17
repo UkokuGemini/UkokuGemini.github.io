@@ -33,7 +33,7 @@
                 </ul>
                 <p class="copyright text-muted">
                     <span id="htmer_time_Blog"></iframe><br>
-                    <span id="htmer_time_Blog"></iframe>
+                    <span id="htmer_time_Born"></iframe>
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
                      On My <a href="{{ site.github_repo }}">GitHub</a> |
@@ -162,7 +162,7 @@
 <script type="text/javascript" language="javascript">
     function setTime() {
         var Born_time = Math.round(new Date(Date.UTC(1993, 06, 11, 00, 00, 00)).getTime() / 1000);
-        var Blog_Time = Math.round(new Date(Date.UTC(1993, 06, 11, 00, 00, 00)).getTime() / 1000);
+        var Blog_Time = Math.round(new Date(Date.UTC(2021, 07, 04, 00, 00, 00)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime_Born = secondToDate((timestamp - Born_time));
         currentTime_Blog = secondToDate((timestamp - Blog_time));
