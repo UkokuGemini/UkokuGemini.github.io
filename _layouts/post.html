@@ -117,7 +117,7 @@ layout: default
                             <div>
                                 {% if page.bgmsever %}
                                 <h5>MUSIC</h5>
-                                <ul style="height:5px">
+                                <div style="height:5px">
                                 <meting-js
                                     server="{{ page.bgmsever }}"
                                     type="{{ page.bgmtype }}"
@@ -129,7 +129,7 @@ layout: default
                                     mutex="true"
                                     list-folded="true">
                                 </meting-js>
-                                </ul>
+                            </div>
                                 {% else %}
                                     {% if page.bgmsrc %}
                                     <h5>MUSIC</h5>
