@@ -1,73 +1,23 @@
 <!-- Js -->
+<!--打字效果-->
 <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
-<script>function subtitleType () {
-    fetch('https://v1.hitokoto.cn')
-      .then(response => response.json())
-      .then(data => {
-        if (true) {
-          const from = '  ·谨言出自:  ' + data.from +"/" + data.from_who
-          const sub = []
-          sub.unshift("  ·此刻谨言: " + data.hitokoto + " ^5000", from.replace("/null",""))
-          window.typed = new Typed('#hitokoto', {
-            strings: sub,
-            startDelay: 300,
-            typeSpeed: 150,
-            loop: true,
-            backSpeed: 75,
-          })
-        } else {
-          document.getElementById('hitokoto').innerHTML = "  ·此刻谨言: " + data.hitokoto
-        }
-      })
-  }
-  if (true) {
-    if (typeof Typed === 'function') {
-      subtitleType()
-    } else {
-      getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
-    }
-  } else {
-    subtitleType()
-  }
-</script>
-<!--计时Js-->
-<script>
-    function siteTime(){
-        window.setTimeout("siteTime()", 1000);
-        var seconds = 1000;
-        var minutes = seconds * 60;
-        var hours = minutes * 60;
-        var days = hours * 24;
-        var years = days * 365;
-        var today = new Date();
-        var todayYear = today.getFullYear();
-        var todayMonth = today.getMonth()+1;
-        var todayDate = today.getDate();
-        var todayHour = today.getHours();
-        var todayMinute = today.getMinutes();
-        var todaySecond = today.getSeconds();
-        var BornDate = Date.UTC(1993,06,11,00,00,00); //此处是开始时间，北京时间 2017-11-11 16:16:16
-        var BlogDate = Date.UTC(2021,07,04,00,00,00);
-        var NowTime = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-        var diff = NowTime-BornDate;
-        var diffYears = Math.floor(diff/years);
-        var diffDays = Math.floor((diff/days)-diffYears*365);
-        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("Time_Born").innerHTML="🐣在今生已然等你：&emsp;"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
-        var diff = NowTime-BlogDate;
-        var diffYears = Math.floor(diff/years);
-        var diffDays = Math.floor((diff/days)-diffYears*365);
-        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("Time_Blog").innerHTML="📝于此地依然等你：&emsp;"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
-    }
-    siteTime();
-</script>
+<!--自部署·一言-->
+<script src="/js/hitokoto.js"></script>
+<!--计时-->
+<script src="/js/siteTime.js"></script>
 <!-- require APlayer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--选择性表达Js-->
+<script type="text/javascript">
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {}
+    else if(screen && screen.width<768){}
+    else {
+        document.write('<script id="live2djs" src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>');
+        document.write('<script id="sakurajs" src="https://cdn.nesxc.com/js/leaves.js"></script>');
+        document.write('<script id="live2djs" src="./js/ClickBoom.js"></script>');
+        document.write('<script id="live2djs" src="./js/NetEffect.js"></script>');
+    }</script> 
