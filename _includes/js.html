@@ -9,12 +9,18 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><script>
 	//按键触发
 document.onkeydown = function(){
     //禁止 F12
     if (window.event && window.event.keyCode == 123) {
+        $.message({
+    message: "预判了谁的预判?",
+    title: "",
+    type: "error",
+    autoHide: !1,
+    time: "2000"
+    });
     event.keyCode = 0;
     event.returnValue = false;
     }
