@@ -10,6 +10,28 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script>
+	//按键触发
+document.onkeydown = function(){
+    //禁止 F12
+    if (window.event && window.event.keyCode == 123) {
+    event.keyCode = 0;
+    event.returnValue = false;
+    }
+    }
+</script>
+<script>
+    //网站禁止选择文字
+        document.body.onselectstart = function() {
+        self.event.returnValue=false
+    };
+</script>
+<script>
+        //网站禁止右键
+        document.body.oncontextmenu = function() {
+        self.event.returnValue=false
+    };
+</script>
 <!--选择性表达Js-->
 <script type="text/javascript">
     var sUserAgent = navigator.userAgent.toLowerCase();
@@ -18,6 +40,6 @@
     else {
         document.write('<script id="live2djs" src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
         document.write('<script id="sakurajs" src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
-        document.write('<script id="live2djs" src="./js/ClickBoom.js"><\/script>');
-        document.write('<script id="live2djs" src="./js/NetEffect.js"><\/script>');
+        document.write('<script id="live2djs" src="/js/ClickBoom.js"><\/script>');
+        document.write('<script id="live2djs" src="/js/NetEffect.js"><\/script>');
     }</script> 

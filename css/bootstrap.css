@@ -49,7 +49,7 @@ a {
 }
 a:active,
 a:hover {
-  cursor: url("/img/Cur/Default.ani"),pointer;
+  cursor: url("../img/Cur/Default.ani"),pointer;
   outline: 0;
 }
 abbr[title] {
