@@ -1,0 +1,183 @@
+<!-- Js -->
+<!--计时Js-->
+<script>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        var BornDate = Date.UTC(1993,06,11,00,00,00); //此处是开始时间，北京时间 2017-11-11 16:16:16
+        var BlogDate = Date.UTC(2021,07,04,00,00,00);
+        var NowTime = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = NowTime-BornDate;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("Time_Born").innerHTML="🐣在今生已然等你："+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+        var diff = NowTime-BlogDate;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("Time_Blog").innerHTML="&#10;&#9;&#9;📝于此地依然等你："+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+</script>
+<!-- //引用stevenjoezhang項目live2d-widget項目默認接口api--> 
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--Sakura-->
+<script src="https://cdn.nesxc.com/js/leaves.js"></script>
+<!--boom-->
+<script>
+    function clickEffect() {
+    let balls = [];
+    let longPressed = false;
+    let longPress;
+    let multiplier = 0;
+    let width, height;
+    let origin;
+    let normal;
+    let ctx;
+    const colours = ["#F73859", "#14FFEC", "#00E0FF", "#FF99FE", "#FAF15D"];
+    const canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    canvas.setAttribute("style", "width: 100%; height: 100%; top: 0; left: 0; z-index: 99999; position: fixed; pointer-events: none;");
+    const pointer = document.createElement("span");
+    pointer.classList.add("pointer");
+    document.body.appendChild(pointer);
+    
+    if (canvas.getContext && window.addEventListener) {
+    ctx = canvas.getContext("2d");
+    updateSize();
+    window.addEventListener('resize', updateSize, false);
+    loop();
+    window.addEventListener("mousedown", function(e) {
+    pushBalls(randBetween(10, 20), e.clientX, e.clientY);
+    document.body.classList.add("is-pressed");
+    longPress = setTimeout(function(){
+    document.body.classList.add("is-longpress");
+    longPressed = true;
+    }, 500);
+    }, false);
+    window.addEventListener("mouseup", function(e) {
+    clearInterval(longPress);
+    if (longPressed == true) {
+    document.body.classList.remove("is-longpress");
+    pushBalls(randBetween(50 + Math.ceil(multiplier), 100 + Math.ceil(multiplier)), e.clientX, e.clientY);
+    longPressed = false;
+    }
+    document.body.classList.remove("is-pressed");
+    }, false);
+    window.addEventListener("mousemove", function(e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    pointer.style.top = y + "px";
+    pointer.style.left = x + "px";
+    }, false);
+    } else {
+    console.log("canvas or addEventListener is unsupported!");
+    }
+    
+    
+    function updateSize() {
+    canvas.width = window.innerWidth * 2;
+    canvas.height = window.innerHeight * 2;
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    ctx.scale(2, 2);
+    width = (canvas.width = window.innerWidth);
+    height = (canvas.height = window.innerHeight);
+    origin = {
+    x: width / 2,
+    y: height / 2
+    };
+    normal = {
+    x: width / 2,
+    y: height / 2
+    };
+    }
+    class Ball {
+    constructor(x = origin.x, y = origin.y) {
+    this.x = x;
+    this.y = y;
+    this.angle = Math.PI * 2 * Math.random();
+    if (longPressed == true) {
+    this.multiplier = randBetween(14 + multiplier, 15 + multiplier);
+    } else {
+    this.multiplier = randBetween(6, 12);
+    }
+    this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
+    this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
+    this.r = randBetween(8, 12) + 3 * Math.random();
+    this.color = colours[Math.floor(Math.random() * colours.length)];
+    }
+    update() {
+    this.x += this.vx - normal.x;
+    this.y += this.vy - normal.y;
+    normal.x = -2 / window.innerWidth * Math.sin(this.angle);
+    normal.y = -2 / window.innerHeight * Math.cos(this.angle);
+    this.r -= 0.3;
+    this.vx *= 0.9;
+    this.vy *= 0.9;
+    }
+    }
+    
+    function pushBalls(count = 1, x = origin.x, y = origin.y) {
+    for (let i = 0; i < count; i++) {
+    balls.push(new Ball(x, y));
+    }
+    }
+    
+    function randBetween(min, max) {
+    return Math.floor(Math.random() * max) + min;
+    }
+    
+    function loop() {
+    ctx.fillStyle = "rgba(255, 255, 255, 0)";
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < balls.length; i++) {
+    let b = balls[i];
+    if (b.r < 0) continue;
+    ctx.fillStyle = b.color;
+    ctx.beginPath();
+    ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2, false);
+    ctx.fill();
+    b.update();
+    }
+    if (longPressed == true) {
+    multiplier += 0.2;
+    } else if (!longPressed && multiplier >= 0) {
+    multiplier -= 0.4;
+    }
+    removeBall();
+    requestAnimationFrame(loop);
+    }
+    
+    function removeBall() {
+    for (let i = 0; i < balls.length; i++) {
+    let b = balls[i];
+    if (b.x + b.r < 0 || b.x - b.r > width || b.y + b.r < 0 || b.y - b.r > height || b.r < 0) {
+    balls.splice(i, 1);
+    }
+    }
+    }
+    }
+    clickEffect();//调用特效函数
+</script>
