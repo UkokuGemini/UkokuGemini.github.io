@@ -32,6 +32,15 @@ document.onkeydown = function(){
         self.event.returnValue=false
     };
 </script>
+<script>
+	//按键触发
+document.onkeydown = function(){
+	//禁止ctrl+s
+    if (event.ctrlKey && window.event.keyCode==83){
+    return false;
+    }
+    }
+</script>
 <!--选择性表达Js-->
 <script type="text/javascript">
     var sUserAgent = navigator.userAgent.toLowerCase();
