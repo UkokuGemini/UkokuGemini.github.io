@@ -38,11 +38,11 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
     if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {}
     else if(screen && screen.width<768){}
     else {
-        document.write('<script id="live2djs" src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
-        document.write('<script id="sakurajs" src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
-        document.write('<script id="live2djs" src="/js/ClickBoom.js"><\/script>');
-        document.write('<script id="live2djs" src="/js/NetEffect.js"><\/script>');
-        document.write('<script id="live2djs" src="/js/CurStar.js"><\/script>');
+        document.write('<script src="/js/Live2d.js"><\/script>');
+        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        document.write('<script src="/js/ClickBoom.js"><\/script>');
+        document.write('<script src="/js/NetEffect.js"><\/script>');
+        document.write('<script src="/js/CurStar.js"><\/script>');
     }</script> 
     <!--配合/js/CurStar光标拖带-->
     <span class="js-cursor-container"></span>
