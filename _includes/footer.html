@@ -32,6 +32,7 @@
                     {% endif %}
                 </ul>
                 <div class="copyright text-muted">
+                    <br>
                     <span id="Time_culculate">👴</span>
                 <script>
                 var BornDate = new Date("1993/06/11 00:00:00");
@@ -50,7 +51,7 @@
                     var RunMinutes_Blog = Math.floor(RundateM_Blog%(24*3600*1000)%(3600*1000)/(60*1000));
                     var RunSeconds_Blog = Math.round(RundateM_Blog%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
                     var RunTime_Blog = RunDays_Blog + "天" + RunHours_Blog + "时" + RunMinutes_Blog + "分" + RunSeconds_Blog + "秒";
-                document.getElementById(id).innerHTML = "在今生已然等你：" + RunTime_Born + "/于此地依然等你：" + RunTime_Blog;
+                document.getElementById(id).innerHTML = "在今生已然等你：" + RunTime_Born + "&#13;/于此地依然等你：" + RunTime_Blog;
                 }setInterval("ShowRunTime('Time_culculate')", 1000);
                 </script>
                 </div>
