@@ -11,25 +11,14 @@
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 <!--网站限制-->
-<script>//按键触发
-document.onkeydown = function(){
-    //禁止 F12
-    if (window.event && window.event.keyCode == 123) {
-        $.message({
-    message: "预判了谁的预判?",
-    title: "",
-    type: "error",
-    autoHide: !1,
-    time: "2000"
-    });
-    event.keyCode = 0;
-    event.returnValue = false;
-    }
-    //禁止ctrl+s
-        if (event.ctrlKey && window.event.keyCode==83){
-    return false;
-    }
-    }
+<script type="text/javascript">
+document.onkeydown = function()
+{
+//禁用F12
+if(window.event && window.event.keyCode == 123){event.keyCode=0;event.returnValue=false;}
+//禁止ctrl+s
+if (event.ctrlKey && window.event.keyCode==83){return false;}
+}
 </script>
 <script>
     //网站禁止选择文字
