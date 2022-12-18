@@ -33,6 +33,8 @@ highlighter: rouge
 kramdown:
 input: GFM                            # use Github Flavored Markdown !important
 
+#浏览器类型 
+UA: true
 
 # Friends
 friends: [

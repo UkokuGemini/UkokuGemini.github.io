@@ -14,11 +14,19 @@
 
     {% include js.html %}
 
+    
+    <script type="text/javascript">
+        function browserRedirect() {
+               var sUserAgent = navigator.userAgent.toLowerCase();
+               if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+            }else{
+                {% include js.html %}
+            }
+           } 
+           browserRedirect();
+    </script>
 <!-- Image to hack wechat -->
 <img alt="·" src="/img/WebSite/NightCrow-32.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 </body>
-<!--
-<script src="/scripts/moment.js"></script>
-<script src="/scripts/moment-precise-range.js"></script>-->
 </html>
