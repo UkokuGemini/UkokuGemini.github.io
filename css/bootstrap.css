@@ -11,6 +11,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
+  cursor: url("/img/Cur/Default.ani"),default;  
   margin: 0;
 }
 article,
@@ -48,6 +49,7 @@ a {
 }
 a:active,
 a:hover {
+  cursor: url("/img/Cur/Default.ani"),pointer;
   outline: 0;
 }
 abbr[title] {
