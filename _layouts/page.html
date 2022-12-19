@@ -23,34 +23,82 @@ layout: default
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
+        {% if site.sidebar == false %}
 <!-- NO SIDEBAR -->
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
                 {{ content }}
             </div>
     <!-- Sidebar Container -->
-        <div class="
-        col-lg-8 col-lg-offset-2
-        col-md-10 col-md-offset-1
-        sidebar-container">
-        <!-- Music -->
-        {% if site.BgmSources %}
-            <hr>
-            <h5>MUSIC</h5>
-            {% for BgmSource in site.BgmSources %}
-            <meting-js
-            name="{{ BgmSource.name }}"
-            artist="{{ BgmSource.artist }}"
-            url="{{ BgmSource.src }}"
-            cover="{{ BgmSource.cover }}"
-            autoplay="true"
-            loop="one"
-            preload="auto"
-            mutex="true"
-            list-folded="true">
-            </meting-js>
-            {% endfor %}
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+                <!-- Friends Blog -->
+                {% if site.friends %}
+                <hr>
+                <h5>友情链接</h5>
+                <ul class="list-inline">
+                    {% for friend in site.friends %}
+                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <Br/>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        {% else %}
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			{{ content }}
+    		</div>
+    <!-- Sidebar Container -->
+  
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Friends Blog -->
+                {% if site.friends %}
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                    {% for friend in site.friends %}
+                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <Br/>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                <!-- Music -->
+                {% if site.BgmSources %}
+                    <hr>
+                    <h5>MUSIC</h5>
+                    {% for BgmSource in site.BgmSources %}
+                    <meting-js
+                    name="{{ BgmSource.name }}"
+                    artist="{{ BgmSource.artist }}"
+                    url="{{ BgmSource.src }}"
+                    cover="{{ BgmSource.cover }}"
+                    Mini="true"
+                    autoplay="true"
+                    loop="one"
+                    preload="auto"
+                    mutex="true"
+                    list-folded="true">
+                    </meting-js>
+                    {% endfor %}
+                {% endif %}
+    		</div>
         {% endif %}
-        </div>
 	</div>
 </div>

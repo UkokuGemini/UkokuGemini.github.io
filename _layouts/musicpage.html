@@ -34,20 +34,9 @@ layout: default
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>友情链接</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><img src="{{friend.pic}}" height="20" width="20"/><a href="{{friend.href}}">{{friend.title}}</a></li>
-                        <Br/>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                <!-- 此处必有我的照片 -->
             </div>
         {% else %}
-
 <!-- USE SIDEBAR -->
     <!-- PostList Container -->
     		<div class="

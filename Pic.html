@@ -9,11 +9,14 @@ header-img: "img/WebSite/Music-BG.jpg"
      · 嘘.看图！.
     👇
 </a>
-<a href=".">换一个</a>
+<a href="." onclick="changePic()">换一个</a>
 <a target="_blank" href="https://api.ixiaowai.cn/api/api.php">下载</a>
 <br>
 <img id="nowpic" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="1000">
 </div>
+<script>
+    function changePic() {var Img = document.getElementById("nowpic");img.src="https://api.ixiaowai.cn/api/api.php?rnd=" + math.random();} 
+</script>
 <!--
 https://api.ixiaowai.cn/api/api.php
 https://www.dmoe.cc/random.php
