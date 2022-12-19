@@ -18,21 +18,22 @@ header-img: "img/WebSite/OFL-BG.jpg"
     function changePic() {
         var Img = document.getElementById("nowpic");
         var TypeA =Math.floor(Math.random()*3);
-        var imgsrc =""
+        var imgs =""
         switch(TypeA){
     case 1:
-        imgs="https://api.ixiaowai.cn/api/api.php"
+        imgs="https://api.ixiaowai.cn/api/api.php";
         break;
     case 2:
-        imgs="https://www.dmoe.cc/random.php"
+        imgs="https://www.dmoe.cc/random.php";
         break;
     case 3:
-        imgs="https://api.vvhan.com/api/girl"
+        imgs="https://api.vvhan.com/api/girl";
         break;
     default:
-        imgs="https://api.vvhan.com/api/girl"
+        imgs="https://api.vvhan.com/api/girl";
         break;
                 }
+            img.src=imgs    
         } 
 </script>
 <!--
