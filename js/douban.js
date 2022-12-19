@@ -5,7 +5,5 @@ function doubane ()
     .then(data => {
       if (true) {
         document.getElementById('douban').innerHTML = data.hitokoto
-      } else {
-      }
-    })
-}doubane ();
+      }})
+}doubane ()
