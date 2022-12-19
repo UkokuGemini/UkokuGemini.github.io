@@ -4,12 +4,11 @@ title: "DailyPic"
 description: ""
 header-img: "img/WebSite/OFL-BG.jpg"
 ---
-<div style="height:800px">
-    <a onclick="changePic()">
+<div id="PicBox" style="height:800px">
 <p>
      · 嘘.看图！.
     👇
-</p></a>
+</p>
 <br>
 <img id="nowpicshown" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
 </div>
@@ -32,10 +31,12 @@ header-img: "img/WebSite/OFL-BG.jpg"
         break;
     default:
         imgs="https://api.vvhan.com/api/girl";
-        break;
-                }
+        break;}
         Img.src=imgs +"?rnd="+ RndA   
         } 
+</script>
+<script language="JavaScript">
+    document.getElementById("nowpicshown").onload = function () {document.getElementById("PicBox").style="height:"+ document.getElementById("nowpicshown").height+"px"}
 </script>
 <!--
 https://api.ixiaowai.cn/api/api.php
