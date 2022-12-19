@@ -17,7 +17,8 @@ header-img: "img/WebSite/OFL-BG.jpg"
 <script>
     function changePic() {
         var Img = document.getElementById("nowpicshown");
-        var TypeA =Math.floor(Math.random()*3);
+        var RndA = Math.random()*3
+        var TypeA =Math.floor(RndA);
         var imgs =""
         switch(TypeA){
     case 1:
@@ -33,7 +34,7 @@ header-img: "img/WebSite/OFL-BG.jpg"
         imgs="https://api.vvhan.com/api/girl";
         break;
                 }
-        Img.src=imgs    
+        Img.src=imgs +"?rnd="+ RndA   
         } 
 </script>
 <!--
