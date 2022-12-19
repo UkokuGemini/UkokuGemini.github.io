@@ -22,13 +22,13 @@ layout: default
 
 <!-- Main Content -->
 <div class="container">
+	<div class="row">
+        {% if site.sidebar == false %}
+<!-- NO SIDEBAR -->
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
                 {{ content }}
             </div>
-	<div class="row">
-        {% if site.sidebar == false %}
-<!-- NO SIDEBAR -->
     <!-- Sidebar Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
@@ -68,46 +68,6 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/About/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        {% if site.sidebar-avatar %}
-                            <a href="{{ site.baseurl }}/About">
-                                <img src="{{site.sidebar-avatar}}"/>
-                            </a>
-                        {% endif %}
-                        {% if site.sidebar-about-description %}
-                            <p>{{site.sidebar-about-description}}</p>
-                        {% endif %}
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            {% if site.RSS %}
-                            <li>
-                                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.github_username %}
-                            <li>
-                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                        {% if site.email %}
-                            <p>✉️ {{site.email}}</p>
-                        {% endif %}
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 {% if site.friends %}
                     <hr>
@@ -118,6 +78,25 @@ layout: default
                         <Br/>
                     {% endfor %}
                     </ul>
+                {% endif %}
+                <!-- Music -->
+                {% if site.BgmSources %}
+                    <hr>
+                    <h5>MUSIC</h5>
+                    {% for BgmSource in site.BgmSources %}
+                    <meting-js
+                    name="{{ BgmSource.name }}"
+                    artist="{{ BgmSource.artist }}"
+                    url="{{ BgmSource.src }}"
+                    cover="{{ BgmSource.cover }}"
+                    Mini="true"
+                    autoplay="true"
+                    loop="one"
+                    preload="auto"
+                    mutex="true"
+                    list-folded="true">
+                    </meting-js>
+                    {% endfor %}
                 {% endif %}
     		</div>
         {% endif %}
