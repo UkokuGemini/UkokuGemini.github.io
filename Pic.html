@@ -5,18 +5,16 @@ description: ""
 header-img: "img/WebSite/OFL-BG.jpg"
 ---
 <div style="height:800px">
-<a>
+<p>
      · 嘘.看图！.
     👇
-</a>
-<a href="" onclick="changePic()">换一个</a>
-<a target="_blank" href="https://api.ixiaowai.cn/api/api.php">下载</a>
+</p>
 <br>
-<img id="nowpic" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="1000">
+<img id="nowpic" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
 </div>
 </tr></table>
 <script>
-    function changePic() {var Img = document.getElementById("nowpic");img.src="https://api.ixiaowai.cn/api/api.php?rnd=" + math.random();} 
+    function changePic() {var Img = document.getElementById("nowpic");Img.src="https://api.ixiaowai.cn/api/api.php?rnd=" + math.random();} 
 </script>
 <!--
 https://api.ixiaowai.cn/api/api.php
