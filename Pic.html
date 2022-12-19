@@ -5,18 +5,16 @@ description: ""
 header-img: "img/WebSite/OFL-BG.jpg"
 ---
 <div id="PicBox" style="height:800px">
-<p>
-     · 嘘.看图！.
-    👇
-</p>
-<br>
-<img id="nowpicshown" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
+<img id="nowpicshown" onclick="changePic(11)" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
+<a onclick="changePic(12)"><p>
+    嘘.看图！
+</p></a>
 </div>
 </tr></table>
 <script>
-    function changePic() {
+    function changePic(MaxNum) {
         var Img = document.getElementById("nowpicshown");
-        var RndA = Math.random()*3
+        var RndA = Math.random()*maxnum
         var TypeA =Math.floor(RndA);
         var imgs =""
         switch(TypeA){
@@ -27,13 +25,34 @@ header-img: "img/WebSite/OFL-BG.jpg"
         imgs="https://www.dmoe.cc/random.php";
         break;
     case 3:
-        imgs="https://api.vvhan.com/api/girl";
+        imgs="https://img.paulzzh.tech/touhou/random";
         break;
     case 4:
         imgs="https://api.vvhan.com/api/view";
         break;
     case 5:
         imgs="https://api.vvhan.com/api/acgimg";
+        break;
+    case 6:
+        imgs="https://www.dmoe.cc/random.php";
+        break;
+    case 7:
+        imgs="https://cdn.seovx.com/d/?mom=302";
+        break;
+    case 8:
+        imgs="https://api.r10086.com/img-api.php?type=动漫综合1";
+        break;
+    case 9:
+        imgs="https://api.ixiaowai.cn/gqapi/gqapi.php";
+        break;
+    case 10:
+        imgs="https://api.mtyqx.cn/tapi/random.php";
+        break;
+    case 11:
+        imgs="https://img.xjh.me/random_img.php";
+        break;
+    case 12:
+        imgs="https://api.vvhan.com/api/girl";
         break;
     default:
         imgs="https://api.vvhan.com/api/bing";
@@ -50,4 +69,33 @@ header-img: "img/WebSite/OFL-BG.jpg"
 https://api.ixiaowai.cn/api/api.php
 https://www.dmoe.cc/random.php
 https://api.vvhan.com/api/girl
+https://www.dmoe.cc/random.php
+樱花：
+晓晴博客：https://acg.toubiec.cn/random.php
+Unsplash Source | API Documentation：详情请看官网介绍
+夏沫博客：https://cdn.seovx.com/?mom=302
+https://cdn.seovx.com/d/?mom=302
+https://cdn.seovx.com/ha/?mom=302
+二次元随机图：https://api.blogbig.cn/random/api.php
+搏天api：https://api.btstu.cn/sjbz/api.php
+姬长信API For Docker：
+----每日bing：https://api.isoyu.com/bing_images.php
+----美女图片壁纸：https://api.isoyu.com/mm_images.php
+----网红专栏壁纸：https://api.isoyu.com/beibei_images.php
+----动态IP签名图片：https://api.isoyu.com/ip_images.php?signature=早安
+----ARU(阿鲁)表情包：https://api.isoyu.com/ARU_GIF_S.php
+樱道：https://api.r10086.com/动漫综合1.php （网站中有更多api接口）
+小歪API：https://api.ixiaowai.cn/api/api.php（二次元动漫）
+https://api.ixiaowai.cn/mcapi/mcapi.php（mc酱动漫）
+https://api.ixiaowai.cn/gqapi/gqapi.php（高清壁纸）
+保罗｜API：https://api.paugram.com/wallpaper/
+墨天逸：https://api.mtyqx.cn/tapi/random.php
+EEE.DOG：https://api.yimian.xyz/img
+动漫星空：https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php
+岁月小筑：#https调用https://img.xjh.me/random_img.php
+#http调用http://img.xjh.me/random_img.php
+东方Project：https://img.paulzzh.tech/touhou/random
+————————————————
+版权声明：本文为CSDN博主「庭户皓己盈」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/SectSnow/article/details/115835711
 --> 
