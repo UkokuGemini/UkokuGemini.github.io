@@ -1,14 +1,14 @@
 function doubane () 
 {
   fetch('https://mouban.mythsman.com/guest/user_movie?id=71362174&action=wish')
-    .then(response => response.json())
-    .then(data => {
+    .then(responseD => responseD.json())
+    .then(dataD => {
       if (true) {
-          var out = "";
+          var outD = "";
           var i;
-          for(i = 0; i < data.length; i++) {
-            out += '<a href="' + data[i].thumbnail + '">' + data[i].title + '</a><br>';
+          for(i = 0; i < dataD.length; i++) {
+            outD += '<a href="' + dataD[i].thumbnail + '">' + dataD[i].title + '</a><br>';
           }
-        document.getElementById('douban').innerHTML = out
+        document.getElementById('douban').innerHTML = outD
       }})
 }doubane ()
