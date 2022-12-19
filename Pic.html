@@ -5,16 +5,35 @@ description: ""
 header-img: "img/WebSite/OFL-BG.jpg"
 ---
 <div style="height:800px">
+    <a onclick="changePic()">
 <p>
      · 嘘.看图！.
     👇
-</p>
+</p></a>
 <br>
 <img id="nowpic" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
 </div>
 </tr></table>
 <script>
-    function changePic() {var Img = document.getElementById("nowpic");Img.src="https://api.ixiaowai.cn/api/api.php?rnd=" + math.random();} 
+    function changePic() {
+        var Img = document.getElementById("nowpic");
+        var TypeA =Math.floor(Math.random()*3);
+        var imgsrc =""
+        switch(TypeA){
+    case 1:
+        imgs="https://api.ixiaowai.cn/api/api.php"
+        break;
+    case 2:
+        imgs="https://www.dmoe.cc/random.php"
+        break;
+    case 3:
+        imgs="https://api.vvhan.com/api/girl"
+        break;
+    default:
+        imgs="https://api.vvhan.com/api/girl"
+        break;
+                }
+        } 
 </script>
 <!--
 https://api.ixiaowai.cn/api/api.php
