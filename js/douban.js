@@ -4,7 +4,7 @@ function doubane ()
     .then(response => response.json())
     .then(data => {
       if (true) {
-alert(data.hitokoto)
+        document.getElementById('douban').innerHTML = data.hitokoto
       } else {
       }
     })
