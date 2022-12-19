@@ -29,14 +29,22 @@ header-img: "img/WebSite/OFL-BG.jpg"
     case 3:
         imgs="https://api.vvhan.com/api/girl";
         break;
+    case 4:
+        imgs="https://api.vvhan.com/api/view";
+        break;
+    case 5:
+        imgs="https://api.vvhan.com/api/acgimg";
+        break;
     default:
-        imgs="https://api.vvhan.com/api/girl";
+        imgs="https://api.vvhan.com/api/bing";
         break;}
         Img.src=imgs +"?rnd="+ RndA   
         } 
 </script>
 <script language="JavaScript">
-    document.getElementById("nowpicshown").onload = function () {document.getElementById("PicBox").style="height:"+ document.getElementById("nowpicshown").height+"px"}
+    document.getElementById("nowpicshown").onload = function () {
+        var SideBarHeight = 100 + document.getElementById("nowpicshown").height;
+        document.getElementById("PicBox").style="height:"+ SideBarHeight +"px"}
 </script>
 <!--
 https://api.ixiaowai.cn/api/api.php
