@@ -1,7 +1,7 @@
 ---
 layout: picpage
 title: "DailyPic"
-description: ""
+description: "来点二次元吧！"
 header-img: "img/WebSite/OFL-BG.jpg"
 ---
 <div><a onclick="changePic(12)"><p>嘘.看图！</p></a></div><br>
@@ -11,7 +11,7 @@ header-img: "img/WebSite/OFL-BG.jpg"
 <script>
     function changePic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
-        var RndA = Math.random()*maxnum
+        var RndA = Math.random()*MaxNum
         var TypeA =Math.floor(RndA);
         var imgs =""
         switch(TypeA){
@@ -48,7 +48,7 @@ header-img: "img/WebSite/OFL-BG.jpg"
     case 11:
         imgs="https://img.xjh.me/random_img.php";
         break;
-    case 12:
+    case 12://18#
         imgs="https://api.vvhan.com/api/girl";
         break;
     default:
