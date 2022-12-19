@@ -11,12 +11,12 @@ header-img: "img/WebSite/OFL-BG.jpg"
     👇
 </p></a>
 <br>
-<img id="nowpic" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
+<img id="nowpicshown" onclick="changePic()" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
 </div>
 </tr></table>
 <script>
     function changePic() {
-        var Img = document.getElementById("nowpic");
+        var Img = document.getElementById("nowpicshown");
         var TypeA =Math.floor(Math.random()*3);
         var imgs =""
         switch(TypeA){
@@ -33,7 +33,7 @@ header-img: "img/WebSite/OFL-BG.jpg"
         imgs="https://api.vvhan.com/api/girl";
         break;
                 }
-            img.src=imgs    
+        Img.src=imgs    
         } 
 </script>
 <!--
