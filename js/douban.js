@@ -1,6 +1,6 @@
 function doubane () 
 {
-  fetch('https://v1.hitokoto.cn')
+  fetch('https://mouban.mythsman.com/guest/user_movie?id=71362174&action=wish')
     .then(response => response.json())
     .then(data => {
       if (true) {
