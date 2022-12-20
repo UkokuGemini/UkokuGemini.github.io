@@ -1,5 +1,6 @@
-function doubanApi (_url,_type) 
+function doubanApi (_url,_type,_title) 
 {
+  document.getElementById('_Thispage').innerHTML ="⚜" + _title
   fetch(_url)
     .then(responseD => responseD.json())
     .then(dataD => {
@@ -60,4 +61,4 @@ function doubanMain(_MainUrl)
         document.getElementById('book_do_n').innerHTML= dataMD.result.movie_collect
     //document.getElementById('doubanlist').innerHTML = '<div><table frame=void><tr><td><img height="100" src="https://images.weserv.nl/?url=' + dataMD.result.thumbnail.substring(7) + '"></td><td weight="20"></td><td><font size="5"><b>' +'· ' + dataMD.result.name + '</b></font></td></tr></table></div><hr>';
       }})
-}doubanMain('/json/douban.json')
+}doubanMain('/json/douban.json');doubanApi('/json/douban_movie_wish.json',0);
