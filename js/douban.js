@@ -8,7 +8,7 @@ function doubanApi (_url,_type,_title)
           var outD = "";
           var i;
           for(i = 0; i < dataD.result.comment.length && i < 5; i++) {
-            outD += '<div><table frame=void><tr><td><img height="100" src="https://images.weserv.nl/?url=' + dataD.result.comment[i].item.thumbnail.substring(7) + '"></td><td weight="20"></td><td><a href="https://movie.douban.com/subject/' + dataD.result.comment[i].item.douban_id + '/"><font size="4"><b>' +'· ' + dataD.result.comment[i].item.title + '</b></font></a><div>'
+            outD += '<div><table frame=void width="100%" border="1" cellpadding="0" cellspacing="0" style="table-layout:fixed"><tr><td weight="150"><img height="100" src="https://images.weserv.nl/?url=' + dataD.result.comment[i].item.thumbnail.substring(7) + '"></td><td weight="20"></td><td><a href="https://movie.douban.com/subject/' + dataD.result.comment[i].item.douban_id + '/"><font size="4"><b>' +'· ' + dataD.result.comment[i].item.title + '</b></font></a><div>'
             switch(_type){
               case 0:
                 outD +='<font size="1"><b>    #演员:</b>' + dataD.result.comment[i].item.actor + '</font><br>';
@@ -24,6 +24,20 @@ function doubanApi (_url,_type,_title)
         document.getElementById('doubanlist').innerHTML = outD
       }})
 }
+function doubanMain(_MainUrl) 
+{ 
+  fetch(_MainUrl)
+    .then(responseMD => responseMD.json())
+    .then(dataMD => {
+      if (true) {
+        document.getElementById('movie_wish_n').innerHTML = dataMD.result.movie_wish
+        document.getElementById('movie_collect_n').innerHTML= dataMD.result.movie_collect
+        document.getElementById('movie_do_n').innerHTML= dataMD.result.movie_do
+        document.getElementById('book_wish_n').innerHTML = dataMD.result.book_wish
+        document.getElementById('book_collect_n').innerHTML= dataMD.result.book_collect
+        document.getElementById('book_do_n').innerHTML= dataMD.result.book_do
+      }})
+}doubanMain('/json/douban.json');doubanApi('/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】');
 //# 将 71362174 改为你的豆瓣数字ID
 //# 用户录入/更新
 //https://mouban.mythsman.com/guest/check_user?id=71362174
@@ -47,18 +61,3 @@ function doubanApi (_url,_type,_title)
 //https://mouban.mythsman.com/guest/user_song?id=71362174&action=wish
 //https://mouban.mythsman.com/guest/user_song?id=71362174&action=do
 //https://mouban.mythsman.com/guest/user_song?id=71362174&action=collect
-function doubanMain(_MainUrl) 
-{ 
-  fetch(_MainUrl)
-    .then(responseMD => responseMD.json())
-    .then(dataMD => {
-      if (true) {
-        document.getElementById('movie_wish_n').innerHTML = dataMD.result.movie_wish
-        document.getElementById('movie_collect_n').innerHTML= dataMD.result.movie_collect
-        document.getElementById('movie_do_n').innerHTML= dataMD.result.movie_do
-        document.getElementById('book_wish_n').innerHTML = dataMD.result.book_wish
-        document.getElementById('book_collect_n').innerHTML= dataMD.result.book_collect
-        document.getElementById('book_do_n').innerHTML= dataMD.result.movie_collect
-    //document.getElementById('doubanlist').innerHTML = '<div><table frame=void><tr><td><img height="100" src="https://images.weserv.nl/?url=' + dataMD.result.thumbnail.substring(7) + '"></td><td weight="20"></td><td><font size="5"><b>' +'· ' + dataMD.result.name + '</b></font></td></tr></table></div><hr>';
-      }})
-}doubanMain('/json/douban.json');doubanApi('/json/douban_movie_wish.json',0);
