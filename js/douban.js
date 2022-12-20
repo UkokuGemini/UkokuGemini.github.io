@@ -54,7 +54,7 @@ function doubanMain(_MainUrl)
       if (true) {
         document.getElementById('movie_wish_n').innerHTML = dataMD.result.movie_wish
         document.getElementById('movie_collect_n').innerHTML= dataMD.result.movie_collect
-        document.getElementById('movie_do_n').innerHTML= dataMD.result.movie_collect
+        document.getElementById('movie_do_n').innerHTML= dataMD.result.movie_do
         document.getElementById('book_wish_n').innerHTML = dataMD.result.book_wish
         document.getElementById('book_collect_n').innerHTML= dataMD.result.book_collect
         document.getElementById('book_do_n').innerHTML= dataMD.result.movie_collect
