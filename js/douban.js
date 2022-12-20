@@ -8,7 +8,7 @@ function doubanApi (_url,_type,_title)
           var outD = "";
           var i;
           for(i = 0; i < dataD.result.comment.length && i < 5; i++) {
-            outD += '<div><table frame=void width="100%" border="1" cellpadding="0" cellspacing="0" style="table-layout:fixed"><tr><td width="120px"><img height="150px" src="https://images.weserv.nl/?url=' + dataD.result.comment[i].item.thumbnail.substring(7) + '"></td><td width="10px"></td><td><a target="_blank" href="https://movie.douban.com/subject/' + dataD.result.comment[i].item.douban_id + '/"><font size="4"><b>' +'· ' + dataD.result.comment[i].item.title + '</b></font></a><div>'
+            outD += '<div><table frame=void width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed"><tr><td width="120px"><img height="150px" src="https://images.weserv.nl/?url=' + dataD.result.comment[i].item.thumbnail.substring(7) + '"></td><td width="10px"></td><td><a target="_blank" href="https://movie.douban.com/subject/' + dataD.result.comment[i].item.douban_id + '/"><font size="4"><b>' +'· ' + dataD.result.comment[i].item.title + '</b></font></a><div>'
             switch(_type){
               case 0:
                 outD +='<font size="1"><b>    #演员:</b>' + dataD.result.comment[i].item.actor + '</font><br>';
