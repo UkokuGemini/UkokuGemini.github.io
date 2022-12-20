@@ -4,12 +4,7 @@ title: "Douban"
 description: "豆瓣"
 header-img: "img/WebSite/Music-BG.jpg"
 ---
-<script>// 解决403图片缓存问题
-getImages(_url){
-    if( _url !== undefined ){
-        let _u = _url.substring( 7 );
-        return 'https://images.weserv.nl/?url=' + _u;
-    }
-}</script>
 <a onclick="doubane()"><p>近期我的想看:</p></a>
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
 <span id="douban"></span>
+</div>
