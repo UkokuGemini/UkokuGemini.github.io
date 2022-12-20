@@ -11,15 +11,32 @@ header-img: "img/WebSite/Music-BG.jpg"
     🤙
 </a>
 <div>豆瓣电影【
+    <a onclick="doubanApi('/json/douban_movie_wish.json',0)">想看:<b id="movie_wish_n"></b></a>
+    /     
+    <a onclick="doubanApi('/json/douban_movie_collect.json',0)">已看:<b id="movie_collect_n"></b></a>
+    /  
+    <a onclick="doubanApi('/json/douban_movie_do.json',0)">正在看:<b id="movie_do_n"></b></a>
+    】</div>
+<div>豆瓣读书【
+    <a onclick="doubanApi('/json/douban_book_wish.json',1)">想读:<b id="book_wish_n"></b></a>
+    /  
+    <a onclick="doubanApi('/json/douban_book_collect.json',1)">已读:<b id="book_collect_n"></b></a>
+    /  
+    <a onclick="doubanApi('/json/douban_book_do.json',1)">正在读:<b id="book_do_n"></b></a>
+    】</div>
+<hr>
+<!--
+<div>豆瓣电影【
     <a onclick="doubanApi('/json/douban_movie_wish_small.json')">想看:<b id="_wish_n"></b></a>
       /  
     <a onclick="doubanApi('/json/douban_movie_collect_small.json')">已看:<b id="_collect_n"></b></a>
     】</div>
-<!--<div>豆瓣读书【
-        <a onclick="doubanApi('/json/douban_movie_wish_small.json')">想读:<b id="_wish_n"></b></a>
-        <a onclick="doubanApi('/json/douban_movie_collect_small.json')">已读:<b id="_collect_n"></b></a>
-】</div>-->
-<hr>
+<div>豆瓣读书【
+        <a onclick="doubanApi('/json/douban_book_wish_small.json')">想读:<b id="_wish_n"></b></a>
+      /  
+        <a onclick="doubanApi('/json/douban_book_collect_small.json')">已读:<b id="_collect_n"></b></a>
+    】</div>    
+-->
 <span id="doubanlist"></span>
 <!--
 <script>
