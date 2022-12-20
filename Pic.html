@@ -4,9 +4,9 @@ title: "DailyPic"
 description: "来点二次元吧！"
 header-img: "img/WebSite/Pic-BG.jpg"
 ---
-<div><a onclick="changePic(13)"><p>🙊嘘.看图！👇</p></a></div>
+<div><a onclick="changePic(12)"><p>🙊嘘.看图！👇</p></a></div>
 <div id="PicBox">
-<img id="NowPicShown" onclick="changePic(12)" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
+<img id="NowPicShown" onclick="changePic(11)" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
 </div>
 <script>
     function changePic(MaxNum) {
@@ -16,7 +16,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         var imgs =""
         switch(TypeA){
     case 0:
-        Img.src="https://images.weserv.nl/?url=img.xjh.me/random_img.php";
+        Img.src="https://api.yimian.xyz/img?type=moe&size=1920x1080"+"&rnd="+ RndA;
         break;
     case 1:
         Img.src="https://api.ixiaowai.cn/api/api.php"+"?rnd="+ RndA;
@@ -48,10 +48,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
     case 10:
         Img.src="https://api.mtyqx.cn/tapi/random.php"+"?rnd="+ RndA;
         break;
-    case 11:
-        Img.src="https://api.yimian.xyz/img?type=moe&size=1920x1080"+"&rnd="+ RndA;
-        break;
-    case 12://18#
+    case 11://18#
         Img.src="https://api.vvhan.com/api/girl"+"?rnd="+ RndA;
         break;
     default:
