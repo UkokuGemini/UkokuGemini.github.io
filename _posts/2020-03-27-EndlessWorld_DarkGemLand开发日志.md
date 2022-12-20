@@ -34,7 +34,7 @@ catalog: True
 
 ### 预览
 
-<img style="float:left" src="https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/PreView.PNG">
+<img style="float:left" src="https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/PreView.PNG?raw=true">
 
 
 ### `描述`
