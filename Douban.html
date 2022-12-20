@@ -4,9 +4,25 @@ title: "Douban"
 description: "豆瓣"
 header-img: "img/WebSite/Music-BG.jpg"
 ---
-<script>doubanMain('/json/douban.json')</script>
-<a onclick="doubanApi('/json/douban_movie_wish_small.json')">豆瓣想看:<b id="_wish_n"></b></a>
-<a onclick="doubanApi('/json/douban_movie_collect_small.json')">豆瓣已看:<b id="_collect_n"></b></a>
+<script>
+doubanMain('/json/douban.json');
+</script>
+<a target="_blank" href="https://www.douban.com/people/UkokuGemini/">
+    <img src="/img/Icon/douban.png" width="25" height="25"/>
+     · 我的豆瓣主页 .
+    <img src="/img/Icon/Join.png" width="25" height="25"/>
+    🤙
+</a>
+<div>豆瓣电影【
+    <a onclick="doubanApi('/json/douban_movie_wish_small.json')">想看:<b id="_wish_n"></b></a>
+      /  
+    <a onclick="doubanApi('/json/douban_movie_collect_small.json')">已看:<b id="_collect_n"></b></a>
+    】</div>
+<!--<div>豆瓣读书【
+        <a onclick="doubanApi('/json/douban_movie_wish_small.json')">想读:<b id="_wish_n"></b></a>
+        <a onclick="doubanApi('/json/douban_movie_collect_small.json')">已读:<b id="_collect_n"></b></a>
+】</div>-->
+<hr>
 <span id="douban"></span>
 <!--
 <script>
