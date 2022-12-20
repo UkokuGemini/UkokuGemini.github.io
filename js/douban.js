@@ -8,7 +8,7 @@ function doubane ()
           var outD = "";
           var i;
           for(i = 0; i < dataD.length; i++) {
-            outD += '<a href="' + dataD[i].item.thumbnail + '">' + dataD[i].item.title + '</a><br>';
+            outD += '<div height="100"><img height="75" src="' + dataD[i].item.thumbnail + '"><br><p>' + dataD[i].item.title + '</p></div><br>';
           }
         document.getElementById('douban').innerHTML = outD
       }})
