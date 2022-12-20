@@ -4,9 +4,6 @@ title: "Douban"
 description: "豆瓣"
 header-img: "img/WebSite/Music-BG.jpg"
 ---
-<script>
-doubanMain('/json/douban.json');
-</script>
 <a target="_blank" href="https://www.douban.com/people/UkokuGemini/">
     <img src="/img/Icon/douban.png" width="25" height="25"/>
      · 我的豆瓣主页 .
@@ -23,7 +20,7 @@ doubanMain('/json/douban.json');
         <a onclick="doubanApi('/json/douban_movie_collect_small.json')">已读:<b id="_collect_n"></b></a>
 】</div>-->
 <hr>
-<span id="douban"></span>
+<span id="doubanlist"></span>
 <!--
 <script>
 $.ajax({
