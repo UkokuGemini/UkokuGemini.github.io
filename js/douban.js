@@ -1,18 +1,5 @@
-function doubanApi (code) 
+function doubanApi (_url) 
 {
-  var _url=""
-  switch(code){
-    case 0:
-        _url="https://mouban.mythsman.com/guest/user_movie?id=71362174&action=wish";
-        break;
-    case 1:
-        _url="https://mouban.mythsman.com/guest/user_movie?id=71362174&action=collect";
-        break;
-    case 2:
-      _url="/json/douban_movie_wish.json";
-      break;
-    default:
-        break;}  
   fetch(_url)
     .then(responseD => responseD.json())
     .then(dataD => {
@@ -49,3 +36,13 @@ function doubanApi (code)
 //https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=wish
 //https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=do
 //https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
+function doubanMain(_MainUrl) 
+{ 
+  fetch(_MainUrl)
+    .then(responseMD => responseMD.json())
+    .then(dataMD => {
+      if (true) {
+        document.getElementById('_wish_n').innerHTML = dataMD.result.movie_wish
+        document.getElementById('_collect_n').innerHTML= 5// dataMD.result.movie_collect
+      }})
+}

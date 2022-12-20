@@ -4,7 +4,17 @@ title: "Douban"
 description: "豆瓣"
 header-img: "img/WebSite/Music-BG.jpg"
 ---
-<a onclick="doubanApi(0)"><p>豆瓣想看:</p></a>
-<a onclick="doubanApi(1)"><p>豆瓣已看:</p></a>
-<a onclick="doubanApi(2)"><p>豆瓣本地想看:</p></a>
+<script>doubanMain('/json/douban.json')</script>
+<a onclick="doubanApi('/json/douban_movie_wish_small.json')">豆瓣想看:<b id="_wish_n"></b></a>
+<a onclick="doubanApi('/json/douban_movie_collect_small.json')">豆瓣已看:<b id="_collect_n"></b></a>
 <span id="douban"></span>
+<!--
+<script>
+$.ajax({
+    url: 'https://mouban.mythsman.com/guest/user_movie?id=71362174&action=wish',
+    type: 'get',
+    dataType: 'jsonp',  // 请求方式为jsonp
+     crossDomain: true,
+     success: function(data) {doubanApi(data)},
+    data: {}
+});</script>-->
