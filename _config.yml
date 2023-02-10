@@ -23,7 +23,7 @@ github_username:    UkokuGemini
 permalink: pretty
 paginate: 5
 exclude: ["node_modules","README.md"]
-
+plugins: [jekyll-paginate]
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown

@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UkokuGemini&apos;s Blog</title>
+    <description>UkokuGemini Just UkokuGemini.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 10 Feb 2023 23:17:09 +0800</pubDate>
+    <lastBuildDate>Fri, 10 Feb 2023 23:17:09 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>网站开发日志</title>
+        <description>&lt;h1 id=&quot;网站开发日志&quot;&gt;网站开发日志&lt;/h1&gt;
+&lt;h3 id=&quot;2021-07-05&quot;&gt;2021-07-05&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.0&lt;/code&gt;&lt;/sub&gt;  建站&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2021-10-28&quot;&gt;2021-10-28&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.1&lt;/code&gt;&lt;/sub&gt;  添加&lt;Link链接&gt;页面&lt;/Link链接&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-04-05&quot;&gt;2022-04-05&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.2&lt;/code&gt;&lt;/sub&gt;  添加音乐控件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-06-09&quot;&gt;2022-06-09&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.3&lt;/code&gt;&lt;/sub&gt;  调整音乐控件在主页和日志页的显示状态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-07-06&quot;&gt;2022-07-06&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.4&lt;/code&gt;&lt;/sub&gt;  日志页面添加独立背景音乐&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-04&quot;&gt;2022-12-04&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.5&lt;/code&gt;&lt;/sub&gt;  页面增加看板娘
+    &lt;ul&gt;
+      &lt;li&gt;&lt;sub&gt;&lt;a href=&quot;https://github.com/stevenjoezhang/live2d-widget&quot;&gt;stevenjoezhang/live2d-widget項目&lt;/a&gt; 默认接口&lt;/sub&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-07&quot;&gt;2022-12-07&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.6&lt;/code&gt;&lt;/sub&gt;  日志页面增加Github Corner小角标
+    &lt;ul&gt;
+      &lt;li&gt;&lt;sub&gt;&lt;a href=&quot;https://github.com/tholman/github-corners&quot;&gt;tholman/github-corners&lt;/a&gt;&lt;/sub&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-12&quot;&gt;2022-12-12&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.7&lt;/code&gt;&lt;/sub&gt;  日志主要页面增加’谨言’滚动语句.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;sub&gt;Fork &lt;a href=&quot;https://github.com/itgoyo/itgoyo.github.io&quot;&gt;itgoyo/itgoyo.github.io&lt;/a&gt;&lt;/sub&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;sub&gt;&lt;a href=&quot;https://hitokoto.cn&quot;&gt;一言 hitokoto.cn&lt;/a&gt; 接口&lt;/sub&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-16&quot;&gt;2022-12-16&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.8&lt;/code&gt;&lt;/sub&gt;  页面最下方增加&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;可爱的&lt;/code&gt;网站访问计数.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-17&quot;&gt;2022-12-17&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.0.9&lt;/code&gt;&lt;/sub&gt;
+    &lt;ul&gt;
+      &lt;li&gt;增加一张Music音乐页面.可以播放歌曲.&lt;/li&gt;
+      &lt;li&gt;替换原老式音乐播放器改为Aplayer插件/MetingJS歌曲列表脚本.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/DIYgod/APlayer&quot;&gt;APlayer&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/metowolf/MetingJS&quot;&gt;MetingJS&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;注:&lt;/code&gt; 含有三种音乐引用模式.&lt;/p&gt;
+
+        &lt;p&gt;1.使用自建地址包含网络地址&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://&lt;/code&gt;和服务器本地地址&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;,(需要&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bgmSrc&lt;/code&gt;字段)&lt;/p&gt;
+
+        &lt;p&gt;2.使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MetingJS&lt;/code&gt;从Sever内读取&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ID&lt;/code&gt;自动填充地址和信息,(需要&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bgmSever&lt;/code&gt;字段)
+ 此方法经测试在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MetingJS&lt;/code&gt;脚本下会造成重复生成的错误,不建议使用.&lt;/p&gt;
+
+        &lt;p&gt;3.无上述字段时,引用默认歌曲地址:&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;内&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BgmSources&lt;/code&gt;内信息&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-18&quot;&gt;2022-12-18&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.1.0&lt;/code&gt;&lt;/sub&gt;
+    &lt;ul&gt;
+      &lt;li&gt;外部JS整理至Js.html以引用方式插入.&lt;/li&gt;
+      &lt;li&gt;手机端简化部分Js特效&lt;/li&gt;
+      &lt;li&gt;加入落叶/网络/鼠标点击的特效&lt;/li&gt;
+      &lt;li&gt;增加一个返回最上端按钮&lt;/li&gt;
+      &lt;li&gt;增加一个网站计时栏目.&lt;/li&gt;
+      &lt;li&gt;禁用部分键盘按键.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2022-12-20&quot;&gt;2022-12-20&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;sub&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Version1.1.1&lt;/code&gt;&lt;/sub&gt;
+    &lt;ul&gt;
+      &lt;li&gt;增加图片页面,随机二次元图片.&lt;/li&gt;
+      &lt;li&gt;增加豆瓣页面,手动爬取转存Json数据展示.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 07 Dec 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/12/07/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/12/07/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>EndlessWorld_DarkGemLand</title>
+        <description>&lt;h1 id=&quot;endlessworld_darkgemland&quot;&gt;ENDLESSWORLD_DARKGEMLAND&lt;/h1&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://github.com/UkokuGemini/UkokuGemini.github.io/blob/MainBranches/img/EndlessWorld_DarkGemLand/ReadMeLogo.png?raw=true&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;项目&quot;&gt;&lt;strong&gt;🏆项目&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/branches/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/commits/UkokuGemini/EndlessWorld_DarkGemLand-Release/MainBranches&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/releases/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/tags/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/issues/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/watchers/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/stars/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/assets-dl/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/forks/UkokuGemini/EndlessWorld_DarkGemLand-Release?color=green&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;游戏&quot;&gt;&lt;strong&gt;🎮游戏&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;预览&quot;&gt;预览&lt;/h3&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/PreView.PNG?raw=true&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;描述&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;描述&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;异世界讨伐魔物的游戏.&lt;/p&gt;
+
+&lt;p&gt;世界是无尽边际的,充斥着不确定性的.&lt;/p&gt;
+
+&lt;p&gt;需要你的智慧和策略.不断成长才有更独特的风景.&lt;/p&gt;
+
+&lt;h3 id=&quot;世界观&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;世界观&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;这是一个建立在异世界的故事。&lt;/p&gt;
+
+&lt;p&gt;城镇冈托斯多的周围近期出现了越来越多的魔物，国王颁布讨伐令很久，勇士们争相出城，而你无论战胜还是战败，总能安全归城，成为这座城市不死的神话，城市的人奉你为英雄。
+而只有你知道，魔物变异的形势愈发严峻，你不断变强的渴望也越发强烈…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;稳定发布版本&quot;&gt;&lt;strong&gt;🎉稳定发布版本&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/release/UkokuGemini/EndlessWorld_DarkGemLand-Release/stable&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://img.shields.io/github/release-date/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Version_Latest/_EndlessWorld_DarkGemLand.msi&quot;&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/DownLoad/Click Here📥/black/&quot; /&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;最新开发进度&quot;&gt;&lt;strong&gt;🔬最新开发进度&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_Log&quot;&gt;历史日志&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;工作情况&quot;&gt;&lt;strong&gt;📅工作情况&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ghchart.rshah.org/444444/UkokuGemini&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;开发待办&quot;&gt;&lt;strong&gt;🧩开发待办&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Design_todo&quot;&gt;待办&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;产品wiki&quot;&gt;&lt;strong&gt;📖产品Wiki&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/wiki/Home&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;使用手册&quot;&gt;&lt;strong&gt;🪔使用手册&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;开发工具&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;·开发工具&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;使用VisualStudio 2022 VB.net语言&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/visualstudio/2022/cyan?icon=visualstudio&quot; /&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/visualstudio/VB.Net/cyan?icon=visualstudio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;平台运行库&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;·平台&amp;amp;运行库&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/Windows/建议10+/black?icon=windows&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/Framework/4.7.2+/black&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/Sqlite/1.0.112.0/black&quot; /&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/badge/Visual_C++_Redistributable/x86/black&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;FrameWork4.7.2&lt;/strong&gt; &lt;a href=&quot;https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net472&quot;&gt;官方页面&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net472-web-installer&quot;&gt;下载链接&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual C++ Redistributable x86&lt;/strong&gt; &lt;a href=&quot;https://www.microsoft.com/zh-CN/download/details.aspx?id=48145&quot;&gt;官方页面&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=48145&amp;amp;6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1&quot;&gt;下载链接&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;运行库 (. Dll)&lt;/strong&gt; &lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Requires&quot;&gt;GitHub页面&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;SQLite 数据库&lt;sub&gt; (32 位 Ver1.0.112.0) &lt;/sub&gt;) &lt;a href=&quot;http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki&quot;&gt;官方页面&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/SQLite.Interop.dll&quot;&gt;下载SQLite. Interop. Dll&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/System.Data.SQLite.dll&quot;&gt;下载System.Data.SQLite.dll&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;音频运行库
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/AxInterop.WMPLib.dll&quot;&gt;下载AxInterop.WMPLib.dll&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/Interop.WMPLib.dll&quot;&gt;下载Interop.WMPLib.dll&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/wmp.dll&quot;&gt;下载wmp.dll&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;windows7系统部分文字缺失问题解决方案&quot;&gt;WINDOWS7系统部分文字缺失问题解决方案&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.microsoft.com/zh-cn/topic/%E7%8E%B0%E6%8F%90%E4%BE%9B%E5%AF%B9-windows-7-%E5%92%8C-windows-server-2008-r2-%E4%B8%AD-segoe-ui-%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93%E7%9A%84%E6%9B%B4%E6%96%B0-0743a473-3afe-e8b2-7c20-54aa430463d6&quot;&gt;更新Windows补丁包Windows6.1-KB2729094-v2-x64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;帮助支持&quot;&gt;&lt;strong&gt;🤝帮助&amp;amp;支持&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;社区&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;·社区&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;欢迎和我交流,访问我的 &lt;a href=&quot;https://ukokugemini.github.io&quot;&gt;Website &amp;amp; Blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fork&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;·FORK&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;考虑到游戏性和机制，不提倡通过修改源码达到获取游戏资源，加速游戏进程的目的。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;==源码暂未提供Fork==&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果有好的意见建议，欢迎联系我进行学术交流。&lt;/p&gt;
+
+&lt;p&gt;也期待大家可以参与进来，成为开发团队中的一员。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;&lt;strong&gt;🎫LICENSE&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/blob/MainBranches/LICENSE&quot;&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://badgen.net/github/license/UkokuGemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;文件一览&quot;&gt;&lt;strong&gt;📁文件一览&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://img.shields.io/github/repo-size/ukokugemini/EndlessWorld_DarkGemLand-Release&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;游戏主体文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EndlessWorld_DarkGemLand.exe&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;DataBase系统数据库  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EndlessWorld_DarkGemLand.SysData.db&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;DataBase用户数据库存档 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EndlessWorld_DarkGemLand.UserData.db&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;SQLite.DLL数据库组件&lt;sub&gt; Ver1.0.112 &lt;/sub&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQLite.Interop.dll&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.Data.SQLite.dll&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;音频组件
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AxInterop.WMPLib.dll&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Interop.WMPLib.dll&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wmp.dll&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;AutoUpdate版本更新软件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AutoUpdate-EndlessWorld_DarkGemLand.exe&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;特别感谢&quot;&gt;&lt;strong&gt;🎳特别感谢&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;特别感谢以下贡献者：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;PSY&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/sunshineyg&quot;&gt;SUNSHINE&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1&gt;&lt;img src=&quot;https://badgen.net/badge/:/EndlessWorld_DarkGemLand开发日志/cyan?icon=github&quot; alt=&quot;EndlessWorld_DarkGemLand开发日志&quot; /&gt;&lt;/h1&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 12 Sep 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/09/12/EndlessWorld_DarkGemLand%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/09/12/EndlessWorld_DarkGemLand%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>衔尾蛇</title>
+        <description>&lt;h1 id=&quot;衔尾蛇&quot;&gt;衔尾蛇&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2022-07-04 13:38:30&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;从花店的台阶上绊倒的那刻，槿坠入了另一个世界.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;那个男孩将她扶住.槿能闻到他身上淡淡的柑橘味道.从花店满目的玫瑰之中透出的丝丝清新味道.&lt;/p&gt;
+
+&lt;p&gt;他是来买花的.今天是母亲节.&lt;/p&gt;
+
+&lt;p&gt;槿送了支向日葵.在他买的一捧康乃馨之中.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;这是他们的相识.但不是故事的开始.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;帮忙配送，有了男孩的微信后，槿主动约了男孩.&lt;/p&gt;
+
+&lt;p&gt;男孩叫阿秋.沉静清澈.像湛蓝天空中一朵浅浅的云.&lt;/p&gt;
+
+&lt;p&gt;沉默不语的时候，槿喜欢静静的看着他的脸.看到他淡色的衣领仿佛可以闻到那天淡淡柑橘的味道.&lt;/p&gt;
+
+&lt;p&gt;他们在小城相恋，与他走在公园的漫步道上，与他度过冬日圣诞的铃铛声，和他一起经营着《槿的花店》，看他笨手笨脚的剪着玫瑰花枝.&lt;/p&gt;
+
+&lt;p&gt;翻过年的夏天，那晚约会后他送她回家.她坐在他的副驾，偏头看泛黄路灯在他脸上忽明忽暗.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;时光像是停滞又盘旋上升.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;突然觉得他的样子与钱包里半夏的照片有几分相像.
+半夏是她的前任.&lt;/p&gt;
+
+&lt;p&gt;阿秋带着疑惑和笑意看着槿盯着自己的眼睛，转而又继续开车.&lt;/p&gt;
+
+&lt;p&gt;槿未曾挪开视线与思绪.只是，半夏的照片慢慢清晰起来，混杂在了槿此刻的思绪中.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;那是另一个久远的世界&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;半夏，活泼阳光，就像湛蓝天空中浅浅的云.
+槿这么想的时候，看阿秋的笑容慢慢收敛起来.&lt;/p&gt;
+
+&lt;p&gt;半夏，更像是夏日充满着活力的柑橘味道.陪伴着槿，在爱慕的青涩年代，在相恋的午后，在雨后的傍晚.只是，槿已想不起来，那是不是半夏的味道.&lt;/p&gt;
+
+&lt;p&gt;最终，半夏所有的回忆只留存成一张与她的合影.静静地躺在钱包里面.&lt;/p&gt;
+
+&lt;p&gt;为何自己还未丢弃那张合影.明明自己已经与阿秋相恋.&lt;/p&gt;
+
+&lt;p&gt;槿稍稍愧疚，又庆幸，未曾让阿秋见到自己钱包里的半夏的照片.&lt;/p&gt;
+
+&lt;p&gt;“哎，阿秋，你身上的香水是什么味道？”&lt;/p&gt;
+
+&lt;p&gt;“尤加利，又叫蓝桉.”&lt;/p&gt;
+
+&lt;p&gt;“以前也是这个香水吗？”&lt;/p&gt;
+
+&lt;p&gt;“嗯，怎么啦？”&lt;/p&gt;
+
+&lt;p&gt;槿，没再说什么，答复里没有半点柑橘.&lt;/p&gt;
+
+&lt;p&gt;回家后的槿，扔掉了半夏的照片.换上了阿秋的.
+照片上，那浅浅的味道.是尤加利.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;终章，但不是世界的终结.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我们坠入爱河，但从不说我们从爱河中搁浅.
+如果我们一直在坠入，这是否意味着我们一开始站在爱情的最高点.&lt;/p&gt;
+
+&lt;p&gt;“你好，有人吗？”&lt;/p&gt;
+
+&lt;p&gt;“嗯，来了，在的，请问你买什么花？”&lt;/p&gt;
+
+&lt;p&gt;“有小的雏菊吗？”&lt;/p&gt;
+
+&lt;p&gt;“有的有的.”&lt;/p&gt;
+
+&lt;p&gt;学生模样的男孩干净整洁，但让槿愣住的是他的味道.熟悉的尤加利的味道.&lt;/p&gt;
+
+&lt;p&gt;透过花店玻璃强烈的光，狠狠的撕开槿的脑袋，躲在阴翳下的槿，虽看不见天空，却也能感到那湛蓝的晴空和不动如画的云，浅浅的.&lt;/p&gt;
+
+&lt;p&gt;夏日的蝉鸣像随着时间的指挥棒一般，一齐开始涌入槿的脑海.
+蝉鸣原本就有，只是此刻，格外像脑海中的翁鸣.&lt;/p&gt;
+
+&lt;p&gt;槿又想到了自己钱包里的照片.有着淡淡尤加利味道的照片.
+时光的倒影在她的脑海里翻涌.那忽明忽暗阿秋的脸.&lt;/p&gt;
+
+&lt;p&gt;槿有些头晕，夏日的炎热让她有些窒息.&lt;/p&gt;
+
+&lt;p&gt;“妈妈，这个叔叔好香呀.”&lt;/p&gt;
+
+&lt;p&gt;”哈哈，小朋友，你几岁啦？“&lt;/p&gt;
+
+&lt;p&gt;“我五岁了.”女儿伸出一只手.&lt;/p&gt;
+
+&lt;p&gt;“这是松木的味道哦”男孩解释道.&lt;/p&gt;
+
+&lt;p&gt;槿不知道是被女儿的声音拉了回来，还是男孩说的松木二字.只感觉自己的脸有些烫，但男孩模糊的脸变得清晰起来.&lt;/p&gt;
+
+&lt;p&gt;”可以配送吗？”男孩递出手机，名字叫忍冬.&lt;/p&gt;
+
+&lt;p&gt;“不好意思.”槿递上雏菊，抱起了女儿.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;蓝桉已遇释槐鸟.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;忍冬走后，夏日的蝉鸣还是那样聒噪.&lt;/p&gt;
+
+&lt;p&gt;槿打开店里的冷气，吹的花儿们枝叶乱颤.&lt;/p&gt;
+
+&lt;p&gt;阳光在门口的地面上留下花的影子，摇曳.&lt;/p&gt;
+
+&lt;p&gt;云依旧浅浅.行人依旧匆匆.&lt;/p&gt;
+
+&lt;p&gt;槿觉得自己有些愧疚，又庆幸，女儿牵着自己的手.&lt;/p&gt;
+
+&lt;p&gt;槿怀抱女儿.“安安，你看谁回来了.”&lt;/p&gt;
+
+&lt;p&gt;“是爸爸”.&lt;/p&gt;
+
+&lt;p&gt;时光归于平静.只是它仍兜转着.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Jul 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/07/04/%E8%A1%94%E5%B0%BE%E8%9B%87/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/07/04/%E8%A1%94%E5%B0%BE%E8%9B%87/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>文章集时间线</title>
+        <description>&lt;h1 id=&quot;文章集分类说明&quot;&gt;文章集分类说明&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;无解妖界&quot;&gt;无解妖界&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;童年的前面(开通空间前初中以后写的一些文章)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2007-01-01【2007】~ 2007-08-31【含痛–朋友的友誼】 &lt;sub&gt;16篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;无解妖界.Me\*20120224081025_【2007】
+无解妖界.Me\*20120224081111_【雪07.01.16】
+无解妖界.Me\*20120224081200_【雨07.02.13】
+无解妖界.Me\*20120224081228_【离别07.02.15】
+无解妖界.Me\*20120224081258_【在這死亡的季節我觸到了一絲生的氣息07.04.14】
+无解妖界.Me\*20120224081330_【相交點07.04.17】
+无解妖界.Me\*20120224081412_【第一杯咖啡07.04.24】
+无解妖界.Me\*20120224081508_【當一個人,不再害怕黑暗07.04.30】
+无解妖界.Me\*20120224081600_【帳`面具07.05.09】
+无解妖界.Me\*20120224081725_【火07.05.09】
+无解妖界.Me\*20120224081800_【如血殘陽07.05.15】
+无解妖界.Me\*20120224081847_【六指07.05.15】
+无解妖界.Me\*20120226080824_【無解妖界】
+无解妖界.Me\*20120226080955_【苦澀的對視07.06.28】
+无解妖界.Me\*20120226081142_【灰原哀07.08.31】
+无解妖界.Me\*20120226081254_【含痛--朋友的友誼07.08.31】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;过往残城&quot;&gt;过往残城&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;懵懂.初恋.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2007-07-04【考试失落后的联想】 ~ 2010-01-09【幽兰似泪】&lt;sub&gt;81篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;过往残城.Me\*20070704212531_【考试失落后的联想】
+过往残城.Me\*20070706161535_【心的出走】
+过往残城.Me\*20070711121954_【感谢海韵飞扬】
+过往残城.Me\*20070721124516_【奴役】
+过往残城.Me\*20070805120201_【无聊的生活】
+过往残城.Me\*20071105121021_【刚得到，早已失去.】
+过往残城.Me\*20071225121628_【平安夜，随想。】
+过往残城.Me\*20080115124124_【下雪了！】
+过往残城.Me\*20080120123200_【罗曼--我的雪】
+过往残城.Me\*20080127172609_【我的高度】
+过往残城.Me\*20080128234443_【夜，凉了】
+过往残城.Me\*20080129000834_【宅男】
+过往残城.Me\*20080202193521_【秋忧亭】
+过往残城.Me\*20080203121103_【走向2008】
+过往残城.Me\*20080204192018_【田云在雪中摔了一跤！】
+过往残城.Me\*20080212212457_【断了的弦，最后的呼喊】
+过往残城.Me\*20080212212854_【笑……】
+过往残城.Me\*20080214124156_【2_14_感想】
+过往残城.Me\*20080626144646_【流沙带不走】
+过往残城.Me\*20080704142039_【毕业，碎】
+过往残城.Me\*20080714000916_【伤】
+过往残城.Me\*20080717104526_【与tzy最后的10天】
+过往残城.Me\*20080721110736_【天亮了,我该走了】
+过往残城.Me\*20080723101433_【在模糊的日子里,时间本来就无所谓】
+过往残城.Me\*20080728151804_【关于s_l】
+过往残城.Me\*20080728152007_【关于tl】
+过往残城.Me\*20080728152319_【AS_NO_MORE_LOVE】
+过往残城.Me\*20080805101614_【那也要好好好考】
+过往残城.Me\*20080820095411_【云南】
+过往残城.Me\*20080902135552_【残城伤秋是个预言】
+过往残城.Me\*20080911214608_【挤公交】
+过往残城.Me\*20080914142447_【车窗】
+过往残城.Me\*20080918124656_【陌路】
+过往残城.Me\*20081001195824_【距离】
+过往残城.Me\*20081003220638_【对《距离》中最后一句话的解释】
+过往残城.Me\*20081008124954_【抱着我，别离开。】
+过往残城.Me\*20081009143533_【高中的瓶子】
+过往残城.Me\*20081014124416_【写给不乖的姐姐】
+过往残城.Me\*20081014124538_【校车上看到过去】
+过往残城.Me\*20081104150640_【怀念，孤独】
+过往残城.Me\*20081108234759_【一夜，】
+过往残城.Me\*20081117123547_【冬日的暖阳】
+过往残城.Me\*20081117124444_【双子，双鱼】
+过往残城.Me\*20081130104959_【你僵尸的刺青】
+过往残城.Me\*20081130105101_【写她的孤独】
+过往残城.Me\*20081130105123_【别再沉沦了啊……】
+过往残城.Me\*20081214005616_【没有嘴角的男孩】
+过往残城.Me\*20081214005924_【骑士的伤】
+过往残城.Me\*20081214010212_【少年轻狂】
+过往残城.Me\*20081214011755_【夹竹桃的爱恋】
+过往残城.Me\*20090101135152_【月光下，连伤口也昭然】
+过往残城.Me\*20090103195727_【预言】
+过往残城.Me\*20090103204357_【Gay】
+过往残城.Me\*20090119003834_【好久没写文章了】
+过往残城.Me\*20090119004844_【不回头】
+过往残城.Me\*20090119103316_【雪】
+过往残城.Me\*20090121160742_【何时学会虚伪的笑】
+过往残城.Me\*20090201220016_【杀掉的是知己】
+过往残城.Me\*20090204091041_【昔我往矣，杨柳依依】
+过往残城.Me\*20090204093037_【赐一杯毒酒，死去】
+过往残城.Me\*20090205152243_【to__紫色雨季】
+过往残城.Me\*20090208095945_【快刀】
+过往残城.Me\*20090210085225_【一盏孔明灯坠落在平静的湖面】
+过往残城.Me\*20090306085305_【祝福】
+过往残城.Me\*20090802003406_【给sm的安慰】
+过往残城.Me\*20090804124632_【flavor_of_life】
+过往残城.Me\*20090806124830_【わかれ】
+过往残城.Me\*20090808220156_【束缚·舞】
+过往残城.Me\*20090810023708_【kill丁卯】
+过往残城.Me\*20090815223451_【我脑海里的那些人】
+过往残城.Me\*20090815230803_【妹妹……为什么】
+过往残城.Me\*20090819024442_【刺青是最后的束缚？】
+过往残城.Me\*20090913084009_【Forced】
+过往残城.Me\*20090916124655_【迷失在挪威的森林里】
+过往残城.Me\*20090924124156_【让我产生错觉的girl】
+过往残城.Me\*20090929121934_【酒吧girl】
+过往残城.Me\*20091003155536_【彻·夜（只给tzy看）】
+过往残城.Me\*20091101002619_【简单的快乐】
+过往残城.Me\*20091211125446_【杨】
+过往残城.Me\*20100106123852_【刀抑或匕首，不重要】
+过往残城.Me\*20100109233405_【幽兰似泪】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;崩塌世界&quot;&gt;崩塌世界&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;曾经的热恋&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2009-12-05【通宵逆流】~ 2011-08-26【十八岁的生日】&lt;sub&gt;83篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;崩塌世界.Me\*20091205125937_【通宵逆流】
+崩塌世界.Me\*20100208235654_【新开始】
+崩塌世界.Me\*20100210145819_【雨过，湮湿了睫毛】
+崩塌世界.Me\*20100211235852_【柯南_小兰_bath】
+崩塌世界.Me\*20100212222921_【中国的相声，真棒！】
+崩塌世界.Me\*20100212230830_【窗前，是最孤独的风景】
+崩塌世界.Me\*20100214205004_【2_14_走在乱雪的街上】
+崩塌世界.Me\*20100216151532_【那些带到新年的旧东西……】
+崩塌世界.Me\*20100219105438_【不是什么大不了的事】
+崩塌世界.Me\*20100221102338_【年味十足】
+崩塌世界.Me\*20100221103200_【想要真实,不得不面对现实】
+崩塌世界.Me\*20100221231404_【支离破碎的只言片语】
+崩塌世界.Me\*20100221232046_【girl明白这种欲望？】
+崩塌世界.Me\*20100222133616_【左飞的乌鸦，该怎样从世界的尽头，返回？】
+崩塌世界.Me\*20100225104723_【做一个吵着吃糖的孩子】
+崩塌世界.Me\*20100225190156_【黎明】
+崩塌世界.Me\*20100226130509_【小楼一夜听春雨】
+崩塌世界.Me\*20100227091912_【又想起了那个恐怖的测试】
+崩塌世界.Me\*20100227095530_【神的孩子都跳舞】
+崩塌世界.Me\*20100227104945_【杨的乌云】
+崩塌世界.Me\*20100228124905_【love_explorer】
+崩塌世界.Me\*20100228162654_【最后的流星】
+崩塌世界.Me\*20100228163727_【我的网名】
+崩塌世界.Me\*20100306150235_【3月4日1时，那不是梦】
+崩塌世界.Me\*20100306152517_【把一首镇魂曲献给那时今夜的雨】
+崩塌世界.Me\*20100306154858_【In_dreams_begin_the_responsibilities】
+崩塌世界.Me\*20100306205709_【怨月-3月7日】
+崩塌世界.Me\*20100320092639_【少年轻狂】
+崩塌世界.Me\*20100323124038_【红豆】
+崩塌世界.Me\*20100328190821_【狂刀】
+崩塌世界.Me\*20100330022847_【血溅是爱】
+崩塌世界.Me\*20100402212323_【轻轻地印】
+崩塌世界.Me\*20100403001232_【哭泣鬼神】
+崩塌世界.Me\*20100418010542_【小丑】
+崩塌世界.Me\*20100418012506_【蝴蝶骨】
+崩塌世界.Me\*20100418013531_【柳儿】
+崩塌世界.Me\*20100423230804_【过去】
+崩塌世界.Me\*20100503175147_【姬瑜】
+崩塌世界.Me\*20100523042713_【18的前夜有多深】
+崩塌世界.Me\*20100524043530_【18前夕的夜有多深(琦姐)】
+崩塌世界.Me\*20100530115313_【在那些沒有女孩的日子】
+崩塌世界.Me\*20100610234159_【永远的17岁】
+崩塌世界.Me\*20100726112145_【那些我不能左右的】
+崩塌世界.Me\*20100811221510_【月下无颜】
+崩塌世界.Me\*20100831014140_【感觉有什么降临】
+崩塌世界.Me\*20110103232455_【兔年咬你】
+崩塌世界.Me\*20110116010000_【摸着黑向前跑】
+崩塌世界.Me\*20110206154540_【不欢而散】
+崩塌世界.Me\*20110209125522_【黑色历史】
+崩塌世界.Me\*20110225100145_【一帘幽梦20110224】
+崩塌世界.Me\*20110226194342_【一帘幽梦20110225】
+崩塌世界.Me\*20110226220607_【一帘幽梦20110226】
+崩塌世界.Me\*20110320134748_【死神访谈】
+崩塌世界.Me\*20110515101135_【最后的最后】
+崩塌世界.Me\*20110603213618_【又见一帘幽梦110603】
+崩塌世界.Me\*20110618010139_【醉者的酒意】
+崩塌世界.Me\*20110621021045_【曲折的时间,记英雄主题曲】
+崩塌世界.Me\*20110623170021_【尋】
+崩塌世界.Me\*20110624124012_【既然,你给我一次.不两次.】
+崩塌世界.Me\*20110625154929_【催人泪下,大学路上陪伴你的旋律.】
+崩塌世界.Me\*20110625230142_【2011-6-25_-_我们毕业了】
+崩塌世界.Me\*20110630203015_【系列】
+崩塌世界.Me\*20110705010855_【梦魇】
+崩塌世界.Me\*20110708114019_【茅草屋的价值】
+崩塌世界.Me\*20110708123502_【甜的点滴英语】
+崩塌世界.Me\*20110711185623_【上班记】
+崩塌世界.Me\*20110711215631_【天蝎与双子的战斗】
+崩塌世界.Me\*20110718090301_【虚假的社会】
+崩塌世界.Me\*20110720203827_【告别。小咯。】
+崩塌世界.Me\*20110809205454_【为什么，NANA……】
+崩塌世界.Me\*20110816153308_【苦苦等的是昱泉的第三版】
+崩塌世界.Me\*20110819171427_【在那并不遥远的未来,我们的生活如此不同】
+崩塌世界.Me\*20110824200056_【旧时旧事】
+崩塌世界.Me\*20110825232927_【玉蝴蝶】
+崩塌世界.Me\*20110825233017_【无言忧】
+崩塌世界.Me\*20110825233107_【我所不能到达的世界】
+崩塌世界.Me\*20110825233221_【片段】
+崩塌世界.Me\*20110825233325_【悠悠的剑】
+崩塌世界.Me\*20110825233435_【等待，那刀不再冰冷】
+崩塌世界.Me\*20110825233552_【盛夏的风铃】
+崩塌世界.Me\*20110826001949_【旧影】
+崩塌世界.Me\*20110826003004_【生物课上6.10】
+崩塌世界.Me\*20110826230610_【十八岁的生日】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;伤心城市&quot;&gt;伤心城市&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;失恋时代&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2011-09-05【海上旅馆】 ~ 2012-05-27【恋人的毁灭】&lt;sub&gt;72篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;伤心城市.Me\*20110905222455_【海上旅馆】
+伤心城市.Me\*20110907161539_【越压抑】
+伤心城市.Me\*20110910130743_【偷(原创歌词)】
+伤心城市.Me\*20110910232422_【遗忘什么在身后】
+伤心城市.Me\*20110917133654_【上海的云】
+伤心城市.Me\*20110920133239_【映射】
+伤心城市.Me\*20110920170742_【异地恋】
+伤心城市.Me\*20110922081203_【圣安东尼的鱼】
+伤心城市.Me\*20110924180417_【衣冠不整】
+伤心城市.Me\*20110927222411_【灰色地区】
+伤心城市.Me\*20111006104250_【被摆一道】
+伤心城市.Me\*20111007172210_【神君】
+伤心城市.Me\*20111105221003_【不像样的江南】
+伤心城市.Me\*20111118205608_【父亲的资格】
+伤心城市.Me\*20111121192422_【2011-11-21，我的伪生日】
+伤心城市.Me\*20111124104631_【你的成年是我的成年】
+伤心城市.Me\*20111202185431_【如果你认为它是对的，就去做吧，你成年了。】
+伤心城市.Me\*20111202194813_【又见夹竹桃】
+伤心城市.Me\*20111202195611_【人生第一个TT】
+伤心城市.Me\*20111202201338_【暗淡无光】
+伤心城市.Me\*20111205185430_【吼】
+伤心城市.Me\*20111205194716_【也许年轻是一种资本，千万别去挥霍。】
+伤心城市.Me\*20111208110550_【终究我缺少的是什么】
+伤心城市.Me\*20111222111448_【边缘有什么？】
+伤心城市.Me\*20111229082935_【遇见100%女孩（real）】
+伤心城市.Me\*20111229083104_【我的边缘有什么？】
+伤心城市.Me\*20120105075233_【女王】
+伤心城市.Me\*20120105075347_【伊藤】
+伤心城市.Me\*20120109151700_【某个时刻，阳光透过玻璃幕墙】
+伤心城市.Me\*20120115184356_【混蛋】
+伤心城市.Me\*20120121134507_【天义和尚】
+伤心城市.Me\*20120123231224_【珍惜】
+伤心城市.Me\*20120129210155_【致我们终将逝去的青春】
+伤心城市.Me\*20120129215808_【今天开始做魔王】
+伤心城市.Me\*20120202123928_【两个走狗，两个杀手，一对恋人。】
+伤心城市.Me\*20120203120047_【恐惧来自于熟悉—AI3的感触】
+伤心城市.Me\*20120204002124_【对于私处的模糊】
+伤心城市.Me\*20120205005629_【女性的依赖性】
+伤心城市.Me\*20120205114324_【背德】
+伤心城市.Me\*20120205225107_【好久沒有遇到一場雨】
+伤心城市.Me\*20120207022645_【imba魔瓶】
+伤心城市.Me\*20120207182012_【喜歡你，我的純色鋼筆】
+伤心城市.Me\*20120209120048_【鶄殑】
+伤心城市.Me\*20120209150645_【不免俗的，我說一聲，我走了。】
+伤心城市.Me\*20120211211505_【最後的夜】
+伤心城市.Me\*20120211211802_【為你，悲第一根白髮。】
+伤心城市.Me\*20120213125641_【玷污之人】
+伤心城市.Me\*20120216142427_【壞了煙囪的小火車】
+伤心城市.Me\*20120216142952_【疏離】
+伤心城市.Me\*20120219081402_【Q寵】
+伤心城市.Me\*20120219081526_【迴歸】
+伤心城市.Me\*20120222225133_【无耻,变态,狂魔。】
+伤心城市.Me\*20120224083608_【boom_qg_qg_boom,qg_qg_boom_】
+伤心城市.Me\*20120228081759_【終章終夢】
+伤心城市.Me\*20120301005628_【夜景小续】
+伤心城市.Me\*20120306081149_【我忘了我在什麼地方_】
+伤心城市.Me\*20120306081446_【奪人所愛,是最華美的招式】
+伤心城市.Me\*20120308080814_【何方妖孽】
+伤心城市.Me\*20120308080901_【在女孩變成女人的夜裏】
+伤心城市.Me\*20120318090117_【路燈】
+伤心城市.Me\*20120403160312_【我看到的,是另一個世界的盲區】
+伤心城市.Me\*20120406210918_【出困】
+伤心城市.Me\*20120409133444_【5.1你不放我假。】
+伤心城市.Me\*20120410230426_【佳佳,你睡醒了吗_】
+伤心城市.Me\*20120411131641_【乌哭不无聊了。】
+伤心城市.Me\*20120421004947_【禁默泧刀】
+伤心城市.Me\*20120428200308_【孤单寂寞冷】
+伤心城市.Me\*20120430133645_【win_8_初体验】
+伤心城市.Me\*20120511083921_【.Hide】
+伤心城市.Me\*20120512000814_【推斩】
+伤心城市.Me\*20120522174710_【小放赖】
+伤心城市.Me\*20120527004211_【恋人的毁灭】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;心有琳夕&quot;&gt;心有琳夕&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;有着与琳的一段故事&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2012-05-29【有点失眠】~ 2013-06-16【6.11游记】&lt;sub&gt;77篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;心有琳夕.Me\*20120529152803_【有点失眠】
+心有琳夕.Me\*20120530125028_【她的味道】
+心有琳夕.Me\*20120530201018_【兔子和小熊的对话】
+心有琳夕.Me\*20120530204539_【念及她名】
+心有琳夕.Me\*20120606204925_【明天就是高考了，洗洗睡吧。】
+心有琳夕.Me\*20120622025350_【破蝶袖】
+心有琳夕.Me\*20120627204817_【我暧昧的听不见你的回答】
+心有琳夕.Me\*20120706193143_【永远是你的小男孩】
+心有琳夕.Me\*20120718123302_【贵族说】
+心有琳夕.Me\*20120723112725_【谁也不要来抢走它】
+心有琳夕.Me\*20120726010133_【柳兰流水何留】
+心有琳夕.Me\*20120802111954_【不要说太多】
+心有琳夕.Me\*20120806003138_【刚哥叫你den着,你敢不den着_】
+心有琳夕.Me\*20120815105346_【Aimukila】
+心有琳夕.Me\*20120821202548_【灰色】
+心有琳夕.Me\*20120902195018_【废墟】
+心有琳夕.Me\*20120906215613_【雾霭】
+心有琳夕.Me\*20120908015650_【你哭什么，哗众取宠】
+心有琳夕.Me\*20120912161502_【谢谢你们】
+心有琳夕.Me\*20120915011457_【Rush】
+心有琳夕.Me\*20120916122853_【不成的战争】
+心有琳夕.Me\*20120921055405_【有些感触】
+心有琳夕.Me\*20120926111910_【小楼】
+心有琳夕.Me\*20121004200545_【当战场上只剩下一把刀,谁又会来将它拾起.】
+心有琳夕.Me\*20121006220615_【上海1006】
+心有琳夕.Me\*20121014180140_【上海1014】
+心有琳夕.Me\*20121022203911_【告别旅馆】
+心有琳夕.Me\*20121103000521_【真心】
+心有琳夕.Me\*20121105235330_【全面发展的小坏蛋】
+心有琳夕.Me\*20121110163616_【我发现我喜欢上了这个坏女人】
+心有琳夕.Me\*20121111191716_【10000000000】
+心有琳夕.Me\*20121112005555_【有排名的地方就有倒数，有些人终究会承认自己的无能为力】
+心有琳夕.Me\*20121114180729_【2012-11-14】
+心有琳夕.Me\*20121121151602_【唯美】
+心有琳夕.Me\*20121129173636_【不是我想宣泄情绪】
+心有琳夕.Me\*20121205212743_【在新的世界遇见你】
+心有琳夕.Me\*20121208010418_【不敢睡】
+心有琳夕.Me\*20121210235637_【无法承受女孩的眼泪】
+心有琳夕.Me\*20121212154943_【Justice】
+心有琳夕.Me\*20121218154246_【大理】
+心有琳夕.Me\*20121221125905_【成长】
+心有琳夕.Me\*20121224202652_【平安夜,你好】
+心有琳夕.Me\*20121230015723_【注销人人】
+心有琳夕.Me\*20121230110443_【雪后天晴】
+心有琳夕.Me\*20121230164441_【思潮】
+心有琳夕.Me\*20130102111522_【2013的一個夢】
+心有琳夕.Me\*20130104183832_【[女文][惡搞]一生一世的約定】
+心有琳夕.Me\*20130109111635_【全世界的細雨落在全世界的草坪】
+心有琳夕.Me\*20130113231832_【真實的愛-香水影評】
+心有琳夕.Me\*20130206173426_【2013_2_6_的梦】
+心有琳夕.Me\*20130209133914_【停在人生的美好处.是否是人生行走的目的_】
+心有琳夕.Me\*20130224021439_【金蛇狂舞】
+心有琳夕.Me\*20130224185642_【20130224】
+心有琳夕.Me\*20130225142145_【我的梦里有你梦到的梦】
+心有琳夕.Me\*20130306110832_【新一】
+心有琳夕.Me\*20130306203000_【我所想要的自由也仅此而已】
+心有琳夕.Me\*20130308010354_【夜苦露死】
+心有琳夕.Me\*20130310123937_【有些东西被铭记下来了】
+心有琳夕.Me\*20130328012632_【故人归】
+心有琳夕.Me\*20130405005002_【贈清明】
+心有琳夕.Me\*20130414115447_【不那么偏爱】
+心有琳夕.Me\*20130414234407_【腐烂根上的花】
+心有琳夕.Me\*20130419132408_【春子，你还好吗？】
+心有琳夕.Me\*20130420182833_【你这朵走散的云】
+心有琳夕.Me\*20130421005559_【以黑夜的献诗说说心情】
+心有琳夕.Me\*20130422174935_【刀很重】
+心有琳夕.Me\*20130424183750_【想写点小清新.】
+心有琳夕.Me\*20130424185019_【迟疑了一下】
+心有琳夕.Me\*20130427175206_【我曾经喜欢过一个毛绒玩具】
+心有琳夕.Me\*20130502082103_【晨薄凉】
+心有琳夕.Me\*20130505104513_【昨夜红酒掺雪碧】
+心有琳夕.Me\*20130512114917_【大逃杀与饥饿游戏】
+心有琳夕.Me\*20130517211010_【再一次拥抱的时候】
+心有琳夕.Me\*20130521010841_【独行】
+心有琳夕.Me\*20130522192854_【浅光】
+心有琳夕.Me\*20130531213830_【蓝色的海】
+心有琳夕.Me\*20130616135345_【6.11游记】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;冰冷的湖&quot;&gt;冰冷的湖&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;实习时光&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2013-06-16【夏天就这样开始了】 ~ 2014-06-03【满足之后】&lt;sub&gt;72篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;冰冷的湖.Me\*20130616133840_【夏天就这样开始了】
+冰冷的湖.Me\*20130619205944_【属性+1】
+冰冷的湖.Me\*20130620102656_【独行属性】
+冰冷的湖.Me\*20130621160855_【黑暗无论多么长光明迟早总是会来的】
+冰冷的湖.Me\*20130625175848_【四班岗】
+冰冷的湖.Me\*20130626070011_【时间的齿轮也坏了】
+冰冷的湖.Me\*20130703141521_【Toll受体的静默哀伤】
+冰冷的湖.Me\*20130704173420_【一个下午的Topit.Me】
+冰冷的湖.Me\*20130705154754_【只希望一直淋着雨】
+冰冷的湖.Me\*20130708212111_【某年某月看见一张图,会不会想起某年某月深埋的岁月】
+冰冷的湖.Me\*20130709171404_【一道伤疤的胜利】
+冰冷的湖.Me\*20130710103543_【日日夜夜我在寻找我的同类】
+冰冷的湖.Me\*20130710204347_【刷街的姿态】
+冰冷的湖.Me\*20130711154654_【地藏王合上双眼，夜蝶在阳光中消逝，那么故事的主体是什么？】
+冰冷的湖.Me\*20130730003853_【10级的X52】
+冰冷的湖.Me\*20130816234751_【一袭华袍遮旧影,两行晨露入白曦】
+冰冷的湖.Me\*20130817152106_【我真的想来讲白雪公主的故事】
+冰冷的湖.Me\*20130821010714_【入秋】
+冰冷的湖.Me\*20130825092223_【在梦醒的边缘】
+冰冷的湖.Me\*20130828184508_【战栗的回忆】
+冰冷的湖.Me\*20130902174259_【如果那日天空没有飘过一片云】
+冰冷的湖.Me\*20130904130844_【柬埔寨的一棵树】
+冰冷的湖.Me\*20130905212649_【这样是我的自由】
+冰冷的湖.Me\*20130909230141_【寄班长韦伯】
+冰冷的湖.Me\*20130921075825_【繁华褪尽欢愉散去】
+冰冷的湖.Me\*20130925213140_【囚】
+冰冷的湖.Me\*20131005205006_【木犀香】
+冰冷的湖.Me\*20131016164740_【看不懂的心力衰竭】
+冰冷的湖.Me\*20131031091422_【How_To_Handle_My_GodDesss】
+冰冷的湖.Me\*20131101012329_【关于朋友】
+冰冷的湖.Me\*20131107005952_【停走弥留】
+冰冷的湖.Me\*20131108164427_【Di_Sea_se】
+冰冷的湖.Me\*20131111110218_【1111】
+冰冷的湖.Me\*20131113114646_【MyWar】
+冰冷的湖.Me\*20131116092304_【xixi】
+冰冷的湖.Me\*20131117150844_【埋藏一个完美的痛苦,安然的堕落】
+冰冷的湖.Me\*20131118190050_【折断的道路】
+冰冷的湖.Me\*20131121143624_【我在苏州河】
+冰冷的湖.Me\*20131121173348_【00_00_00】
+冰冷的湖.Me\*20131125201558_【布拉格.之春】
+冰冷的湖.Me\*20131203113232_【华丽的葬礼与八音盒】
+冰冷的湖.Me\*20131209013751_【袁菲的旅行】
+冰冷的湖.Me\*20131212191808_【年终的碎碎念】
+冰冷的湖.Me\*20131212204225_【做什么写什么听什么】
+冰冷的湖.Me\*20131225172147_【记雨天清晨】
+冰冷的湖.Me\*20131226173931_【冰冷的湖】
+冰冷的湖.Me\*20131230195957_【UnKnownEvil2014】
+冰冷的湖.Me\*20131231201117_【Start2013End】
+冰冷的湖.Me\*20140107212539_【夜雾】
+冰冷的湖.Me\*20140112122734_【2014-1-12】
+冰冷的湖.Me\*20140118125534_【最軟的喜愛與熱情】
+冰冷的湖.Me\*20140122105201_【三重门】
+冰冷的湖.Me\*20140212195302_【能躺着绝不站着-01】
+冰冷的湖.Me\*20140215222503_【迷离朦胧夜暖灯】
+冰冷的湖.Me\*20140301130743_【我借妳的夜樱,还偿梅见】
+冰冷的湖.Me\*20140303202430_【莫名的喜悦】
+冰冷的湖.Me\*20140304120924_【阳春三月】
+冰冷的湖.Me\*20140311173320_【落暮之舞】
+冰冷的湖.Me\*20140318012020_【我们用网络干什么_】
+冰冷的湖.Me\*20140318210023_【闲论】
+冰冷的湖.Me\*20140325155839_【翠墨】
+冰冷的湖.Me\*20140404102127_【无主之地，怎奈春日】
+冰冷的湖.Me\*20140410132120_【男人的脸庞】
+冰冷的湖.Me\*20140416211449_【光明】
+冰冷的湖.Me\*20140419002756_【听U小雪.刀】
+冰冷的湖.Me\*20140504181653_【GalRoad】
+冰冷的湖.Me\*20140506105557_【那个结了婚的男人】
+冰冷的湖.Me\*20140508114404_【那个结了婚的女人】
+冰冷的湖.Me\*20140522112147_【到6.11还有几天】
+冰冷的湖.Me\*20140527043911_【温馨的梦5.27】
+冰冷的湖.Me\*20140528161017_【无处安放】
+冰冷的湖.Me\*20140603110603_【满足之后】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;慕斯森林&quot;&gt;慕斯森林&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;迷茫·毕业&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2014-06-10【deadline.】 ~ 2016-12-13【小镇】&lt;sub&gt;40篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慕斯森林.Me\*20140610120402_【deadline.】
+慕斯森林.Me\*20140611005208_【慕斯的森林】
+慕斯森林.Me\*20140614095827_【考试月】
+慕斯森林.Me\*20140616232556_【12年前的八度空间】
+慕斯森林.Me\*20140620011832_【去年今日】
+慕斯森林.Me\*20140621205618_【L,MiSa】
+慕斯森林.Me\*20140627111127_【下午团战就开打】
+慕斯森林.Me\*20140704131727_【He】
+慕斯森林.Me\*20140713203839_【这是个结尾】
+慕斯森林.Me\*20140805115626_【甜蜜18岁.感】
+慕斯森林.Me\*20140901020718_【九月】
+慕斯森林.Me\*20141012222046_【如果没有梦,一切都会安然】
+慕斯森林.Me\*20141017000321_【薄凉】
+慕斯森林.Me\*20141021131000_【梦境缠绕】
+慕斯森林.Me\*20141022134806_【读&amp;lt;另一个故乡.Die.andere.Heimat.&amp;gt;】
+慕斯森林.Me\*20141104205424_【All_I_Have】
+慕斯森林.Me\*20141111014606_【when_you_kiss_me_on_that_street,_i_kiss_you_back.】
+慕斯森林.Me\*20141121011243_【TA】
+慕斯森林.Me\*20141201004944_【绿子】
+慕斯森林.Me\*20141218152617_【惜江南】
+慕斯森林.Me\*20141230101620_【先吃萝莉再吃熟女】
+慕斯森林.Me\*20150503174822_【童话】
+慕斯森林.Me\*20150509040436_【悲伤幸福】
+慕斯森林.Me\*20150708014628_【世界的残酷】
+慕斯森林.Me\*20150811180600_【墨色瞳】
+慕斯森林.Me\*20151003153718_【无家可归】
+慕斯森林.Me\*20151027015915_【不在学习的状态】
+慕斯森林.Me\*20151126014721_【慕斯、芝士、提拉米苏、黑森林.】
+慕斯森林.Me\*20151207090652_【小小欣慰】
+慕斯森林.Me\*20151211014857_【冬月】
+慕斯森林.Me\*20151219182904_【はなび】
+慕斯森林.Me\*20160111171250_【白夜行】
+慕斯森林.Me\*20160314200352_【言叶之庭】
+慕斯森林.Me\*20160316183956_【午睡起来】
+慕斯森林.Me\*20160327231826_【&amp;lt;荆棘花&amp;gt;】
+慕斯森林.Me\*20160520023433_【誓再得其业.】
+慕斯森林.Me\*20160820004053_【夜骑车】
+慕斯森林.Me\*20160922165224_【春志与明娇】
+慕斯森林.Me\*20161015231154_【沉默不忘却】
+慕斯森林.Me\*20161213221256_【小镇】
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;缄黯桃乡&quot;&gt;缄黯桃乡&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;蜗居的工作&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2017-01-27【阳光的醉意】 ~ 2021-09-09【朝がAsaga】&lt;sub&gt;10篇&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;缄黯桃乡\*20170127095428_【阳光的醉意】
+缄黯桃乡\*20170311204500_【一点想法和最近的心态吧.】
+缄黯桃乡\*20170312010937_【因为一首歌,记住一个人】
+缄黯桃乡\*20170722233430_【溫柔】
+缄黯桃乡\*20180121163210_【初雪】
+缄黯桃乡\*20180626154805_【我的樣子】
+缄黯桃乡\*20181019163703_【27歲的同居（引子）】
+缄黯桃乡\*20181123005412_【無法到達的四公里】
+缄黯桃乡\*20190611230453_【晨哥的酒】
+缄黯桃乡\*20210909201902_【朝がAsaga】
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 25 May 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/05/25/%E6%96%87%E7%AB%A0%E9%9B%86%E6%97%B6%E9%97%B4%E7%BA%BF/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/05/25/%E6%96%87%E7%AB%A0%E9%9B%86%E6%97%B6%E9%97%B4%E7%BA%BF/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>石像的著落春</title>
+        <description>&lt;h1 id=&quot;石像的著落春&quot;&gt;石像的著落春&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2022-3-7&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;妻的肚子已經很大了.但我在家的這段時光並沒有什麼不同.&lt;/p&gt;
+
+&lt;p&gt;妻還要上班.我在家的時候照例煮飯燒菜.&lt;/p&gt;
+
+&lt;p&gt;晚上有的時候會一起看看電影,只是之後的雲雨點到為止.&lt;/p&gt;
+
+&lt;p&gt;凌晨的時候,天還微亮微涼.我看見妻坐在窗邊的藤制靠椅上看著窗帘縫隙外面的世界.&lt;/p&gt;
+
+&lt;p&gt;我起身拿起碎花睡衣給妻披上.&lt;/p&gt;
+
+&lt;p&gt;桃花開了.妻說.&lt;/p&gt;
+
+&lt;p&gt;我望了望,印象裡的桃枝還在前些日落初雪的樣子.如今已漫出滿樹粉花.&lt;/p&gt;
+
+&lt;p&gt;我看向妻的臉頰,噙著淚光.&lt;/p&gt;
+
+&lt;p&gt;你聽說過「著落春」嗎？我搖搖頭.妻也不再說話.&lt;/p&gt;
+
+&lt;p&gt;不忍再問,也怕此刻窗外的春曦被一句淡然的回答弄的變了天.&lt;/p&gt;
+
+&lt;p&gt;我扶妻再次睡下.起身去做早餐.然後靠在陽台睡回籠覺.&lt;/p&gt;
+
+&lt;p&gt;夢裡的石像望著海平面的日出.&lt;/p&gt;
+
+&lt;p&gt;那是新的太陽.從南半球到北半球的太陽.從嚴冬走到春日的太陽.&lt;/p&gt;
+
+&lt;p&gt;融化了石像的雪,淋濕了石像的側臉.&lt;/p&gt;
+
+&lt;p&gt;鴉停在石像的肩膀,聽著涓涓細流.陪著石像看太陽落入海平面以下.&lt;/p&gt;
+
+&lt;p&gt;終於在落日後,迎來冰封的寒冷,鴉的身體也已石化,從石像身上滑落,落入懸崖下的海.&lt;/p&gt;
+
+&lt;p&gt;醒來的時候妻吃完早餐已經走了.&lt;/p&gt;
+
+&lt;p&gt;我起身在衛生間的隔櫃台上翻出一根煙，含在嘴裡.&lt;/p&gt;
+
+&lt;p&gt;望著鏡子裡的自己.又將煙放好.&lt;/p&gt;
+
+&lt;p&gt;去陽台再望著那枝桃樹,呆呆地,彷彿一座石像.看桃樹光禿的枝椏.又彷彿有一隻鴉棲息.&lt;/p&gt;
+
+&lt;p&gt;直至一聲驚雷.落下了春日的雨霖.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p align=&quot;right&quot;&gt; - 記2022.3.7 nico说的著落春/koumyou的生日.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Mar 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/03/07/%E7%9F%B3%E5%83%8F%E7%9A%84%E8%91%97%E8%90%BD%E6%98%A5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/03/07/%E7%9F%B3%E5%83%8F%E7%9A%84%E8%91%97%E8%90%BD%E6%98%A5/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>朝がAsaga</title>
+        <description>&lt;h1 id=&quot;朝がasaga&quot;&gt;朝がAsaga&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2021-9-9 20:19&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;八月末的白露，正午的蟬還有著不知覺的堅強.&lt;/p&gt;
+
+&lt;p&gt;妻和我說「她可能有了」.&lt;/p&gt;
+
+&lt;p&gt;看到妻的短信的時候，我正抱著茶茶，剛結束.&lt;/p&gt;
+
+&lt;p&gt;茶茶察覺我的表情，湊上來輕咬我的耳朵，問「怎麼了」.&lt;/p&gt;
+
+&lt;p&gt;我沒回答，吻了吻她的額頭，起身去找煙.&lt;/p&gt;
+
+&lt;p&gt;煙盒裡只有打火機，我折回去看見茶茶半坐起來，&lt;/p&gt;
+
+&lt;p&gt;正在穿衣服.&lt;/p&gt;
+
+&lt;p&gt;我撲倒她，吻了上去，粗暴的.&lt;/p&gt;
+
+&lt;p&gt;她有些抵抗，又瞬間安靜下來.我們又做了一次，這次她沒有出聲.&lt;/p&gt;
+
+&lt;p&gt;退房後，我替她叫了一輛出租.轉去便利店買了一包煙.&lt;/p&gt;
+
+&lt;p&gt;給她發了信息「以後別再聯繫了吧」.&lt;/p&gt;
+
+&lt;p&gt;坐在車上，我撥通了妻的電話.「去接妳」.&lt;/p&gt;
+
+&lt;p&gt;妻在醫院的門口，手裏拿著報告向我揮了揮.&lt;/p&gt;
+
+&lt;p&gt;我跑向妻，緊緊的抱住她，哭了.&lt;/p&gt;
+
+&lt;p&gt;妻安慰我，撫著我的頭.&lt;/p&gt;
+
+&lt;p&gt;一切很自然的，我像一個溫柔的準父親.&lt;/p&gt;
+
+&lt;p&gt;那晚，我擁著妻沉沉的睡去.&lt;/p&gt;
+
+&lt;p&gt;醒來的凌晨，我看見手機裡，茶茶的回信「好」.&lt;/p&gt;
+
+&lt;p&gt;已讀.&lt;/p&gt;
+
+&lt;p&gt;我起身去找煙.被身旁的妻拉住.&lt;/p&gt;
+
+&lt;p&gt;「戒了吧」.妻帶著還半醒的嘟噥語氣.&lt;/p&gt;
+
+&lt;p&gt;我再次緊緊的抱住妻，哭了.&lt;/p&gt;
+
+&lt;p&gt;「已經戒了」.我嗚咽著.不成聲.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Sep 2021 20:19:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/09/09/%E6%9C%9D%E3%81%8CAsaga/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/09/09/%E6%9C%9D%E3%81%8CAsaga/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DNS收藏</title>
+        <description>&lt;h2 id=&quot;dns收藏&quot;&gt;DNS收藏&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;自用的几个比较好用的DNS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Dlsite
+54.249.17.113 login.dlsite.com
+#GitHub
+52.69.186.44 github.com
+#Steam本地反代
+127.0.0.1 steamcommunity.com
+127.0.0.1 www.steamcommunity.com
+127.0.0.1 store.steampowered.com
+127.0.0.1 api.steampowered.com
+127.0.0.1 steamcdn-a.akamaihd.net
+#Nintendo
+168.126.63.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 12 Jul 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/07/12/DNS%E6%94%B6%E8%97%8F/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/07/12/DNS%E6%94%B6%E8%97%8F/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Post Steam 探索代码</title>
+        <description>&lt;h3 id=&quot;post-steam-探索代码&quot;&gt;Post Steam 探索代码&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://store.steampowered.com/&quot;&gt;Steam&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+
+(function _exec()
+{ 
+    var appids, running = true, queueNumber, progressDialog = ShowAlertDialog(&apos;探索中&apos;, $J(&apos;&amp;lt;div/&amp;gt;&apos;).append($J(&apos;&amp;lt;div/&amp;gt;&apos;, {&apos;class&apos;: &apos;waiting_dialog_throbber&apos;}) ).append( $J(&apos;&amp;lt;div/&amp;gt;&apos;, {&apos;id&apos;: &apos;progressContainer&apos;}).text(&apos;获取进度...&apos;) ), &apos;停止&apos;).done(abort); 
+
+function abort()
+{ running = false; progressDialog.Dismiss(); } 
+
+function retry()
+{ 
+    abort(); 
+    ShowConfirmDialog(&apos;错误&apos;, &apos;是否重试?&apos;, &apos;重试&apos;, &apos;放弃&apos;).done(_exec) 
+} 
+
+function clearApp()
+{ 
+    if(!running) return; showProgress(); 
+    var appid = appids.shift(); 
+    !appid ? generateQueue() : $J.post( appids.length ? &apos;/app/&apos; + appid : &apos;/explore/next/&apos;, {sessionid: g_sessionID, appid_to_clear_from_queue: appid} ).done(clearApp).fail(retry); 
+} 
+
+function generateQueue()
+{ running &amp;amp;&amp;amp; $J.post(&apos;/explore/generatenewdiscoveryqueue&apos;, {sessionid: g_sessionID, queuetype: 0}).done(beginQueue).fail(retry); } 
+
+function beginQueue()
+{ 
+    if(!running) return; $J.get(&apos;/explore/&apos;).done(function(htmlText){ var cardInfo = htmlText.match(/&amp;lt;div class=&quot;subtext&quot;&amp;gt;\D+(\d)\D+&amp;lt;\/div&amp;gt;/); 
+    if( !cardInfo ){ abort(); ShowAlertDialog(&apos;完成&apos;,&apos;已完成全部3轮探索队列&apos;); return; } var matchedAppids = htmlText.match(/0,\s+(\[.*\])/); 
+    if( !matchedAppids ){ retry(); return; } appids = JSON.parse(matchedAppids[1]); queueNumber = cardInfo[1]; appids.length == 0 ? generateQueue() : clearApp(); showProgress(); }) 
+} 
+
+function showProgress()
+{ 
+    $J(&apos;#progressContainer&apos;).html( &apos;&amp;lt;br&amp;gt;剩余&apos; + queueNumber + &apos;个待探索队列, 当前队列剩余&apos; + appids.length + &apos;个待探索游戏&apos; ); 
+} beginQueue(); 
+}
+()
+)
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;以上…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/07/05/Steam%E6%8E%A2%E7%B4%A2%E9%98%9F%E5%88%97%E4%BB%A3%E7%A0%81/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/07/05/Steam%E6%8E%A2%E7%B4%A2%E9%98%9F%E5%88%97%E4%BB%A3%E7%A0%81/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>我的个人小站开通啦!</title>
+        <description>&lt;h1 id=&quot;今天开通我的个人小站啦撒花&quot;&gt;今天开通我的个人小站啦~撒花~&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://UkokuGemini.GitHub.io&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;初心&quot;&gt;初心&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目的呢，当然是找人&lt;strong&gt;打游戏&lt;/strong&gt;啦！（理直气壮）🤭.欢迎加好友开黑！！！&lt;/p&gt;
+
+&lt;p&gt;再一个是发布一些自己代🐎成果.&lt;/p&gt;
+
+&lt;p&gt;然后就米有啦…
+新添加一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Link&lt;/code&gt;页面。指路吧~&lt;/p&gt;
+&lt;h2 id=&quot;项目预告&quot;&gt;项目预告&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目前项目是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VB.Net&lt;/code&gt; &amp;amp; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FrameWork4.7&lt;/code&gt;下的防置策略游戏：
+&lt;a href=&quot;http://www.github.com\UkokuGemini\DGL_Rise&quot;&gt;EndlessWorld_DarkGemLand&lt;/a&gt; -（目前Private)&lt;/p&gt;
+
+&lt;p&gt;没了，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Respect!&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;关于建站-thanks&quot;&gt;关于建站 Thanks&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thanks Forks &lt;a href=&quot;http://qiubaiying.vip/&quot;&gt;柏荧&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;建站tools&quot;&gt;建站Tools：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;缩略图片软件&lt;a href=&quot;https://www.picdiet.com/zh-cn&quot;&gt;picdiet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;图标素材 &lt;a href=&quot;https://www.iconfont.cn/&quot;&gt;阿里巴巴矢量图标IconFont&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;加快Git速度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global http.postBuffer 524288000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Sun, 04 Jul 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/07/04/%E5%BC%80%E9%80%9A%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%95%A6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/07/04/%E5%BC%80%E9%80%9A%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%95%A6/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>晨哥的酒</title>
+        <description>&lt;h1 id=&quot;晨哥的酒&quot;&gt;晨哥的酒&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2019-06-11 23:04:53&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;晨哥的酒&lt;br /&gt;
+四月三日雨.&lt;br /&gt;
+居酒屋在雨天反而沒什麼生意&lt;br /&gt;
+老闆娘 夕 遇到這樣的天氣就獨自坐在吧台角落的高腳椅上.&lt;br /&gt;
+偶爾看看窗外行人.偶爾看看店內陰影.&lt;br /&gt;
+悶的發霉的時候，她會敲敲吧台的桌子.給晨哥一個眼神.要一杯「灰色沙漏」&lt;br /&gt;
+晨哥的「灰色沙漏」只為她做，卻從不告訴她做法.&lt;br /&gt;
+她只知道加了伏特加，配了苦薄荷葉.&lt;br /&gt;
+這酒滑入喉嚨的時候會有種窒息的痛，之後又有種特別的失落感.總能讓夕想到傷心的事情.&lt;br /&gt;
+其他的，就連她這個酒吧的老闆娘也嘗不出來.&lt;br /&gt;
+夕很能喝，但喝了晨哥的這杯酒，每次都睡的昏沈.&lt;br /&gt;
+等到落日的暮光將要褪色的傍晚.&lt;br /&gt;
+夕揉著蓬鬆的頭髮，從房間裡出來.&lt;br /&gt;
+晨哥會再做一杯「甜檸檬奈何」.&lt;br /&gt;
+很甜.很安靜的甜.&lt;br /&gt;
+讓夕忘卻一切.&lt;/p&gt;
+
+&lt;p&gt;六月十一日.&lt;br /&gt;
+晨哥說，要不要再嚐嚐「灰色沙漏」.&lt;br /&gt;
+夕.點頭.&lt;br /&gt;
+這次晨做了半杯「灰色沙漏」半杯「甜檸檬奈何」.&lt;br /&gt;
+混合在一起.&lt;br /&gt;
+夕問，那這叫什麼？&lt;br /&gt;
+晨說叫「他的離開」&lt;br /&gt;
+夕問為什麼.&lt;br /&gt;
+晨說你嘗嘗就知道了.&lt;br /&gt;
+那是一種安靜的苦.清醒的痛.&lt;/p&gt;
+
+&lt;p&gt;終於夕哭了.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Jun 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/11/%E6%99%A8%E5%93%A5%E7%9A%84%E9%85%92/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/11/%E6%99%A8%E5%93%A5%E7%9A%84%E9%85%92/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UkokuGemini Just UkokuGemini.">
+    <meta name="keywords"  content="UkokuGemini">
+    <meta name="theme-color" content="">
+    
+    <title>文章集时间线 - UkokuGemini's Blog | UkokuGemini's Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Safari Webpage Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/WebSite/NightCrow-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/WebSite/NightCrow-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/WebSite/NightCrow-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/WebSite/NightCrow-144.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2022/05/25/%E6%96%87%E7%AB%A0%E9%9B%86%E6%97%B6%E9%97%B4%E7%BA%BF/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">UkokuGemini's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://localhost:4000/">Blog List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AboutMe/">AboutMe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Douban/">Douban</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Links/">Links</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Music/">Music</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Pic/">DailyPic</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/Blog/B00.jpg')
+    }
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>文章集时间线</h1>
+                    
+                    
+                    <h2 class="subheading"></h2>
+                    
+                    <span class="meta">Posted by UkokuGemini on May 25, 2022</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+<a href="https://github.com/UkokuGemini" class="github-corner" aria-label="View source on GitHub">
+<svg width="60" height="60" viewBox="0 0 250 250" preserveAspectRatio="xMinYMin meet" style="fill:#151513; color:#fff; position: absolute; top: header.height; border: 0; right: 0;" aria-hidden="true">
+<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <div class="row">
+    <!-- Post Container -->
+        <div class="
+        col-lg-8 col-lg-offset-2
+        col-md-10 col-md-offset-1
+        post-container">
+        <h1 id="文章集分类说明">文章集分类说明</h1>
+
+<hr />
+
+<h2 id="无解妖界">无解妖界</h2>
+
+<p><strong>童年的前面(开通空间前初中以后写的一些文章)</strong></p>
+
+<ul>
+  <li>2007-01-01【2007】~ 2007-08-31【含痛–朋友的友誼】 <sub>16篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>无解妖界.Me\*20120224081025_【2007】
+无解妖界.Me\*20120224081111_【雪07.01.16】
+无解妖界.Me\*20120224081200_【雨07.02.13】
+无解妖界.Me\*20120224081228_【离别07.02.15】
+无解妖界.Me\*20120224081258_【在這死亡的季節我觸到了一絲生的氣息07.04.14】
+无解妖界.Me\*20120224081330_【相交點07.04.17】
+无解妖界.Me\*20120224081412_【第一杯咖啡07.04.24】
+无解妖界.Me\*20120224081508_【當一個人,不再害怕黑暗07.04.30】
+无解妖界.Me\*20120224081600_【帳`面具07.05.09】
+无解妖界.Me\*20120224081725_【火07.05.09】
+无解妖界.Me\*20120224081800_【如血殘陽07.05.15】
+无解妖界.Me\*20120224081847_【六指07.05.15】
+无解妖界.Me\*20120226080824_【無解妖界】
+无解妖界.Me\*20120226080955_【苦澀的對視07.06.28】
+无解妖界.Me\*20120226081142_【灰原哀07.08.31】
+无解妖界.Me\*20120226081254_【含痛--朋友的友誼07.08.31】
+</code></pre></div></div>
+
+<h2 id="过往残城">过往残城</h2>
+
+<p><strong>懵懂.初恋.</strong></p>
+
+<ul>
+  <li>2007-07-04【考试失落后的联想】 ~ 2010-01-09【幽兰似泪】<sub>81篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>过往残城.Me\*20070704212531_【考试失落后的联想】
+过往残城.Me\*20070706161535_【心的出走】
+过往残城.Me\*20070711121954_【感谢海韵飞扬】
+过往残城.Me\*20070721124516_【奴役】
+过往残城.Me\*20070805120201_【无聊的生活】
+过往残城.Me\*20071105121021_【刚得到，早已失去.】
+过往残城.Me\*20071225121628_【平安夜，随想。】
+过往残城.Me\*20080115124124_【下雪了！】
+过往残城.Me\*20080120123200_【罗曼--我的雪】
+过往残城.Me\*20080127172609_【我的高度】
+过往残城.Me\*20080128234443_【夜，凉了】
+过往残城.Me\*20080129000834_【宅男】
+过往残城.Me\*20080202193521_【秋忧亭】
+过往残城.Me\*20080203121103_【走向2008】
+过往残城.Me\*20080204192018_【田云在雪中摔了一跤！】
+过往残城.Me\*20080212212457_【断了的弦，最后的呼喊】
+过往残城.Me\*20080212212854_【笑……】
+过往残城.Me\*20080214124156_【2_14_感想】
+过往残城.Me\*20080626144646_【流沙带不走】
+过往残城.Me\*20080704142039_【毕业，碎】
+过往残城.Me\*20080714000916_【伤】
+过往残城.Me\*20080717104526_【与tzy最后的10天】
+过往残城.Me\*20080721110736_【天亮了,我该走了】
+过往残城.Me\*20080723101433_【在模糊的日子里,时间本来就无所谓】
+过往残城.Me\*20080728151804_【关于s_l】
+过往残城.Me\*20080728152007_【关于tl】
+过往残城.Me\*20080728152319_【AS_NO_MORE_LOVE】
+过往残城.Me\*20080805101614_【那也要好好好考】
+过往残城.Me\*20080820095411_【云南】
+过往残城.Me\*20080902135552_【残城伤秋是个预言】
+过往残城.Me\*20080911214608_【挤公交】
+过往残城.Me\*20080914142447_【车窗】
+过往残城.Me\*20080918124656_【陌路】
+过往残城.Me\*20081001195824_【距离】
+过往残城.Me\*20081003220638_【对《距离》中最后一句话的解释】
+过往残城.Me\*20081008124954_【抱着我，别离开。】
+过往残城.Me\*20081009143533_【高中的瓶子】
+过往残城.Me\*20081014124416_【写给不乖的姐姐】
+过往残城.Me\*20081014124538_【校车上看到过去】
+过往残城.Me\*20081104150640_【怀念，孤独】
+过往残城.Me\*20081108234759_【一夜，】
+过往残城.Me\*20081117123547_【冬日的暖阳】
+过往残城.Me\*20081117124444_【双子，双鱼】
+过往残城.Me\*20081130104959_【你僵尸的刺青】
+过往残城.Me\*20081130105101_【写她的孤独】
+过往残城.Me\*20081130105123_【别再沉沦了啊……】
+过往残城.Me\*20081214005616_【没有嘴角的男孩】
+过往残城.Me\*20081214005924_【骑士的伤】
+过往残城.Me\*20081214010212_【少年轻狂】
+过往残城.Me\*20081214011755_【夹竹桃的爱恋】
+过往残城.Me\*20090101135152_【月光下，连伤口也昭然】
+过往残城.Me\*20090103195727_【预言】
+过往残城.Me\*20090103204357_【Gay】
+过往残城.Me\*20090119003834_【好久没写文章了】
+过往残城.Me\*20090119004844_【不回头】
+过往残城.Me\*20090119103316_【雪】
+过往残城.Me\*20090121160742_【何时学会虚伪的笑】
+过往残城.Me\*20090201220016_【杀掉的是知己】
+过往残城.Me\*20090204091041_【昔我往矣，杨柳依依】
+过往残城.Me\*20090204093037_【赐一杯毒酒，死去】
+过往残城.Me\*20090205152243_【to__紫色雨季】
+过往残城.Me\*20090208095945_【快刀】
+过往残城.Me\*20090210085225_【一盏孔明灯坠落在平静的湖面】
+过往残城.Me\*20090306085305_【祝福】
+过往残城.Me\*20090802003406_【给sm的安慰】
+过往残城.Me\*20090804124632_【flavor_of_life】
+过往残城.Me\*20090806124830_【わかれ】
+过往残城.Me\*20090808220156_【束缚·舞】
+过往残城.Me\*20090810023708_【kill丁卯】
+过往残城.Me\*20090815223451_【我脑海里的那些人】
+过往残城.Me\*20090815230803_【妹妹……为什么】
+过往残城.Me\*20090819024442_【刺青是最后的束缚？】
+过往残城.Me\*20090913084009_【Forced】
+过往残城.Me\*20090916124655_【迷失在挪威的森林里】
+过往残城.Me\*20090924124156_【让我产生错觉的girl】
+过往残城.Me\*20090929121934_【酒吧girl】
+过往残城.Me\*20091003155536_【彻·夜（只给tzy看）】
+过往残城.Me\*20091101002619_【简单的快乐】
+过往残城.Me\*20091211125446_【杨】
+过往残城.Me\*20100106123852_【刀抑或匕首，不重要】
+过往残城.Me\*20100109233405_【幽兰似泪】
+</code></pre></div></div>
+
+<h2 id="崩塌世界">崩塌世界</h2>
+
+<p><strong>曾经的热恋</strong></p>
+
+<ul>
+  <li>2009-12-05【通宵逆流】~ 2011-08-26【十八岁的生日】<sub>83篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>崩塌世界.Me\*20091205125937_【通宵逆流】
+崩塌世界.Me\*20100208235654_【新开始】
+崩塌世界.Me\*20100210145819_【雨过，湮湿了睫毛】
+崩塌世界.Me\*20100211235852_【柯南_小兰_bath】
+崩塌世界.Me\*20100212222921_【中国的相声，真棒！】
+崩塌世界.Me\*20100212230830_【窗前，是最孤独的风景】
+崩塌世界.Me\*20100214205004_【2_14_走在乱雪的街上】
+崩塌世界.Me\*20100216151532_【那些带到新年的旧东西……】
+崩塌世界.Me\*20100219105438_【不是什么大不了的事】
+崩塌世界.Me\*20100221102338_【年味十足】
+崩塌世界.Me\*20100221103200_【想要真实,不得不面对现实】
+崩塌世界.Me\*20100221231404_【支离破碎的只言片语】
+崩塌世界.Me\*20100221232046_【girl明白这种欲望？】
+崩塌世界.Me\*20100222133616_【左飞的乌鸦，该怎样从世界的尽头，返回？】
+崩塌世界.Me\*20100225104723_【做一个吵着吃糖的孩子】
+崩塌世界.Me\*20100225190156_【黎明】
+崩塌世界.Me\*20100226130509_【小楼一夜听春雨】
+崩塌世界.Me\*20100227091912_【又想起了那个恐怖的测试】
+崩塌世界.Me\*20100227095530_【神的孩子都跳舞】
+崩塌世界.Me\*20100227104945_【杨的乌云】
+崩塌世界.Me\*20100228124905_【love_explorer】
+崩塌世界.Me\*20100228162654_【最后的流星】
+崩塌世界.Me\*20100228163727_【我的网名】
+崩塌世界.Me\*20100306150235_【3月4日1时，那不是梦】
+崩塌世界.Me\*20100306152517_【把一首镇魂曲献给那时今夜的雨】
+崩塌世界.Me\*20100306154858_【In_dreams_begin_the_responsibilities】
+崩塌世界.Me\*20100306205709_【怨月-3月7日】
+崩塌世界.Me\*20100320092639_【少年轻狂】
+崩塌世界.Me\*20100323124038_【红豆】
+崩塌世界.Me\*20100328190821_【狂刀】
+崩塌世界.Me\*20100330022847_【血溅是爱】
+崩塌世界.Me\*20100402212323_【轻轻地印】
+崩塌世界.Me\*20100403001232_【哭泣鬼神】
+崩塌世界.Me\*20100418010542_【小丑】
+崩塌世界.Me\*20100418012506_【蝴蝶骨】
+崩塌世界.Me\*20100418013531_【柳儿】
+崩塌世界.Me\*20100423230804_【过去】
+崩塌世界.Me\*20100503175147_【姬瑜】
+崩塌世界.Me\*20100523042713_【18的前夜有多深】
+崩塌世界.Me\*20100524043530_【18前夕的夜有多深(琦姐)】
+崩塌世界.Me\*20100530115313_【在那些沒有女孩的日子】
+崩塌世界.Me\*20100610234159_【永远的17岁】
+崩塌世界.Me\*20100726112145_【那些我不能左右的】
+崩塌世界.Me\*20100811221510_【月下无颜】
+崩塌世界.Me\*20100831014140_【感觉有什么降临】
+崩塌世界.Me\*20110103232455_【兔年咬你】
+崩塌世界.Me\*20110116010000_【摸着黑向前跑】
+崩塌世界.Me\*20110206154540_【不欢而散】
+崩塌世界.Me\*20110209125522_【黑色历史】
+崩塌世界.Me\*20110225100145_【一帘幽梦20110224】
+崩塌世界.Me\*20110226194342_【一帘幽梦20110225】
+崩塌世界.Me\*20110226220607_【一帘幽梦20110226】
+崩塌世界.Me\*20110320134748_【死神访谈】
+崩塌世界.Me\*20110515101135_【最后的最后】
+崩塌世界.Me\*20110603213618_【又见一帘幽梦110603】
+崩塌世界.Me\*20110618010139_【醉者的酒意】
+崩塌世界.Me\*20110621021045_【曲折的时间,记英雄主题曲】
+崩塌世界.Me\*20110623170021_【尋】
+崩塌世界.Me\*20110624124012_【既然,你给我一次.不两次.】
+崩塌世界.Me\*20110625154929_【催人泪下,大学路上陪伴你的旋律.】
+崩塌世界.Me\*20110625230142_【2011-6-25_-_我们毕业了】
+崩塌世界.Me\*20110630203015_【系列】
+崩塌世界.Me\*20110705010855_【梦魇】
+崩塌世界.Me\*20110708114019_【茅草屋的价值】
+崩塌世界.Me\*20110708123502_【甜的点滴英语】
+崩塌世界.Me\*20110711185623_【上班记】
+崩塌世界.Me\*20110711215631_【天蝎与双子的战斗】
+崩塌世界.Me\*20110718090301_【虚假的社会】
+崩塌世界.Me\*20110720203827_【告别。小咯。】
+崩塌世界.Me\*20110809205454_【为什么，NANA……】
+崩塌世界.Me\*20110816153308_【苦苦等的是昱泉的第三版】
+崩塌世界.Me\*20110819171427_【在那并不遥远的未来,我们的生活如此不同】
+崩塌世界.Me\*20110824200056_【旧时旧事】
+崩塌世界.Me\*20110825232927_【玉蝴蝶】
+崩塌世界.Me\*20110825233017_【无言忧】
+崩塌世界.Me\*20110825233107_【我所不能到达的世界】
+崩塌世界.Me\*20110825233221_【片段】
+崩塌世界.Me\*20110825233325_【悠悠的剑】
+崩塌世界.Me\*20110825233435_【等待，那刀不再冰冷】
+崩塌世界.Me\*20110825233552_【盛夏的风铃】
+崩塌世界.Me\*20110826001949_【旧影】
+崩塌世界.Me\*20110826003004_【生物课上6.10】
+崩塌世界.Me\*20110826230610_【十八岁的生日】
+</code></pre></div></div>
+<h2 id="伤心城市">伤心城市</h2>
+
+<p><strong>失恋时代</strong></p>
+
+<ul>
+  <li>2011-09-05【海上旅馆】 ~ 2012-05-27【恋人的毁灭】<sub>72篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>伤心城市.Me\*20110905222455_【海上旅馆】
+伤心城市.Me\*20110907161539_【越压抑】
+伤心城市.Me\*20110910130743_【偷(原创歌词)】
+伤心城市.Me\*20110910232422_【遗忘什么在身后】
+伤心城市.Me\*20110917133654_【上海的云】
+伤心城市.Me\*20110920133239_【映射】
+伤心城市.Me\*20110920170742_【异地恋】
+伤心城市.Me\*20110922081203_【圣安东尼的鱼】
+伤心城市.Me\*20110924180417_【衣冠不整】
+伤心城市.Me\*20110927222411_【灰色地区】
+伤心城市.Me\*20111006104250_【被摆一道】
+伤心城市.Me\*20111007172210_【神君】
+伤心城市.Me\*20111105221003_【不像样的江南】
+伤心城市.Me\*20111118205608_【父亲的资格】
+伤心城市.Me\*20111121192422_【2011-11-21，我的伪生日】
+伤心城市.Me\*20111124104631_【你的成年是我的成年】
+伤心城市.Me\*20111202185431_【如果你认为它是对的，就去做吧，你成年了。】
+伤心城市.Me\*20111202194813_【又见夹竹桃】
+伤心城市.Me\*20111202195611_【人生第一个TT】
+伤心城市.Me\*20111202201338_【暗淡无光】
+伤心城市.Me\*20111205185430_【吼】
+伤心城市.Me\*20111205194716_【也许年轻是一种资本，千万别去挥霍。】
+伤心城市.Me\*20111208110550_【终究我缺少的是什么】
+伤心城市.Me\*20111222111448_【边缘有什么？】
+伤心城市.Me\*20111229082935_【遇见100%女孩（real）】
+伤心城市.Me\*20111229083104_【我的边缘有什么？】
+伤心城市.Me\*20120105075233_【女王】
+伤心城市.Me\*20120105075347_【伊藤】
+伤心城市.Me\*20120109151700_【某个时刻，阳光透过玻璃幕墙】
+伤心城市.Me\*20120115184356_【混蛋】
+伤心城市.Me\*20120121134507_【天义和尚】
+伤心城市.Me\*20120123231224_【珍惜】
+伤心城市.Me\*20120129210155_【致我们终将逝去的青春】
+伤心城市.Me\*20120129215808_【今天开始做魔王】
+伤心城市.Me\*20120202123928_【两个走狗，两个杀手，一对恋人。】
+伤心城市.Me\*20120203120047_【恐惧来自于熟悉—AI3的感触】
+伤心城市.Me\*20120204002124_【对于私处的模糊】
+伤心城市.Me\*20120205005629_【女性的依赖性】
+伤心城市.Me\*20120205114324_【背德】
+伤心城市.Me\*20120205225107_【好久沒有遇到一場雨】
+伤心城市.Me\*20120207022645_【imba魔瓶】
+伤心城市.Me\*20120207182012_【喜歡你，我的純色鋼筆】
+伤心城市.Me\*20120209120048_【鶄殑】
+伤心城市.Me\*20120209150645_【不免俗的，我說一聲，我走了。】
+伤心城市.Me\*20120211211505_【最後的夜】
+伤心城市.Me\*20120211211802_【為你，悲第一根白髮。】
+伤心城市.Me\*20120213125641_【玷污之人】
+伤心城市.Me\*20120216142427_【壞了煙囪的小火車】
+伤心城市.Me\*20120216142952_【疏離】
+伤心城市.Me\*20120219081402_【Q寵】
+伤心城市.Me\*20120219081526_【迴歸】
+伤心城市.Me\*20120222225133_【无耻,变态,狂魔。】
+伤心城市.Me\*20120224083608_【boom_qg_qg_boom,qg_qg_boom_】
+伤心城市.Me\*20120228081759_【終章終夢】
+伤心城市.Me\*20120301005628_【夜景小续】
+伤心城市.Me\*20120306081149_【我忘了我在什麼地方_】
+伤心城市.Me\*20120306081446_【奪人所愛,是最華美的招式】
+伤心城市.Me\*20120308080814_【何方妖孽】
+伤心城市.Me\*20120308080901_【在女孩變成女人的夜裏】
+伤心城市.Me\*20120318090117_【路燈】
+伤心城市.Me\*20120403160312_【我看到的,是另一個世界的盲區】
+伤心城市.Me\*20120406210918_【出困】
+伤心城市.Me\*20120409133444_【5.1你不放我假。】
+伤心城市.Me\*20120410230426_【佳佳,你睡醒了吗_】
+伤心城市.Me\*20120411131641_【乌哭不无聊了。】
+伤心城市.Me\*20120421004947_【禁默泧刀】
+伤心城市.Me\*20120428200308_【孤单寂寞冷】
+伤心城市.Me\*20120430133645_【win_8_初体验】
+伤心城市.Me\*20120511083921_【.Hide】
+伤心城市.Me\*20120512000814_【推斩】
+伤心城市.Me\*20120522174710_【小放赖】
+伤心城市.Me\*20120527004211_【恋人的毁灭】
+</code></pre></div></div>
+
+<h2 id="心有琳夕">心有琳夕</h2>
+
+<p><strong>有着与琳的一段故事</strong></p>
+
+<ul>
+  <li>2012-05-29【有点失眠】~ 2013-06-16【6.11游记】<sub>77篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>心有琳夕.Me\*20120529152803_【有点失眠】
+心有琳夕.Me\*20120530125028_【她的味道】
+心有琳夕.Me\*20120530201018_【兔子和小熊的对话】
+心有琳夕.Me\*20120530204539_【念及她名】
+心有琳夕.Me\*20120606204925_【明天就是高考了，洗洗睡吧。】
+心有琳夕.Me\*20120622025350_【破蝶袖】
+心有琳夕.Me\*20120627204817_【我暧昧的听不见你的回答】
+心有琳夕.Me\*20120706193143_【永远是你的小男孩】
+心有琳夕.Me\*20120718123302_【贵族说】
+心有琳夕.Me\*20120723112725_【谁也不要来抢走它】
+心有琳夕.Me\*20120726010133_【柳兰流水何留】
+心有琳夕.Me\*20120802111954_【不要说太多】
+心有琳夕.Me\*20120806003138_【刚哥叫你den着,你敢不den着_】
+心有琳夕.Me\*20120815105346_【Aimukila】
+心有琳夕.Me\*20120821202548_【灰色】
+心有琳夕.Me\*20120902195018_【废墟】
+心有琳夕.Me\*20120906215613_【雾霭】
+心有琳夕.Me\*20120908015650_【你哭什么，哗众取宠】
+心有琳夕.Me\*20120912161502_【谢谢你们】
+心有琳夕.Me\*20120915011457_【Rush】
+心有琳夕.Me\*20120916122853_【不成的战争】
+心有琳夕.Me\*20120921055405_【有些感触】
+心有琳夕.Me\*20120926111910_【小楼】
+心有琳夕.Me\*20121004200545_【当战场上只剩下一把刀,谁又会来将它拾起.】
+心有琳夕.Me\*20121006220615_【上海1006】
+心有琳夕.Me\*20121014180140_【上海1014】
+心有琳夕.Me\*20121022203911_【告别旅馆】
+心有琳夕.Me\*20121103000521_【真心】
+心有琳夕.Me\*20121105235330_【全面发展的小坏蛋】
+心有琳夕.Me\*20121110163616_【我发现我喜欢上了这个坏女人】
+心有琳夕.Me\*20121111191716_【10000000000】
+心有琳夕.Me\*20121112005555_【有排名的地方就有倒数，有些人终究会承认自己的无能为力】
+心有琳夕.Me\*20121114180729_【2012-11-14】
+心有琳夕.Me\*20121121151602_【唯美】
+心有琳夕.Me\*20121129173636_【不是我想宣泄情绪】
+心有琳夕.Me\*20121205212743_【在新的世界遇见你】
+心有琳夕.Me\*20121208010418_【不敢睡】
+心有琳夕.Me\*20121210235637_【无法承受女孩的眼泪】
+心有琳夕.Me\*20121212154943_【Justice】
+心有琳夕.Me\*20121218154246_【大理】
+心有琳夕.Me\*20121221125905_【成长】
+心有琳夕.Me\*20121224202652_【平安夜,你好】
+心有琳夕.Me\*20121230015723_【注销人人】
+心有琳夕.Me\*20121230110443_【雪后天晴】
+心有琳夕.Me\*20121230164441_【思潮】
+心有琳夕.Me\*20130102111522_【2013的一個夢】
+心有琳夕.Me\*20130104183832_【[女文][惡搞]一生一世的約定】
+心有琳夕.Me\*20130109111635_【全世界的細雨落在全世界的草坪】
+心有琳夕.Me\*20130113231832_【真實的愛-香水影評】
+心有琳夕.Me\*20130206173426_【2013_2_6_的梦】
+心有琳夕.Me\*20130209133914_【停在人生的美好处.是否是人生行走的目的_】
+心有琳夕.Me\*20130224021439_【金蛇狂舞】
+心有琳夕.Me\*20130224185642_【20130224】
+心有琳夕.Me\*20130225142145_【我的梦里有你梦到的梦】
+心有琳夕.Me\*20130306110832_【新一】
+心有琳夕.Me\*20130306203000_【我所想要的自由也仅此而已】
+心有琳夕.Me\*20130308010354_【夜苦露死】
+心有琳夕.Me\*20130310123937_【有些东西被铭记下来了】
+心有琳夕.Me\*20130328012632_【故人归】
+心有琳夕.Me\*20130405005002_【贈清明】
+心有琳夕.Me\*20130414115447_【不那么偏爱】
+心有琳夕.Me\*20130414234407_【腐烂根上的花】
+心有琳夕.Me\*20130419132408_【春子，你还好吗？】
+心有琳夕.Me\*20130420182833_【你这朵走散的云】
+心有琳夕.Me\*20130421005559_【以黑夜的献诗说说心情】
+心有琳夕.Me\*20130422174935_【刀很重】
+心有琳夕.Me\*20130424183750_【想写点小清新.】
+心有琳夕.Me\*20130424185019_【迟疑了一下】
+心有琳夕.Me\*20130427175206_【我曾经喜欢过一个毛绒玩具】
+心有琳夕.Me\*20130502082103_【晨薄凉】
+心有琳夕.Me\*20130505104513_【昨夜红酒掺雪碧】
+心有琳夕.Me\*20130512114917_【大逃杀与饥饿游戏】
+心有琳夕.Me\*20130517211010_【再一次拥抱的时候】
+心有琳夕.Me\*20130521010841_【独行】
+心有琳夕.Me\*20130522192854_【浅光】
+心有琳夕.Me\*20130531213830_【蓝色的海】
+心有琳夕.Me\*20130616135345_【6.11游记】
+</code></pre></div></div>
+
+<h2 id="冰冷的湖">冰冷的湖</h2>
+
+<p><strong>实习时光</strong></p>
+
+<ul>
+  <li>2013-06-16【夏天就这样开始了】 ~ 2014-06-03【满足之后】<sub>72篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>冰冷的湖.Me\*20130616133840_【夏天就这样开始了】
+冰冷的湖.Me\*20130619205944_【属性+1】
+冰冷的湖.Me\*20130620102656_【独行属性】
+冰冷的湖.Me\*20130621160855_【黑暗无论多么长光明迟早总是会来的】
+冰冷的湖.Me\*20130625175848_【四班岗】
+冰冷的湖.Me\*20130626070011_【时间的齿轮也坏了】
+冰冷的湖.Me\*20130703141521_【Toll受体的静默哀伤】
+冰冷的湖.Me\*20130704173420_【一个下午的Topit.Me】
+冰冷的湖.Me\*20130705154754_【只希望一直淋着雨】
+冰冷的湖.Me\*20130708212111_【某年某月看见一张图,会不会想起某年某月深埋的岁月】
+冰冷的湖.Me\*20130709171404_【一道伤疤的胜利】
+冰冷的湖.Me\*20130710103543_【日日夜夜我在寻找我的同类】
+冰冷的湖.Me\*20130710204347_【刷街的姿态】
+冰冷的湖.Me\*20130711154654_【地藏王合上双眼，夜蝶在阳光中消逝，那么故事的主体是什么？】
+冰冷的湖.Me\*20130730003853_【10级的X52】
+冰冷的湖.Me\*20130816234751_【一袭华袍遮旧影,两行晨露入白曦】
+冰冷的湖.Me\*20130817152106_【我真的想来讲白雪公主的故事】
+冰冷的湖.Me\*20130821010714_【入秋】
+冰冷的湖.Me\*20130825092223_【在梦醒的边缘】
+冰冷的湖.Me\*20130828184508_【战栗的回忆】
+冰冷的湖.Me\*20130902174259_【如果那日天空没有飘过一片云】
+冰冷的湖.Me\*20130904130844_【柬埔寨的一棵树】
+冰冷的湖.Me\*20130905212649_【这样是我的自由】
+冰冷的湖.Me\*20130909230141_【寄班长韦伯】
+冰冷的湖.Me\*20130921075825_【繁华褪尽欢愉散去】
+冰冷的湖.Me\*20130925213140_【囚】
+冰冷的湖.Me\*20131005205006_【木犀香】
+冰冷的湖.Me\*20131016164740_【看不懂的心力衰竭】
+冰冷的湖.Me\*20131031091422_【How_To_Handle_My_GodDesss】
+冰冷的湖.Me\*20131101012329_【关于朋友】
+冰冷的湖.Me\*20131107005952_【停走弥留】
+冰冷的湖.Me\*20131108164427_【Di_Sea_se】
+冰冷的湖.Me\*20131111110218_【1111】
+冰冷的湖.Me\*20131113114646_【MyWar】
+冰冷的湖.Me\*20131116092304_【xixi】
+冰冷的湖.Me\*20131117150844_【埋藏一个完美的痛苦,安然的堕落】
+冰冷的湖.Me\*20131118190050_【折断的道路】
+冰冷的湖.Me\*20131121143624_【我在苏州河】
+冰冷的湖.Me\*20131121173348_【00_00_00】
+冰冷的湖.Me\*20131125201558_【布拉格.之春】
+冰冷的湖.Me\*20131203113232_【华丽的葬礼与八音盒】
+冰冷的湖.Me\*20131209013751_【袁菲的旅行】
+冰冷的湖.Me\*20131212191808_【年终的碎碎念】
+冰冷的湖.Me\*20131212204225_【做什么写什么听什么】
+冰冷的湖.Me\*20131225172147_【记雨天清晨】
+冰冷的湖.Me\*20131226173931_【冰冷的湖】
+冰冷的湖.Me\*20131230195957_【UnKnownEvil2014】
+冰冷的湖.Me\*20131231201117_【Start2013End】
+冰冷的湖.Me\*20140107212539_【夜雾】
+冰冷的湖.Me\*20140112122734_【2014-1-12】
+冰冷的湖.Me\*20140118125534_【最軟的喜愛與熱情】
+冰冷的湖.Me\*20140122105201_【三重门】
+冰冷的湖.Me\*20140212195302_【能躺着绝不站着-01】
+冰冷的湖.Me\*20140215222503_【迷离朦胧夜暖灯】
+冰冷的湖.Me\*20140301130743_【我借妳的夜樱,还偿梅见】
+冰冷的湖.Me\*20140303202430_【莫名的喜悦】
+冰冷的湖.Me\*20140304120924_【阳春三月】
+冰冷的湖.Me\*20140311173320_【落暮之舞】
+冰冷的湖.Me\*20140318012020_【我们用网络干什么_】
+冰冷的湖.Me\*20140318210023_【闲论】
+冰冷的湖.Me\*20140325155839_【翠墨】
+冰冷的湖.Me\*20140404102127_【无主之地，怎奈春日】
+冰冷的湖.Me\*20140410132120_【男人的脸庞】
+冰冷的湖.Me\*20140416211449_【光明】
+冰冷的湖.Me\*20140419002756_【听U小雪.刀】
+冰冷的湖.Me\*20140504181653_【GalRoad】
+冰冷的湖.Me\*20140506105557_【那个结了婚的男人】
+冰冷的湖.Me\*20140508114404_【那个结了婚的女人】
+冰冷的湖.Me\*20140522112147_【到6.11还有几天】
+冰冷的湖.Me\*20140527043911_【温馨的梦5.27】
+冰冷的湖.Me\*20140528161017_【无处安放】
+冰冷的湖.Me\*20140603110603_【满足之后】
+</code></pre></div></div>
+
+<h2 id="慕斯森林">慕斯森林</h2>
+
+<p><strong>迷茫·毕业</strong></p>
+
+<ul>
+  <li>2014-06-10【deadline.】 ~ 2016-12-13【小镇】<sub>40篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>慕斯森林.Me\*20140610120402_【deadline.】
+慕斯森林.Me\*20140611005208_【慕斯的森林】
+慕斯森林.Me\*20140614095827_【考试月】
+慕斯森林.Me\*20140616232556_【12年前的八度空间】
+慕斯森林.Me\*20140620011832_【去年今日】
+慕斯森林.Me\*20140621205618_【L,MiSa】
+慕斯森林.Me\*20140627111127_【下午团战就开打】
+慕斯森林.Me\*20140704131727_【He】
+慕斯森林.Me\*20140713203839_【这是个结尾】
+慕斯森林.Me\*20140805115626_【甜蜜18岁.感】
+慕斯森林.Me\*20140901020718_【九月】
+慕斯森林.Me\*20141012222046_【如果没有梦,一切都会安然】
+慕斯森林.Me\*20141017000321_【薄凉】
+慕斯森林.Me\*20141021131000_【梦境缠绕】
+慕斯森林.Me\*20141022134806_【读&lt;另一个故乡.Die.andere.Heimat.&gt;】
+慕斯森林.Me\*20141104205424_【All_I_Have】
+慕斯森林.Me\*20141111014606_【when_you_kiss_me_on_that_street,_i_kiss_you_back.】
+慕斯森林.Me\*20141121011243_【TA】
+慕斯森林.Me\*20141201004944_【绿子】
+慕斯森林.Me\*20141218152617_【惜江南】
+慕斯森林.Me\*20141230101620_【先吃萝莉再吃熟女】
+慕斯森林.Me\*20150503174822_【童话】
+慕斯森林.Me\*20150509040436_【悲伤幸福】
+慕斯森林.Me\*20150708014628_【世界的残酷】
+慕斯森林.Me\*20150811180600_【墨色瞳】
+慕斯森林.Me\*20151003153718_【无家可归】
+慕斯森林.Me\*20151027015915_【不在学习的状态】
+慕斯森林.Me\*20151126014721_【慕斯、芝士、提拉米苏、黑森林.】
+慕斯森林.Me\*20151207090652_【小小欣慰】
+慕斯森林.Me\*20151211014857_【冬月】
+慕斯森林.Me\*20151219182904_【はなび】
+慕斯森林.Me\*20160111171250_【白夜行】
+慕斯森林.Me\*20160314200352_【言叶之庭】
+慕斯森林.Me\*20160316183956_【午睡起来】
+慕斯森林.Me\*20160327231826_【&lt;荆棘花&gt;】
+慕斯森林.Me\*20160520023433_【誓再得其业.】
+慕斯森林.Me\*20160820004053_【夜骑车】
+慕斯森林.Me\*20160922165224_【春志与明娇】
+慕斯森林.Me\*20161015231154_【沉默不忘却】
+慕斯森林.Me\*20161213221256_【小镇】
+
+</code></pre></div></div>
+
+<h2 id="缄黯桃乡">缄黯桃乡</h2>
+
+<p><strong>蜗居的工作</strong></p>
+
+<ul>
+  <li>2017-01-27【阳光的醉意】 ~ 2021-09-09【朝がAsaga】<sub>10篇</sub></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>缄黯桃乡\*20170127095428_【阳光的醉意】
+缄黯桃乡\*20170311204500_【一点想法和最近的心态吧.】
+缄黯桃乡\*20170312010937_【因为一首歌,记住一个人】
+缄黯桃乡\*20170722233430_【溫柔】
+缄黯桃乡\*20180121163210_【初雪】
+缄黯桃乡\*20180626154805_【我的樣子】
+缄黯桃乡\*20181019163703_【27歲的同居（引子）】
+缄黯桃乡\*20181123005412_【無法到達的四公里】
+缄黯桃乡\*20190611230453_【晨哥的酒】
+缄黯桃乡\*20210909201902_【朝がAsaga】
+</code></pre></div></div>
+
+        <hr style="visibility: hidden;">
+        <ul class="pager">
+            
+            <li class="previous">
+                <a href="/2022/03/07/%E7%9F%B3%E5%83%8F%E7%9A%84%E8%91%97%E8%90%BD%E6%98%A5/" data-toggle="tooltip" data-placement="top" title="石像的著落春">
+                Previous<br>
+                <span>石像的著落春</span>
+                </a>
+            </li>
+            
+            
+            <li class="next">
+                <a href="/2022/07/04/%E8%A1%94%E5%B0%BE%E8%9B%87/" data-toggle="tooltip" data-placement="top" title="衔尾蛇">
+                Next<br>
+                <span>衔尾蛇</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>  
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">  
+                <hr>
+                <table><tr>
+                    <!-- Friends Blog -->
+                    
+                        <th>
+                            <h5>FRIENDS</h5>
+                        <hr>
+                        <ul class="list-inline">
+                            
+                                <li><img src="https://avatars.githubusercontent.com/u/58005045?v=4" height="20" width="20"/><a href="https://github.com/sunshineyg">sunshineyg</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/UnUser.png" height="20" width="20"/><a href="">psy</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/404.png" height="20" width="20"/><a href="https://ukokugemini.github.io/404">404</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/Offline.png" height="20" width="20"/><a href="https://ukokugemini.github.io/offline">Offline</a></li>
+                                <Br/>
+                            
+                        </ul>
+                        </th>
+                    
+                    <!--Music-->
+                        <th>
+                            <div>
+                                
+                                    
+                                    <h5>MUSIC</h5>
+                                    <meting-js
+                                        name="新宝島"
+                                        artist="Lefty Hand Cream"
+                                        url="https://music.163.com/song/media/outer/url?id=1327337964"
+                                        cover="http://p1.music.126.net/6Equs_n-FrHndGb3SGT7EA==/109951165779395044.jpg?param=130y130"
+                                        autoplay="true"
+                                        loop="one"
+                                        preload="auto"
+                                        mutex="true"
+                                        list-folded="true">
+                                    </meting-js>
+                                    
+                                
+                            </div>
+                        </th>
+                </tr></table>
+            </div>    
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div>
+                    <a href="#">
+                    <img src="/img/Icon/Up.png" align="right" height="25">
+                    </a></div>
+                <hr>
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/UkokuGemini">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    <span id="Time_Born" class="copyright text-muted"></span>
+                    <br>
+                    <span id="Time_Blog"></span>
+                    <br>
+                    Copyright &copy; UkokuGemini's Blog 2023
+                    <br>
+                     On My <a href="https://github.com/UkokuGemini/UkokuGemini.github.io.git">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=UkokuGemini&repo=UkokuGemini.github.io&type=star&count=true" >
+                    </iframe>
+                    <br>
+                    <a href="https://ukokugemini.github.io/2022/12/07/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                    <img src="https://badgen.net/badge/Website Version /[1.1.1]">
+                    </a>
+                    <img src="https://badgen.net/github/commits/UkokuGemini/UkokuGemini.github.io/MainBranches">
+                    <br><br>
+                    <img src="https://count.getloli.com/get/@UkokuGemini Blog?theme=rule34" height="90">
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+<!-- 
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+    
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+    <!-- Js -->
+<!--打字效果-->
+<script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+<!--自部署·一言-->
+<script src="/js/hitokoto.js"></script>
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--网站限制-->
+<script type="text/javascript">
+document.onkeydown = function()
+{
+//禁用F12
+//if(window.event && window.event.keyCode == 123){event.keyCode=0;event.returnValue=false;}
+//禁止ctrl+s
+if (event.ctrlKey && window.event.keyCode==83){return false;}
+}
+</script>
+<script>
+    //网站禁止选择文字
+        document.body.onselectstart = function() {
+        self.event.returnValue=false
+    };
+</script>
+<!--
+<script>
+        //网站禁止右键
+        document.body.oncontextmenu = function() {
+        self.event.returnValue=false
+    };
+</script>-->
+<!--豆瓣读取-->
+<script src="/js/douban.js"></script>
+<!--计时-->
+<script src="/js/siteTime.js"></script>
+<!--选择性表达Js-->
+<script type="text/javascript">
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {}
+    else if(screen && screen.width<768){}
+    else {
+        //live-2d
+        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        //sakura
+        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        //ClickBoom
+        document.write('<script src="/js/ClickBoom.js"><\/script>');
+        //蛛网效果
+        document.write('<script src="/js/NetEffect.js"><\/script>');
+        //鼠标拖带    
+        document.write('<script src="/js/CurStar.js"><\/script>');
+    }
+</script> 
+<!--配合/js/CurStar光标拖带-->
+<span class="js-cursor-container"></span>
+
+<!-- Image to hack wechat -->
+<img alt="·" src="/img/WebSite/NightCrow-32.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+</body>
+</html>

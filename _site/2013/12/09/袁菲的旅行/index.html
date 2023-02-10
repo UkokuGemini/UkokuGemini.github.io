@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UkokuGemini Just UkokuGemini.">
+    <meta name="keywords"  content="UkokuGemini">
+    <meta name="theme-color" content="">
+    
+    <title>袁菲的旅行 - UkokuGemini's Blog | UkokuGemini's Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Safari Webpage Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/WebSite/NightCrow-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/WebSite/NightCrow-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/WebSite/NightCrow-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/WebSite/NightCrow-144.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2013/12/09/%E8%A2%81%E8%8F%B2%E7%9A%84%E6%97%85%E8%A1%8C/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">UkokuGemini's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://localhost:4000/">Blog List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AboutMe/">AboutMe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Douban/">Douban</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Links/">Links</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Music/">Music</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Pic/">DailyPic</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/Blog/B03.jpg')
+    }
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>袁菲的旅行</h1>
+                    
+                    
+                    <h2 class="subheading">-冰冷的湖</h2>
+                    
+                    <span class="meta">Posted by UkokuGemini on December 9, 2013</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+<a href="https://github.com/UkokuGemini" class="github-corner" aria-label="View source on GitHub">
+<svg width="60" height="60" viewBox="0 0 250 250" preserveAspectRatio="xMinYMin meet" style="fill:#151513; color:#fff; position: absolute; top: header.height; border: 0; right: 0;" aria-hidden="true">
+<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <div class="row">
+    <!-- Post Container -->
+        <div class="
+        col-lg-8 col-lg-offset-2
+        col-md-10 col-md-offset-1
+        post-container">
+        <h1 id="袁菲的旅行">袁菲的旅行</h1>
+<blockquote>
+  <p>2013-12-09 01:37:51</p>
+</blockquote>
+
+<p>袁菲是个有志青年,想要登上富士山去看日出,想要在法国铁塔下邂逅自己的王子,等到白发,午后的下午茶时光,能依靠在柏林墙下,静思回眸,结束自己不遗憾的人生.</p>
+
+<p>在袁菲第一次旅游的时候,她便是这么想的.</p>
+
+<p>从莫名的地方,开始她的漂泊.第一站,是上海.</p>
+
+<p>她听说,这里是个伤心的地方.却依旧不能阻止她来这的好奇,吴侬的软语,深旧的弄堂,像是每一处都有一个兀自忧伤的故事,缓缓流淌.她喜欢把这条河,叫苏州河.</p>
+
+<p>背上几千元的廉价单反,她相信自己的技术足可以摄魂入魄,有时候她也觉得自己有些小小的自恋,转而又安慰的,摄影也不过是愉悦自己.</p>
+
+<p>她爱拍铁路.喜欢沿着铁路走啊走,没有尽头,又处处是她的远方.</p>
+
+<p>她想要到远方去,没有原因.也绝非冲动.像是久久埋藏在脑海里的一颗种子.破土而出的那一刻,就疯狂的生长.繁荫了她的愿望.</p>
+
+<p>只是实际的上海,她不明了,镜头里是人们倦怠的眼神,繁忙的上班流拥挤着人们的心,腐蚀着潮湿冰冷却又闷热的上海空气.</p>
+
+<p>她不愿看自己拍的照片,在暗室里悬挂着垂滴着红色液体的孤寂的灵魂.,她有种紧张而兴奋的感觉.比起街头上匆匆的人,她更喜欢自己的照片,脱光衣服,躺在自己揉皱的纯白色的被单上,奇怪的角度.</p>
+
+<p>有个男人对她说过,女人的胴体是最完美的存在,衣服是一种肮脏.可是世人总喜欢赞美肮脏的衣物,将身体看作污秽.</p>
+
+<p>她曾爱过.不只是他.但是她记住了他的每一句近似哲学的话,虽然不明白,但是也都莫名的记住了.</p>
+
+<p>男人与女人存在不同的世界,彼此无法跨越.或许是自己的身体,从生下来到成人的变化,一步步.没有觉得自己身体有他口气里的那么完美.</p>
+
+<p>或许就是多年的夫妻,也不能了解.</p>
+
+<p>或许那里就是到达不了的风景.</p>
+
+<p>在上海,他也在上海.南京路的偏僻的一间咖啡馆.她又见了他.</p>
+
+<p>女人如果喜欢一个男人,才会和他做爱.她与他见面的时候,自己已经喜欢过好几个男人了.每次她都有长长久久的感觉,每一次,她都去认真的爱.累了,才会想要找个归宿.</p>
+
+<p>女人,无论自己能够行走多远,终归会在一个男人的依靠下停歇.这也是他的话.</p>
+
+<p>只是同龄的他们,他好像能够预知未来的她的心情.</p>
+
+<p>袁菲与他聊了过去.她不知道除此之外她还能聊些什么.袁菲突兀的问,你有女友吗?他微笑着问,妳猜呢?袁菲笑~有些尴尬,有些失落.</p>
+
+<p>会不会他与女友夜夜欢度,抑或也在一个又一个的对象中漂泊.</p>
+
+<p>女人有种占有感,被占有的男人总是隔着很远的距离.所以才会冒昧的问吧~急切的,想要确认.</p>
+
+<p>咖啡厅里让袁菲注意的一首歌,是一个女生的声音,唱的很轻.那时,她尴尬的不知道说什么好,低头搅动着已然破坏的花式咖啡.后来她知道,那首叫<二十岁的某一天>.</二十岁的某一天></p>
+
+<p>二十已然快三十的她,再也不想漂泊.若是爱情降临,一定不再让它再错过.只是何时再会降临?</p>
+
+<p>外面已然是灯火通明在荒芜漆黑的夜.</p>
+
+<p>她突然想要拍下他的脸.怕是以后模糊或者记不得.就像歌里的,我已经想不起你的脸.</p>
+
+<p>或许当初离开他,那样仓促.是自己的孤傲.如今她想再次被拥抱,被那个曾经的他.就带着他未曾言说的希望,再被拥抱一次.无论他有没有归属.只是现在的她就像没人要的,已然无法再开口让他收留.</p>
+
+<p>最终,她还是发短信给他,在咖啡馆面对面的时候.她,想在这次无论有无的欢度后,远走.</p>
+
+<p>去富士山,去法国铁塔,去柏林墙.然后孤独的死去.</p>
+
+<p>他拿起手机,没有变化的看了一眼.就像是在看一条无关的推送广告.放下,他依旧在喝杯里的咖啡.微笑着说着曾经的事情.</p>
+
+<p>离开的时候,他说,左拐有家宾馆.</p>
+
+<p>男人可以没有喜欢的去做爱.袁菲开始可以体会到这种情感.可他说那只是妳觉得像是,实际不是的错觉.</p>
+
+<p>小宾馆,让袁菲有种避风的感觉.尽管她披着他的风衣,夜风还是吹散了她的头发.想到今晚之后,就是漂泊.仍是凛凛寒风.不免让她觉得这里尚存一丝温馨.</p>
+
+<p>或许就他的眼里,肌肤之亲是圣洁的,或许他也认为,这样肮脏的地方是唯一的纯洁之地.</p>
+
+<p>她在担心,他的女友.或许撒一个无所谓的谎言,谁也不会再知道.</p>
+
+<p>可能现在的他在思考,或许突然的,就让自己失去闭幕的夜晚,她或许觉得自己也是那样的任性自私,强求的最后是一时的冲动.</p>
+
+<p>可是她也回不去了.宾馆里的两人,拥抱在漆黑狭小的巨大梳妆镜前面,淋浴,亲吻.</p>
+
+<p>仅此而已.</p>
+
+<p>他,没有过多的再做什么.<br />
+他吸烟,却不沉溺,彬彬有礼的,在偶尔的时候,点上一根.</p>
+
+<p>那晚,他只侧卧在床上,看着她,看她的胴体,看她半遮掩的肌肤.</p>
+
+<p>直到深夜,她要回去的时候.</p>
+
+<p>她要回去哪里?她自己也不知道.明天就去旅行,或者叫漂泊更为合适.</p>
+
+<p>她觉得自己在逃避,却也不知道在逃避什么.</p>
+
+<p>不管怎样,她已然拧开了门.</p>
+
+<p>她说,谢谢.她不知道声音能否,传到床边不动的他那里.</p>
+
+<p>她突然回想起他说过的石像之歌,她像一尊石像,仿佛获得了自由.</p>
+
+<p>深夜的风,真真切切的带着寒冷.</p>
+
+<p>让纷扰的街道愈发冷清.几个日本料理店散发着清酒味道的酒鬼蹒跚的路过.</p>
+
+<p>让她觉得这里与自己的小城市有那么几分相似.</p>
+
+<p>哪里都是伤心的城市,这里也不比哪里更伤心一些.抑或,全世界也不存在不伤心的地方.</p>
+
+<p>想像着旅行的样子,她觉得无非是换个地方,那里的人们仍是带着空虚倦怠的眼神.</p>
+
+<p>可是自己没有办法留在这里.</p>
+
+<p>她想最后再拍一张上海的照片.拍出所有的孤独与寂寥.</p>
+
+<p>明天的我想去俄国,想去柬埔寨,想去意大利.可是,我现在哪里都不想去.</p>
+
+<p>他说,</p>
+
+<p>将自己的风衣披在袁菲的身上.从后面搂紧了她.</p>
+
+<p>或许旅行,就到此为止.漂泊的人们因为归宿而停止漂泊.<br />
+袁菲终究没有去她梦想中的地方.她蜗居在这座城市,从未再离开过.</p>
+
+        <hr style="visibility: hidden;">
+        <ul class="pager">
+            
+            <li class="previous">
+                <a href="/2013/05/31/%E8%93%9D%E8%89%B2%E7%9A%84%E6%B5%B7/" data-toggle="tooltip" data-placement="top" title="蓝色的海">
+                Previous<br>
+                <span>蓝色的海</span>
+                </a>
+            </li>
+            
+            
+            <li class="next">
+                <a href="/2014/06/11/%E6%85%95%E6%96%AF%E7%9A%84%E6%A3%AE%E6%9E%97/" data-toggle="tooltip" data-placement="top" title="慕斯的森林">
+                Next<br>
+                <span>慕斯的森林</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>  
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">  
+                <hr>
+                <table><tr>
+                    <!-- Friends Blog -->
+                    
+                        <th>
+                            <h5>FRIENDS</h5>
+                        <hr>
+                        <ul class="list-inline">
+                            
+                                <li><img src="https://avatars.githubusercontent.com/u/58005045?v=4" height="20" width="20"/><a href="https://github.com/sunshineyg">sunshineyg</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/UnUser.png" height="20" width="20"/><a href="">psy</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/404.png" height="20" width="20"/><a href="https://ukokugemini.github.io/404">404</a></li>
+                                <Br/>
+                            
+                                <li><img src="/img/Icon/Offline.png" height="20" width="20"/><a href="https://ukokugemini.github.io/offline">Offline</a></li>
+                                <Br/>
+                            
+                        </ul>
+                        </th>
+                    
+                    <!--Music-->
+                        <th>
+                            <div>
+                                
+                                    
+                                        
+                                        <h5>MUSIC</h5>
+                                            
+                                        <meting-js
+                                        name="1时间"
+                                        artist="ハンバート_ハンバート"
+                                        url="/music/1时间.mp3"
+                                        cover="/music/1时间.png"
+                                        autoplay="false"
+                                        loop="one"
+                                        preload="auto"
+                                        mutex="true"
+                                        list-folded="true">
+                                        </meting-js>
+                                            
+                                        
+                                    
+                                
+                            </div>
+                        </th>
+                </tr></table>
+            </div>    
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div>
+                    <a href="#">
+                    <img src="/img/Icon/Up.png" align="right" height="25">
+                    </a></div>
+                <hr>
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/UkokuGemini">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    <span id="Time_Born" class="copyright text-muted"></span>
+                    <br>
+                    <span id="Time_Blog"></span>
+                    <br>
+                    Copyright &copy; UkokuGemini's Blog 2023
+                    <br>
+                     On My <a href="https://github.com/UkokuGemini/UkokuGemini.github.io.git">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=UkokuGemini&repo=UkokuGemini.github.io&type=star&count=true" >
+                    </iframe>
+                    <br>
+                    <a href="https://ukokugemini.github.io/2022/12/07/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                    <img src="https://badgen.net/badge/Website Version /[1.1.1]">
+                    </a>
+                    <img src="https://badgen.net/github/commits/UkokuGemini/UkokuGemini.github.io/MainBranches">
+                    <br><br>
+                    <img src="https://count.getloli.com/get/@UkokuGemini Blog?theme=rule34" height="90">
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+<!-- 
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+    
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+    <!-- Js -->
+<!--打字效果-->
+<script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+<!--自部署·一言-->
+<script src="/js/hitokoto.js"></script>
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--网站限制-->
+<script type="text/javascript">
+document.onkeydown = function()
+{
+//禁用F12
+//if(window.event && window.event.keyCode == 123){event.keyCode=0;event.returnValue=false;}
+//禁止ctrl+s
+if (event.ctrlKey && window.event.keyCode==83){return false;}
+}
+</script>
+<script>
+    //网站禁止选择文字
+        document.body.onselectstart = function() {
+        self.event.returnValue=false
+    };
+</script>
+<!--
+<script>
+        //网站禁止右键
+        document.body.oncontextmenu = function() {
+        self.event.returnValue=false
+    };
+</script>-->
+<!--豆瓣读取-->
+<script src="/js/douban.js"></script>
+<!--计时-->
+<script src="/js/siteTime.js"></script>
+<!--选择性表达Js-->
+<script type="text/javascript">
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {}
+    else if(screen && screen.width<768){}
+    else {
+        //live-2d
+        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        //sakura
+        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        //ClickBoom
+        document.write('<script src="/js/ClickBoom.js"><\/script>');
+        //蛛网效果
+        document.write('<script src="/js/NetEffect.js"><\/script>');
+        //鼠标拖带    
+        document.write('<script src="/js/CurStar.js"><\/script>');
+    }
+</script> 
+<!--配合/js/CurStar光标拖带-->
+<span class="js-cursor-container"></span>
+
+<!-- Image to hack wechat -->
+<img alt="·" src="/img/WebSite/NightCrow-32.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+</body>
+</html>

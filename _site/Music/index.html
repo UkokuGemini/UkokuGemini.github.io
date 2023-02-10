@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UkokuGemini Just UkokuGemini.">
+    <meta name="keywords"  content="UkokuGemini">
+    <meta name="theme-color" content="">
+    
+    <title>Music - UkokuGemini's Blog | UkokuGemini's Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/WebSite/NightCrow-32.png">
+
+    <!-- Safari Webpage Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/WebSite/NightCrow-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/WebSite/NightCrow-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/WebSite/NightCrow-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/WebSite/NightCrow-144.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/Music/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">UkokuGemini's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://localhost:4000/">Blog List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AboutMe/">AboutMe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Douban/">Douban</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Links/">Links</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Music/">Music</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Pic/">DailyPic</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/WebSite/Music-BG.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Music</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">歇一会,听听我喜欢的歌吧...</span>
+                    <!-- span id="TypedSubheading" style="white-space: pre-wrap;line-height: 30px;">|</span>-->
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 " style="text-align:right">  
+                <span id="hitokoto" class="subheading" style="color:gainsboro"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			<div>
+<!--我的网易云音乐(喜爱红心)地址:306443252-->
+<meting-js
+	server="netease"
+	type="playlist"
+	id="7822619060"
+    autoplay="false"
+    fixed="false"
+    mini="false"
+    order="random"
+    mutex="true"
+    list-folded="false"
+    list-max-height="600px">
+</meting-js>
+</div>
+<div>
+<a target="_blank" href="https://music.163.com/#/user/home?id=245891950">
+    <img src="/img/Icon/netease.png" width="25" height="25"/>
+     · 我的网易云主页 .
+    <img src="/img/Icon/Join.png" width="25" height="25"/>
+    🤙
+</a>
+</div>
+    		</div>
+    <!-- Sidebar Container -->
+  
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/About/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <a href="/About">
+                                <img src="/img/WebSite/Mine.jpg"/>
+                            </a>
+                        
+                        
+                            <p>UkokuGemini Just UkokuGemini.</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/UkokuGemini">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                            <p>✉️ Ukoku@live.cn</p>
+                        
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                    
+                        <li><img src="https://avatars.githubusercontent.com/u/58005045?v=4" height="20" width="20"/><a href="https://github.com/sunshineyg">sunshineyg</a></li>
+                        <Br/>
+                    
+                        <li><img src="/img/Icon/UnUser.png" height="20" width="20"/><a href="">psy</a></li>
+                        <Br/>
+                    
+                        <li><img src="/img/Icon/404.png" height="20" width="20"/><a href="https://ukokugemini.github.io/404">404</a></li>
+                        <Br/>
+                    
+                        <li><img src="/img/Icon/Offline.png" height="20" width="20"/><a href="https://ukokugemini.github.io/offline">Offline</a></li>
+                        <Br/>
+                    
+                    </ul>
+                
+    		</div>
+        
+	</div>
+</div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div>
+                    <a href="#">
+                    <img src="/img/Icon/Up.png" align="right" height="25">
+                    </a></div>
+                <hr>
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/UkokuGemini">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    <span id="Time_Born" class="copyright text-muted"></span>
+                    <br>
+                    <span id="Time_Blog"></span>
+                    <br>
+                    Copyright &copy; UkokuGemini's Blog 2023
+                    <br>
+                     On My <a href="https://github.com/UkokuGemini/UkokuGemini.github.io.git">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=UkokuGemini&repo=UkokuGemini.github.io&type=star&count=true" >
+                    </iframe>
+                    <br>
+                    <a href="https://ukokugemini.github.io/2022/12/07/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                    <img src="https://badgen.net/badge/Website Version /[1.1.1]">
+                    </a>
+                    <img src="https://badgen.net/github/commits/UkokuGemini/UkokuGemini.github.io/MainBranches">
+                    <br><br>
+                    <img src="https://count.getloli.com/get/@UkokuGemini Blog?theme=rule34" height="90">
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+<!-- 
+<!-- Side Catalog -->
+
+
+
+
+    <!-- Js -->
+<!--打字效果-->
+<script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+<!--自部署·一言-->
+<script src="/js/hitokoto.js"></script>
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--网站限制-->
+<script type="text/javascript">
+document.onkeydown = function()
+{
+//禁用F12
+//if(window.event && window.event.keyCode == 123){event.keyCode=0;event.returnValue=false;}
+//禁止ctrl+s
+if (event.ctrlKey && window.event.keyCode==83){return false;}
+}
+</script>
+<script>
+    //网站禁止选择文字
+        document.body.onselectstart = function() {
+        self.event.returnValue=false
+    };
+</script>
+<!--
+<script>
+        //网站禁止右键
+        document.body.oncontextmenu = function() {
+        self.event.returnValue=false
+    };
+</script>-->
+<!--豆瓣读取-->
+<script src="/js/douban.js"></script>
+<!--计时-->
+<script src="/js/siteTime.js"></script>
+<!--选择性表达Js-->
+<script type="text/javascript">
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {}
+    else if(screen && screen.width<768){}
+    else {
+        //live-2d
+        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        //sakura
+        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        //ClickBoom
+        document.write('<script src="/js/ClickBoom.js"><\/script>');
+        //蛛网效果
+        document.write('<script src="/js/NetEffect.js"><\/script>');
+        //鼠标拖带    
+        document.write('<script src="/js/CurStar.js"><\/script>');
+    }
+</script> 
+<!--配合/js/CurStar光标拖带-->
+<span class="js-cursor-container"></span>
+
+<!-- Image to hack wechat -->
+<img alt="·" src="/img/WebSite/NightCrow-32.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+</body>
+</html>
