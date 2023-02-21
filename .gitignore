@@ -1,7 +1,9 @@
-﻿
+﻿/.vs
+/_site
+/.jekyll-cache
+/@Guide
 /_posts/BlogAdd.exe
 /music/BGM.Old/*
-/@Guide/*
 
 .gitignore
 *.exe
