@@ -1,4 +1,27 @@
-function doubanApi (_url,_type,_title) 
+function doubanWebApi (_url,_type,_title) 
+{
+  document.getElementById('_Thispage').innerHTML ="⚜" + _title
+          var outD = "";
+          var i;
+          $.getJSON(_url, function (JsonData) {
+          for(i = 0; i < JsonData.result.comment.length && i < 5; i++) {
+            outD += '<div><table frame=void width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed"><tr><td width="120px"><img height="150px" src="https://images.weserv.nl/?url=' + JsonData.result.comment[i].item.thumbnail.substring(7) + '"></td><td width="10px"></td><td><a target="_blank" href="https://movie.douban.com/subject/' + JsonData.result.comment[i].item.douban_id + '/"><font size="4"><b>' +'· ' + JsonData.result.comment[i].item.title + '</b></font></a><div>'
+            switch(_type){
+              case 0:
+                outD +='<font size="1"><b>    #演员:</b>' + JsonData.result.comment[i].item.actor + '</font><br>';
+                break;
+              case 1:
+                outD +='<font size="1"><b>    #作者:</b>' + JsonData.result.comment[i].item.author + '</font><br>';
+                break;
+              default:
+                break;
+            }
+            outD +='<font size="1"><b>    #添加日期:</b>'+ JsonData.result.comment[i].mark_date +'</font></div></td></tr></table></div><hr>'
+          }
+        document.getElementById('doubanlist').innerHTML = outD
+      })
+}
+function doubanLocalApi (_url,_type,_title) 
 {
   document.getElementById('_Thispage').innerHTML ="⚜" + _title
   fetch(_url)

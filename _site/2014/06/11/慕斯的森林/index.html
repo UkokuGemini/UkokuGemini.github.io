@@ -477,8 +477,6 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
         self.event.returnValue=false
     };
 </script>-->
-<!--豆瓣读取-->
-<script src="/js/douban.js"></script>
 <!--计时-->
 <script src="/js/siteTime.js"></script>
 <!--选择性表达Js-->
@@ -488,9 +486,9 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
     else if(screen && screen.width<768){}
     else {
         //live-2d
-        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        document.write('<script src="/js/autoload.js"><\/script>');
         //sakura
-        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        document.write('<script src="/js/leaves.js"><\/script>');
         //ClickBoom
         document.write('<script src="/js/ClickBoom.js"><\/script>');
         //蛛网效果

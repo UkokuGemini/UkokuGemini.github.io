@@ -200,40 +200,66 @@
                 col-xs-12
                 postlist-container
             ">
-    			<a target="_blank" href="https://www.douban.com/people/UkokuGemini/">
+    			<!--豆瓣读取-->
+<script src="/js/douban.js"></script>
+<a target="_blank" href="https://www.douban.com/people/UkokuGemini/">
     <img src="/img/Icon/douban.png" width="25" height="25"/>
      · 我的豆瓣主页 .
     <img src="/img/Icon/Join.png" width="25" height="25"/>
     🤙
 </a>
 <div>豆瓣电影【
-    <a onclick="doubanApi('/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】')">想看:<b id="movie_wish_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】')">想看:<b id="movie_wish_n"></b></a>
     /     
-    <a onclick="doubanApi('/json/douban_movie_collect_small.json',0,'豆瓣电影【已看】')">已看:<b id="movie_collect_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_movie_collect_small.json',0,'豆瓣电影【已看】')">已看:<b id="movie_collect_n"></b></a>
     /  
-    <a onclick="doubanApi('/json/douban_movie_do_small.json',0,'豆瓣电影【正在看】')">正在看:<b id="movie_do_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_movie_do_small.json',0,'豆瓣电影【正在看】')">正在看:<b id="movie_do_n"></b></a>
     】</div>
 <div>豆瓣读书【
-    <a onclick="doubanApi('/json/douban_book_wish_small.json',1,'豆瓣读书【想读】')">想读:<b id="book_wish_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_book_wish_small.json',1,'豆瓣读书【想读】')">想读:<b id="book_wish_n"></b></a>
     /  
-    <a onclick="doubanApi('/json/douban_book_collect_small.json',1,'豆瓣读书【已读】')">已读:<b id="book_collect_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_book_collect_small.json',1,'豆瓣读书【已读】')">已读:<b id="book_collect_n"></b></a>
     /  
-    <a onclick="doubanApi('/json/douban_book_do_small.json',1,'豆瓣读书【正在读】')">正在读:<b id="book_do_n"></b></a>
+    <a onclick="doubanLocalApi('/json/douban_book_do_small.json',1,'豆瓣读书【正在读】')">正在读:<b id="book_do_n"></b></a>
     】</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$.getJSON('http://47.96.176.56:4500?remoteUrl=http://47.96.176.56:8089/json/douban_book_collect_small.json', function (data) {
+    console.log("BCN", data);
+})
+</script>
+<div>豆瓣Online电影【
+        <a onclick="doubanWebApi('BCN',0,'豆瓣电影【想看】')">想看:<b id="movie_wish_n"></b></a>
+        /     
+        <a onclick="doubanWebApi('BCN',0,'豆瓣电影【已看】')">已看:<b id="movie_collect_n"></b></a>
+        /  
+        <a onclick="doubanWebApi('BCN',0,'豆瓣电影【正在看】')">正在看:<b id="movie_do_n"></b></a>
+        】</div>
+<div>豆瓣Onlie读书【
+        <a onclick="doubanWebApi('BCN',1,'豆瓣读书【想读】')">想读:<b id="book_wish_n"></b></a>
+        /  
+        <a onclick="doubanWebApi('http://47.96.176.56:4500?remoteUrl=http://47.96.176.56:8089/json/douban_book_collect_small.json',1,'豆瓣读书【已读】')">已读:<b id="book_collect_n"></b></a>
+        /  
+        <a onclick="doubanWebApi('BCN',1,'豆瓣读书【正在读】')">正在读:<b id="book_do_n"></b></a>
+        】</div>
 <br>    
 <b id="_Thispage"></b>
 <hr>
 <span id="doubanlist"></span>
 <!--
-<script>
-$.ajax({
-    url: 'https://mouban.mythsman.com/guest/user_movie?id=71362174&action=wish',
+  <script type="text/javascript">
+D=$.ajax({
+    url: 'http://47.96.176.56:4500http://47.96.176.56:8089/json/douban_book_collect_small.json',
     type: 'get',
     dataType: 'jsonp',  // 请求方式为jsonp
      crossDomain: true,
-     success: function(data) {doubanApi(data)},
+     success: function(data) {},
     data: {}
-});</script>-->
+});DD=D.responseText;
+result=$.parseJSON(D["responseText"])
+</script>  
+-->
+
     		</div>
     <!-- Sidebar Container -->
   
@@ -434,8 +460,6 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
         self.event.returnValue=false
     };
 </script>-->
-<!--豆瓣读取-->
-<script src="/js/douban.js"></script>
 <!--计时-->
 <script src="/js/siteTime.js"></script>
 <!--选择性表达Js-->
@@ -445,9 +469,9 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
     else if(screen && screen.width<768){}
     else {
         //live-2d
-        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        document.write('<script src="/js/autoload.js"><\/script>');
         //sakura
-        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        document.write('<script src="/js/leaves.js"><\/script>');
         //ClickBoom
         document.write('<script src="/js/ClickBoom.js"><\/script>');
         //蛛网效果

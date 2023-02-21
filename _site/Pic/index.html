@@ -191,9 +191,9 @@
 	<div class="row">
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
-                <div><a onclick="changePic(12)"><p>🙊嘘.看图！👇</p></a></div>
+                <div><a onclick="changePic(7)"><p>🙊嘘.看图！👇</p></a></div>
 <div id="PicBox">
-<img id="NowPicShown" onclick="changePic(11)" src="https://api.ixiaowai.cn/api/api.php" style="position:absolute;left:0" width="800">
+<img id="NowPicShown" onclick="changePic(6)" src="https://api.vvhan.com/api/bing" style="position:absolute;left:0" width="800"/>
 </div>
 <script>
     function changePic(MaxNum) {
@@ -203,13 +203,13 @@
         var imgs =""
         switch(TypeA){
     case 0:
-        Img.src="https://api.yimian.xyz/img?type=moe&size=1920x1080"+"&rnd="+ RndA;
+        Img.src="https://api.mtyqx.cn/tapi/random.php"+"?rnd="+ RndA;
         break;
     case 1:
-        Img.src="https://api.ixiaowai.cn/api/api.php"+"?rnd="+ RndA;
+        Img.src="https://api.yimian.xyz/img?type=moe&size=1920x1080"+"&rnd="+ RndA;
         break;
     case 2:
-        Img.src="https://www.dmoe.cc/random.php"+"?rnd="+ RndA;
+        Img.src="https://cdn.seovx.com/d/?mom=302"+"&rnd="+ RndA;
         break;
     case 3:
         Img.src="https://img.paulzzh.tech/touhou/random"+"?rnd="+ RndA;
@@ -220,22 +220,7 @@
     case 5:
         Img.src="https://api.vvhan.com/api/acgimg"+"?rnd="+ RndA;
         break;
-    case 6:
-        Img.src="https://www.dmoe.cc/random.php"+"?rnd="+ RndA;
-        break;
-    case 7:
-        Img.src="https://cdn.seovx.com/d/?mom=302"+"&rnd="+ RndA;
-        break;
-    case 8:
-        Img.src="https://api.r10086.com/img-api.php?type=动漫综合1"+"&rnd="+ RndA;
-        break;
-    case 9:
-        Img.src="https://api.ixiaowai.cn/gqapi/gqapi.php"+"?rnd="+ RndA;
-        break;
-    case 10:
-        Img.src="https://api.mtyqx.cn/tapi/random.php"+"?rnd="+ RndA;
-        break;
-    case 11://18#
+    case 6://18#
         Img.src="https://api.vvhan.com/api/girl"+"?rnd="+ RndA;
         break;
     default:
@@ -243,6 +228,17 @@
         break;}  
         } 
 </script>
+<!--
+    已挂
+    case 98:
+        Img.src="https://www.dmoe.cc/random.php"+"?rnd="+ RndA;
+    case 97:
+        Img.src="https://api.ixiaowai.cn/gqapi/gqapi.php"+"?rnd="+ RndA;
+        break;
+     case 99:
+        Img.src="https://api.ixiaowai.cn/api/api.php"+"?rnd="+ RndA;
+        break;
+-->
 <script language="JavaScript">
     document.getElementById("NowPicShown").onload = function () {
         var SideBarHeight = 100 + document.getElementById("NowPicShown").height;
@@ -382,8 +378,6 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
         self.event.returnValue=false
     };
 </script>-->
-<!--豆瓣读取-->
-<script src="/js/douban.js"></script>
 <!--计时-->
 <script src="/js/siteTime.js"></script>
 <!--选择性表达Js-->
@@ -393,9 +387,9 @@ if (event.ctrlKey && window.event.keyCode==83){return false;}
     else if(screen && screen.width<768){}
     else {
         //live-2d
-        document.write('<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><\/script>');
+        document.write('<script src="/js/autoload.js"><\/script>');
         //sakura
-        document.write('<script src="https://cdn.nesxc.com/js/leaves.js"><\/script>');
+        document.write('<script src="/js/leaves.js"><\/script>');
         //ClickBoom
         document.write('<script src="/js/ClickBoom.js"><\/script>');
         //蛛网效果
