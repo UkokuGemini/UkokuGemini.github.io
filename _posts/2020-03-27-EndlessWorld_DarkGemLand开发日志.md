@@ -114,8 +114,8 @@ catalog: True
 
 - **FrameWork4.7.2** [官方页面](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net472)
 	- [下载链接](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net472-web-installer)
-- **Visual C++ Redistributable x86** [官方页面](https://www.microsoft.com/zh-CN/download/details.aspx?id=48145)
-	- [下载链接](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=48145&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1)
+- **Visual C++ Redistributable x86** [官方页面](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+	- [下载链接](https://www.microsoft.com/en-us/download/confirmation.aspx?id=26999&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1)
 
 - **运行库 (. Dll)** [GitHub页面](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/tag/Requires)
 	 - SQLite 数据库<sub> (32 位 Ver1.0.112.0) </sub>) [官方页面](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)
@@ -130,6 +130,10 @@ catalog: True
 
  - [更新Windows补丁包Windows6.1-KB2729094-v2-x64](https://support.microsoft.com/zh-cn/topic/%E7%8E%B0%E6%8F%90%E4%BE%9B%E5%AF%B9-windows-7-%E5%92%8C-windows-server-2008-r2-%E4%B8%AD-segoe-ui-%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93%E7%9A%84%E6%9B%B4%E6%96%B0-0743a473-3afe-e8b2-7c20-54aa430463d6)
 
+#### SQLite. Interop. Dll无法识别模块 (缺少Visual C++2010Service库)
+
+ - 更新安装Vcredist_x86[官方页面](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+ - [下载链接](https://www.microsoft.com/en-us/download/confirmation.aspx?id=26999&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1)
 ---
 
 ## **🤝帮助&支持**
