@@ -125,6 +125,8 @@ catalog: True
 		 - [下载AxInterop.WMPLib.dll](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/AxInterop.WMPLib.dll)
 		 - [下载Interop.WMPLib.dll](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/Interop.WMPLib.dll)
 		 - [下载wmp.dll](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/wmp.dll)
+	- Json运行库
+		 - [下载Newtonsoft.Json.dll](https://github.com/UkokuGemini/EndlessWorld_DarkGemLand-Release/releases/download/Requires/Newtonsoft.Json.dll)
 
 #### WINDOWS7系统部分文字缺失问题解决方案
 
@@ -180,8 +182,13 @@ catalog: True
     - `AxInterop.WMPLib.dll`
     - `Interop.WMPLib.dll`
     - `wmp.dll`
+ -  Json组件
+    - `Newtonsoft.Json.dll`
  - AutoUpdate版本更新软件 `AutoUpdate-EndlessWorld_DarkGemLand.exe`
-
+ - Uninstall卸载软件`Uninstall-EndlessWorld_DarkGemLand.exe size`
+ - 图标文件 
+ 	- `EndlessWorld_DarkGemLand.ico`
+ 	- `Uninstall-EndlessWorld_DarkGemLand.ico`
 ---
 
 ## **🎳特别感谢**
