@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script async defer src="/js/Comments.js"></script>
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
@@ -15,6 +16,16 @@ layout: default
         background: rgba(0,0,0, {{ page.header-mask }});
     }
     {% endif %}
+ .cusdisComments{
+flex-direction: column;
+    align-items: center;
+    border-left-color: #09b0bc;
+    border-left-width: 4px;
+    row-gap: var(--hope-space-2);
+    background-color: var(--hope-colors-neutral1);
+    border-radius: var(--hope-radii-xl);
+    padding-top: 150px;padding-left: 150px;padding-right: 50px;padding-top: 50px;
+    width: 105%;}
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -72,7 +83,7 @@ layout: default
             </li>
             {% endif %}
         </ul>
-    </div>  
+    </div> 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
@@ -93,7 +104,39 @@ layout: default
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
-                sidebar-container">  
+                sidebar-container"> 
+                <!-- cusdis Comments --> 
+<hr>
+<div class="
+col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+sidebar-container">
+<img src="/img/Icon/Comments.png" height="20" width="20" >
+    <a id ="SwitchComments" onclick="display('CommentsDiv')">隐藏留言板</a>
+</div>
+
+<script type="text/javascript">
+    function display(id){  
+        var traget=document.getElementById(id);  
+        if(traget.style.display=="none"){  
+            traget.style.display=""; 
+            document.getElementById("SwitchComments").innerText="隐藏留言板"
+            $("#content").load(location.href + "#CommentsDiv")
+        }else{  
+            traget.style.display="none";  
+            document.getElementById("SwitchComments").innerText="显示留言板."
+      }  
+   }  
+</script>
+<div id="CommentsDiv">
+<div class="cusdisComments" id="cusdis_thread"  data-host="https://cusdis.com" data-app-id="35e9dbc5-33b9-4906-9fd6-0beb2a316f0c" data-page-id="{{ page.title }}"data-page-url="{{ site.url }}{{ page.url }}" data-page-title="{{ page.title }}">
+</div>
+</div>
+<script defer src="https://cusdis.com/js/widget/lang/zh-tw.js"></script>
+<script async defer src="/js/Comments.js"></script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>(function (c) {for (var i = 0; i < c.length; i++) {var d = document,s = d.createElement("script");s.src = remark_config.host + "/web/" + c[i] + ".js";s.defer = true;(d.head || d.body).appendChild(s);}})(remark_config.components || ["embed"];)</script> 
+<br>
                 <hr>
                 <table><tr>
                     <!-- Friends Blog -->
@@ -167,3 +210,9 @@ layout: default
         </div>
     </div>
 </article>
+<script>
+    window.onload=function(){ 
+        document.getElementById("CommentsDiv").style.display="none";  
+        document.getElementById("SwitchComments").innerText="显示留言板."
+} 
+</script>
