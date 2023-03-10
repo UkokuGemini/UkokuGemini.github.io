@@ -1,5 +1,4 @@
-function doubanWebApi (_url,_type,_title) 
-{
+function doubanWebApi (_url,_type,_title) {
   document.getElementById('_Thispage').innerHTML ="⚜" + _title
           var outD = "";
           var i;
@@ -60,7 +59,10 @@ function doubanMain(_MainUrl)
         document.getElementById('book_collect_n').innerHTML= dataMD.result.book_collect
         document.getElementById('book_do_n').innerHTML= dataMD.result.book_do
       }})
-}doubanMain('/json/douban.json');doubanLocalApi('/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】');
+}
+doubanMain('/DoubanJson/json/douban.json');
+doubanLocalApi('/DoubanJson/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】');
+
 //# 将 71362174 改为你的豆瓣数字ID
 //# 用户录入/更新
 //https://mouban.mythsman.com/guest/check_user?id=71362174

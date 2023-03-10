@@ -8,3 +8,5 @@
 .gitignore
 *.exe
 *.ini
+*.trash
+*.zip
