@@ -163,7 +163,6 @@ function change18Pic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
         var RndA = Math.random()*MaxNum
         var TypeA =Math.floor(RndA);
-        var imgs =""
         switch(TypeA){
     case 0://.Jitsuの随机涩图API(img.jitsu.top)
         UrlStr="https://api.anosu.top/img";
@@ -185,8 +184,8 @@ function change18Pic(MaxNum) {
             UrlStr="https://image.anosu.top/pixiv/direct?r18=1";
             Img.src=UrlStr + "&rnd=" + RndA;
         break;
-    default:changePic(MaxNum);   } 
-    if(MaxNum<5){
+    default:changePic(35);   } 
+    if(TypeA<5){
     document.getElementById("PicUrlText").innerHTML ="🎈" + "#" + TypeA + ":" + UrlStr;
         }    
     }
