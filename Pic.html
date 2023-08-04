@@ -8,7 +8,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
 <div id="PicBox">
 <img id="NowPicShown" onclick="changePic(6)" src="https://api.vvhan.com/api/bing" alt="." style="position:absolute;left:0" width="800"/>
 </img></div>
-<div><P id ="picurltext">Url</P></div>
+<div><P id ="picurltext" style="font-size:14px">Url</P></div>
 <script>
     function changePic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
@@ -67,8 +67,41 @@ header-img: "img/WebSite/Pic-BG.jpg"
     case 16:
         Img.src="https://api.ghser.com/random/api.php"+"?rnd="+ RndA;
         break;
+    case 17:
+        Img.src="https://www.ggapi.cn/api/acg/"+"?rnd="+ RndA;
+        break;
+    case 18:
+        Img.src="https://www.ggapi.cn/api/girls/"+"?rnd="+ RndA;
+        break;
+    case 19:
+        Img.src="https://www.ggapi.cn/api/aiimg/"+"?rnd="+ RndA;
+        break;
+    case 20:
+        Img.src="https://www.ggapi.cn/api/jkzf/"+"?rnd="+ RndA;
+        break;
+    case 21:
+        Img.src="http://apis.liaomengyun.top/API/pic.php"+"?rnd="+ RndA;
+        break;
+    case 22:
+        Img.src="https://v2.api-m.com/api/randomAcgPic?type=pc&return=302"+"?rnd="+ RndA;
+        break;
+    case 23:
+        Img.src="https://api.horosama.com/random.php"+"?rnd="+ RndA;
+        break;
+    case 24:
+        Img.src="https://unsplash.it/1600/900?random"+"?rnd="+ RndA;
+        break;
+    case 25:
+        Img.src="https://picsum.photos/1600/900"+"?rnd="+ RndA;
+        break;
+    case 26:
+        Img.src="https://www.loliapi.com/acg/"+"?rnd="+ RndA;
+        break;
+    case 27:
+        Img.src="https://api.oick.cn/random/api.php"+"?rnd="+ RndA;
+        break;
     default:
-        Img.src="https://api.vvhan.com/api/bing"+"?rnd="+ RndA;
+        Img.src="https://tuapi.eees.cc/api.php?category=dongman&type=302"+"?rnd="+ RndA;
         break;}
     document.getElementById("picurltext").innerHTML ="#" & TypeA & ":" & document.getElementById("NowPicShown").src;
         } ;
