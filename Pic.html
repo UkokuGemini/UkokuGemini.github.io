@@ -7,7 +7,11 @@ header-img: "img/WebSite/Pic-BG.jpg"
 <div><a onclick="change18Pic(40)"><p>🙊嘘.看图！👇</p></a></div>
 <div id="PicBox">
 <img id="NowPicShown" onclick="changePic(35)" src="https://api.vvhan.com/api/bing" alt="." style="position:absolute;left:0" width="800"/>
-</img></div><div><div class="right-float" style="margin:0px auto 0px auto;"><a id ="PicUrlText" style="Text-align:right;font-size:7px;color:rgb(219, 219, 219)">.</a><a onclick="change18Pic(6)">🎈</a></div></div>
+</img></div>
+    <div style="float:right;margin:0px auto 0px auto;margin-right:0;">
+    <a id ="PicUrlText" style="Text-align:right;font-size:7px;color:rgb(219, 219, 219)">.</a>
+    <a onclick="change18Pic(6)">🎈</a>
+</div>
 <script>
     function changePic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
