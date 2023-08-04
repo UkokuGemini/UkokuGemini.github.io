@@ -14,7 +14,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         var Img = document.getElementById("NowPicShown");
         var RndA = Math.random()*MaxNum
         var TypeA =Math.floor(RndA);
-        var imgs =""
+        var UrlStr =""
         switch(TypeA){
     case 0:
         Img.src="https://api.mtyqx.cn/tapi/random.php"+"?rnd="+ RndA;
@@ -103,7 +103,8 @@ header-img: "img/WebSite/Pic-BG.jpg"
     default:
         Img.src="https://tuapi.eees.cc/api.php?category=dongman&type=302"+"?rnd="+ RndA;
         break;}
-    document.getElementById("picurltext").innerHTML ="#" & TypeA & ":" & document.getElementById("NowPicShown").src;
+        UrlStr ="#" + TypeA + ":" + document.getElementById("NowPicShown").src
+    document.getElementById("picurltext").innerHTML =urlstr;
         } ;
 function change18Pic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
