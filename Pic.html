@@ -6,9 +6,9 @@ header-img: "img/WebSite/Pic-BG.jpg"
 ---
 <div><a onclick="change18Pic(11)"><p>🙊嘘.看图！👇</p></a></div>
 <div id="PicBox">
-<img id="NowPicShown" onclick="changePic(6)" src="https://api.vvhan.com/api/bing" alt="." style="position:absolute;left:0" width="800"/>
+<img id="NowPicShown" onclick="changePic(28)" src="https://api.vvhan.com/api/bing" alt="." style="position:absolute;left:0" width="800"/>
 </img></div>
-<div><P id ="picurltext" style="font-size:14px">Url</P></div>
+<div><P id ="PicUrlText" style="font-size:14px">Url</P></div>
 <script>
     function changePic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
@@ -104,7 +104,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         Img.src="https://tuapi.eees.cc/api.php?category=dongman&type=302"+"?rnd="+ RndA;
         break;}
         UrlStr ="#" + TypeA + ":" + document.getElementById("NowPicShown").src
-    document.getElementById("picurltext").innerHTML =urlstr;
+    document.getElementById("PicUrlText").innerHTML =UrlStr;
         } ;
 function change18Pic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
