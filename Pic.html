@@ -4,7 +4,8 @@ title: "DailyPic"
 description: "来点二次元吧！"
 header-img: "img/WebSite/Pic-BG.jpg"
 ---
-<div><a onclick="changePic(7)"><p>🙊嘘.看图！👇</p></a></div>
+<div><a onclick="changePic(11)"><p>🙊嘘.看图！👇</p></a></div>
+<div id ="picUrl"><a id ="picurltext"></a></div>
 <div id="PicBox">
 <img id="NowPicShown" onclick="changePic(6)" src="https://api.vvhan.com/api/bing" style="position:absolute;left:0" width="800"/>
 </div>
@@ -36,9 +37,13 @@ header-img: "img/WebSite/Pic-BG.jpg"
     case 6://18#
         Img.src="https://api.vvhan.com/api/girl"+"?rnd="+ RndA;
         break;
+    case 7:
+            Img.src="https://t.mwm.moe/pc"+"?rnd="+ RndA;
+            break;
     default:
         Img.src="https://api.vvhan.com/api/bing"+"?rnd="+ RndA;
         break;}  
+    document.getElementById('doubanlist').innerHTML =  Img.src;
         } 
 </script>
 <!--
