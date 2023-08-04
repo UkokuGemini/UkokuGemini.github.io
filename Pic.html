@@ -43,7 +43,6 @@ header-img: "img/WebSite/Pic-BG.jpg"
     default:
         Img.src="https://api.vvhan.com/api/bing"+"?rnd="+ RndA;
         break;}  
-    document.getElementById('Picurltext').innerHTML = TypeA & Img.src;
         } 
 </script>
 <!--
@@ -61,4 +60,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
     document.getElementById("NowPicShown").onload = function () {
         var SideBarHeight = 100 + document.getElementById("NowPicShown").height;
         document.getElementById("PicBox").style="height:"+ SideBarHeight +"px"}
+</script>
+<script>
+    document.getElementById('Picurltext').innerHTML =document.getElementById("NowPicShown").Src;
 </script>
