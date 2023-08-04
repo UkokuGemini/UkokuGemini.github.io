@@ -5,7 +5,7 @@ description: "来点二次元吧！"
 header-img: "img/WebSite/Pic-BG.jpg"
 ---
 <div><a onclick="changePic(11)"><p>🙊嘘.看图！👇</p></a></div>
-<div id ="picUrl"><a id ="picurltext"></a></div>
+<div id ="picUrl"><P id ="picurltext">Url</P></div>
 <div id="PicBox">
 <img id="NowPicShown" onclick="changePic(6)" src="https://api.vvhan.com/api/bing" style="position:absolute;left:0" width="800"/>
 </div>
@@ -62,5 +62,5 @@ header-img: "img/WebSite/Pic-BG.jpg"
         document.getElementById("PicBox").style="height:"+ SideBarHeight +"px"}
 </script>
 <script>
-    document.getElementById('Picurltext').innerHTML =document.getElementById("NowPicShown").Src;
+    document.getElementById('picurltext').innerHTML =document.getElementById("NowPicShown").Src;
 </script>
