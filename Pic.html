@@ -186,8 +186,10 @@ function change18Pic(MaxNum) {
             Img.src=UrlStr + "&rnd=" + RndA;
         break;
     default:changePic(MaxNum);   } 
+    if(MaxNum<5){
     document.getElementById("PicUrlText").innerHTML ="🎈" + "#" + TypeA + ":" + UrlStr;
         }    
+    }
 </script>
 <script language="JavaScript">
     document.getElementById("NowPicShown").onload = function () {
