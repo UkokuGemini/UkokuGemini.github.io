@@ -43,6 +43,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
     default:
         Img.src="https://api.vvhan.com/api/bing"+"?rnd="+ RndA;
         break;}  
+        document.getElementById("NowPicShown").innerHTML =Img.Src
         } 
 </script>
 <!--
@@ -62,6 +63,5 @@ header-img: "img/WebSite/Pic-BG.jpg"
         document.getElementById("PicBox").style="height:"+ SideBarHeight +"px"}
 </script>
 <script>
-     var Img = document.getElementById("NowPicShown")
-    document.getElementById('picurltext').innerHTML =Img.Src;
+    document.getElementById('picurltext').innerHTML =document.getElementById("NowPicShown").innerHTML;
 </script>
