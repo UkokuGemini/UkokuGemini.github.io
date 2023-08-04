@@ -7,7 +7,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
 <div><a onclick="change18Pic(40)"><p>🙊嘘.看图！👇</p></a></div>
 <div id="PicBox">
 <img id="NowPicShown" onclick="changePic(34)" src="https://api.vvhan.com/api/bing" alt="." style="position:absolute;left:0" width="800"/>
-</img></div><div class="right-float"><a id ="PicUrlText" style="Text-align:right;font-size:14px;color:grey">.</a><a onclick="change18Pic(6)">🎈</a></div>
+</img></div><div class="right-float"><a id ="PicUrlText" style="Text-align:right;font-size:7px;color:rgb(219, 219, 219)">.</a><a onclick="change18Pic(6)">🎈</a></div>
 <script>
     function changePic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
@@ -16,115 +16,148 @@ header-img: "img/WebSite/Pic-BG.jpg"
         var UrlStr =""
         switch(TypeA){
     case 0://三秋API接口站
-        Img.src="https://api.ghser.com/random/api.php"+"?rnd="+ RndA;
+        UrlStr="https://api.ghser.com/random/api.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 1:
-        Img.src="https://api.yimian.xyz/img?type=moe&size=1920x1080"+"&rnd="+ RndA;
+        UrlStr="https://api.yimian.xyz/img?type=moe&size=1920x1080";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 2:
-        Img.src="https://cdn.seovx.com/d/?mom=302"+"&rnd="+ RndA;
+        UrlStr="https://cdn.seovx.com/d/?mom=302";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 3://PAULZZH 东方Project随机图片API
-        Img.src="https://img.paulzzh.tech/touhou/random"+"?rnd="+ RndA;
+        UrlStr="https://img.paulzzh.tech/touhou/random";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 4://韩小韩API接口站
-        Img.src="https://api.vvhan.com/api/view"+"?rnd="+ RndA;
+        UrlStr="https://api.vvhan.com/api/view";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 5:
-        Img.src="https://api.vvhan.com/api/acgimg"+"?rnd="+ RndA;
+        UrlStr="https://api.vvhan.com/api/acgimg";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 6://18#
-        Img.src="http://www.98qy.com/sjbz/api.php"+"?rnd="+ RndA;
+        UrlStr="http://www.98qy.com/sjbz/api.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 7:
-        Img.src="https://t.mwm.moe/pc"+"?rnd="+ RndA;
+        UrlStr="https://t.mwm.moe/pc";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 8:
-        Img.src="https://imgapi.xl0408.top/index.php"+"?rnd="+ RndA;
+        UrlStr="https://imgapi.xl0408.top/index.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 9:
-        Img.src="https://api.yimian.xyz/img"+"?rnd="+ RndA;
+        UrlStr="https://api.yimian.xyz/img";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 10://樱花
-        Img.src="https://www.dmoe.cc/random.php"+"?rnd="+ RndA;
+        UrlStr="https://www.dmoe.cc/random.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 11://一只小嘟嘟的萝莉接口
-        Img.src="http://www.yzxdd.icu/api/";
+        UrlStr="http://www.yzxdd.icu/api/";
         break;
     case 12://缙哥哥的博客原神随机图
-        Img.src="https://api.dujin.org/pic/yuanshen/"+"?rnd="+ RndA;
+        UrlStr="https://api.dujin.org/pic/yuanshen/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 13://unsplash随机图片
-        Img.src="https://source.unsplash.com/random";
+        UrlStr="https://source.unsplash.com/random";
         break;
     case 14://搏天api 
-        Img.src="https://api.btstu.cn/sjbz/api.php?format=images"+"?rnd="+ RndA;
+        UrlStr="https://api.btstu.cn/sjbz/api.php?format=images";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 15://保罗 API 
-        Img.src="https://api.paugram.com/wallpaper/"+"?rnd="+ RndA;
+        UrlStr="https://api.paugram.com/wallpaper/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 16:
-        Img.src="https://api.ghser.com/random/api.php"+"?rnd="+ RndA;
+        UrlStr="https://api.ghser.com/random/api.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 17://狗哥API
-        Img.src="https://www.ggapi.cn/api/acg/"+"?rnd="+ RndA;
+        UrlStr="https://www.ggapi.cn/api/acg/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 18:
-        Img.src="https://www.ggapi.cn/api/girls/"+"?rnd="+ RndA;
+        UrlStr="https://www.ggapi.cn/api/girls/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 19:
-        Img.src="https://www.ggapi.cn/api/aiimg/"+"?rnd="+ RndA;
+        UrlStr="https://www.ggapi.cn/api/aiimg/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 20:
-        Img.src="https://www.ggapi.cn/api/jkzf/"+"?rnd="+ RndA;
+        UrlStr="https://www.ggapi.cn/api/jkzf/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 33:
-        Img.src="https://www.ggapi.cn/api/gancheng/"+"?rnd="+ RndA;
+        UrlStr="https://www.ggapi.cn/api/gancheng/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 21://撩梦云API
-        Img.src="http://apis.liaomengyun.top/API/pic.php"+"?rnd="+ RndA;
+        UrlStr="http://apis.liaomengyun.top/API/pic.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 22://小小API二次元
-        Img.src="https://v2.api-m.com/api/randomAcgPic?type=pc&return=302"+"?rnd="+ RndA;
+        UrlStr="https://v2.api-m.com/api/randomAcgPic?type=pc&return=302";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 34://小小API二次元
-        Img.src="https://v2.api-m.com/api/meinvpic?return=302"+"?rnd="+ RndA;
+        UrlStr="https://v2.api-m.com/api/meinvpic?return=302";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 23://赫萝随机图片API
-        Img.src="https://api.horosama.com/random.php"+"?rnd="+ RndA;
+        UrlStr="https://api.horosama.com/random.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 24://另一个unsplash随机风景图？
-        Img.src="https://unsplash.it/1600/900?random"+"?rnd="+ RndA;
+        UrlStr="https://unsplash.it/1600/900?random";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 25://Lorem Picsum
-        Img.src="https://picsum.photos/1600/900"+"?rnd="+ RndA;
+        UrlStr="https://picsum.photos/1600/900";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 26:
-        Img.src="https://www.loliapi.com/acg/"+"?rnd="+ RndA;
+        UrlStr="https://www.loliapi.com/acg/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 27://LoliAPI | LoliAPI
-        Img.src="https://www.loliapi.com/acg/"+"?rnd="+ RndA;
+        UrlStr="https://www.loliapi.com/acg/";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 28://零七生活API
-        Img.src="https://api.oick.cn/random/api.php"+"?rnd="+ RndA;
+        UrlStr="https://api.oick.cn/random/api.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 29://复苏API
-        Img.src="http://dsyai.club/api/DmImg.php"+"?rnd="+ RndA;
+        UrlStr="http://dsyai.club/api/DmImg.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 30://
-        Img.src="http://dsyai.club/api/youhuotu.php"+"?rnd="+ RndA;
+        UrlStr="http://dsyai.club/api/youhuotu.php";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 31://魅影随机图片API
-        Img.src="https://tuapi.eees.cc/api.php?category=dongman&type=302"+"?rnd="+ RndA;
+        UrlStr="https://tuapi.eees.cc/api.php?category=dongman&type=302";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 32://如诗的API接口
-        Img.src="https://api.likepoems.com/img/pc"+"?rnd="+ RndA;
+        UrlStr="https://api.likepoems.com/img/pc";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     default:
-    Img.src="https://api.vvhan.com/api/bing"+"?rnd="+ RndA;
-    break;}
-        UrlStr ="#" + TypeA + ":" + document.getElementById("NowPicShown").src
-    document.getElementById("PicUrlText").innerHTML =UrlStr;
+        UrlStr="https://api.vvhan.com/api/bing";
+        break;
+    }
+    document.getElementById("PicUrlText").innerHTML ="#" + TypeA + ":" + UrlStr;
         } ;
 function change18Pic(MaxNum) {
         var Img = document.getElementById("NowPicShown");
@@ -133,22 +166,27 @@ function change18Pic(MaxNum) {
         var imgs =""
         switch(TypeA){
     case 0://.Jitsuの随机涩图API(img.jitsu.top)
-        Img.src="https://api.anosu.top/img"+"?rnd="+ RndA;
+        UrlStr="https://api.anosu.top/img";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 1://一直小辣鸡的随机图片API三次元少女图片
-        Img.src="https://www.onexiaolaji.cn/RandomPicture/api/?key=qq249663924"+"&rnd="+ RndA;
+        UrlStr="https://www.onexiaolaji.cn/RandomPicture/api/?key=qq249663924";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 2:
-        Img.src="https://sex.nyan.xyz/api/v2/img"+"?rnd="+ RndA;
+        UrlStr="https://sex.nyan.xyz/api/v2/img";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 3://18#
-        Img.src="https://api.vvhan.com/api/girl"+"?rnd="+ RndA;
+        UrlStr="https://api.vvhan.com/api/girl";
+        Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 4://18#
-            Img.src="https://image.anosu.top/pixiv/direct?r18=1"+"?rnd="+ RndA;
-            break;
+            UrlStr="https://image.anosu.top/pixiv/direct?r18=1";
+            Img.src=UrlStr + "?rnd=" + RndA;
+        break;
     default:changePic(MaxNum);   } 
-    document.getElementById("picurltext").innerHTML =document.getElementById("NowPicShown").src;
+    document.getElementById("picurltext").innerHTML ="🎈" + "#" + TypeA + ":" + UrlStr;
         }    
 </script>
 <script language="JavaScript">
