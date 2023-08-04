@@ -21,11 +21,11 @@ header-img: "img/WebSite/Pic-BG.jpg"
         break;
     case 1:
         UrlStr="https://api.yimian.xyz/img?type=moe&size=1920x1080";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 2:
         UrlStr="https://cdn.seovx.com/d/?mom=302";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 3://PAULZZH 东方Project随机图片API
         UrlStr="https://img.paulzzh.tech/touhou/random";
@@ -71,7 +71,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         break;
     case 14://搏天api 
         UrlStr="https://api.btstu.cn/sjbz/api.php?format=images";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 15://保罗 API 
         UrlStr="https://api.paugram.com/wallpaper/";
@@ -107,11 +107,11 @@ header-img: "img/WebSite/Pic-BG.jpg"
         break;
     case 22://小小API二次元
         UrlStr="https://v2.api-m.com/api/randomAcgPic?type=pc&return=302";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 34://小小API二次元
         UrlStr="https://v2.api-m.com/api/meinvpic?return=302";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 23://赫萝随机图片API
         UrlStr="https://api.horosama.com/random.php";
@@ -119,7 +119,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         break;
     case 24://另一个unsplash随机风景图？
         UrlStr="https://unsplash.it/1600/900?random";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 25://Lorem Picsum
         UrlStr="https://picsum.photos/1600/900";
@@ -147,7 +147,7 @@ header-img: "img/WebSite/Pic-BG.jpg"
         break;
     case 31://魅影随机图片API
         UrlStr="https://tuapi.eees.cc/api.php?category=dongman&type=302";
-        Img.src=UrlStr + "?rnd=" + RndA;
+        Img.src=UrlStr + "&rnd=" + RndA;
         break;
     case 32://如诗的API接口
         UrlStr="https://api.likepoems.com/img/pc";
@@ -170,7 +170,7 @@ function change18Pic(MaxNum) {
         Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 1://一直小辣鸡的随机图片API三次元少女图片
-        UrlStr="https://www.onexiaolaji.cn/RandomPicture/api/?key=qq249663924";
+        UrlStr="https://www.onexiaolaji.cn/RandomPicture/api/";
         Img.src=UrlStr + "?rnd=" + RndA;
         break;
     case 2:
@@ -183,7 +183,7 @@ function change18Pic(MaxNum) {
         break;
     case 4://18#
             UrlStr="https://image.anosu.top/pixiv/direct?r18=1";
-            Img.src=UrlStr + "?rnd=" + RndA;
+            Img.src=UrlStr + "&rnd=" + RndA;
         break;
     default:changePic(MaxNum);   } 
     document.getElementById("picurltext").innerHTML ="🎈" + "#" + TypeA + ":" + UrlStr;
