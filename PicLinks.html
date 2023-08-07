@@ -1,0 +1,83 @@
+---
+layout: page
+title: "PicLinks"
+description: "UkokuGemini Just UkokuGemini."
+header-img: "img/WebSite/Link-BG.jpg"
+---
+
+<div>
+    <span id="DivTable" class="Mygrid-container" style="margin-top: 15px;"></span>
+</div>
+<script>
+    function AddLinkDiv (_JsPath) {
+  fetch(_JsPath)
+  .then(responseD => responseD.json())
+  .then(dataD => {
+    if (true) {
+  var outD ="";
+  var i;for(i = 0; i < dataD.data.length; i++) {
+    outD += '<div class="hvr-shrink"><div class="box"><a href="'
+    + dataD.data[i].item.Url +'"><div class="glass" style="z-index:0;"><img class="glass" src="'
+    + dataD.data[i].item.Cover +'"><div class="text"><p Style="font-size:'
+    + dataD.data[i].item.Size +'px">'
+    + dataD.data[i].item.Intro + '</p><br></div></div></a></div></div>';
+  }
+document.getElementById('DivTable').innerHTML = outD;
+}})
+}
+AddLinkDiv('/PicLinks/Link.json');
+</script>
+<style>
+.box {width: 100%;height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: 100% 100%;
+      background-position: center;}
+.text{letter-spacing: 0;position: absolute;z-index: 1;left: 5%;top: -5px; color: #000;
+    font-family:'MyEnFont','Covered By Your Grace','MyChFont', cursive,'PingFang SC','Microsoft Yahei','STXingkai';}
+.glass {max-height: 135px;min-height: 135px;
+      width: auto;min-width: 100px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.5em;
+      backdrop-filter: blur(20px);
+      color: #fff;
+      box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3);}
+@font-face {
+    font-family: "MyChFont";
+    src: url(/PicLinks/MyChFont.ttf);}
+@font-face {
+    font-family: "MyEnFont";
+    src: url(/PicLinks/MyEhFont.ttf);}
+.Mygrid-container{
+  display:grid;
+/*  grid-template-columns:350px 350px 350px; 
+/*   grid-template-columns:1fr 3fr 1fr;  */
+/*   grid-template-columns:repeat(auto-fit,100px); */
+grid-template-columns:repeat(auto-fit,minmax(350px,350px));
+  grid-template-rows:repeat(200px,minmax(200px,200px));
+  /*  items之间的间距 */
+  grid-column-gap:20px;
+  grid-row-gap:30px;
+  border:0px solid rgb(253, 253, 253);}
+.Mygrid-container div{
+  text-align:center;
+  line-height:0px;}
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);}
+</style>
