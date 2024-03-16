@@ -1,0 +1,44 @@
+---
+layout: page
+title: "Douban&Bangumi"
+description: "豆瓣&番组"
+header-img: "img/WebSite/Bangumi-BG.jpg"
+---
+<!--豆瓣读取-->
+<a target="_blank" href="https://www.douban.com/people/UkokuGemini/">
+    <img src="/img/Icon/douban.png" width="25" height="25"/>
+     · 我的豆瓣主页 .
+    <img src="/img/Icon/Join.png" width="25" height="25"/>
+    🤙
+</a>
+<div>豆瓣电影【
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_movie_wish_small.json',0,'豆瓣电影【想看】')">想看:<b id="movie_wish_n"></b></a>
+    /     
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_movie_collect_small.json',0,'豆瓣电影【已看】')">已看:<b id="movie_collect_n"></b></a>
+    /  
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_movie_do_small.json',0,'豆瓣电影【正在看】')">正在看:<b id="movie_do_n"></b></a>
+    】</div>
+<div>豆瓣读书【
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_book_wish_small.json',1,'豆瓣读书【想读】')">想读:<b id="book_wish_n"></b></a>
+    /  
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_book_collect_small.json',1,'豆瓣读书【已读】')">已读:<b id="book_collect_n"></b></a>
+    /  
+    <a onclick="doubanLocalApi('/DoubanJson/json/douban_book_do_small.json',1,'豆瓣读书【正在读】')">正在读:<b id="book_do_n"></b></a>
+    】</div>
+<a target="_blank" href="https://bangumi.tv/user/ukokugemini">
+    <img src="/img/Icon/bangumi.png" width="25" height="25"/>
+     · 我的Bangumi主页 .
+    <img src="/img/Icon/Join.png" width="25" height="25"/>
+    🤙
+</a>
+<div>Bangumi【
+    <a onclick="bangumiWebApi('https://api.bgm.tv/v0/users/ukokugemini/collections?subject_type=2&type=3&limit=10&offset=0','Bangumi【目前追番】',0)">目前追番:<b id="anime_do_n"></b></a>
+    /     
+    <a onclick="bangumiWebApi('https://api.bgm.tv/v0/users/ukokugemini/collections?subject_type=2&type=2&limit=10&offset=0','Bangumi【最近看过】',1)">最近看过:<b id="anime_collect_n"></b></a>
+    】</div>
+<br>    
+<b id="_Thispage"></b>
+<hr>
+<span id="ViList"></span>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/ViQuer.js"></script>
